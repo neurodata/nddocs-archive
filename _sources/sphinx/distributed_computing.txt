@@ -1,2 +1,2 @@
-Cluster Configuration
+Distributed Computing
 *********************
