@@ -1,2 +1,2 @@
-Cloud Computing
+Getting Started
 ***************

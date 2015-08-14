@@ -1,78 +1,88 @@
-.. M2G is kinda good.
 .. meta::
-   :description: Official documentation for M2G:  MR Images to Graphs 
-   :keywords: MRI, pipeline, neuroscience, diffusion, resting state
-.. title::
-   m2g
+   :description: Open Connectome Project Documentation:  This site contains a collection
+    of pages explaining how to access data, analyze data, and visualize both raw and derived data products.
+
+   :keywords: neuroscience, connectome, help, documentation
+
+.. title::  OCP Docs
 
 .. raw:: html
 
-	<h1>m2g:  Framework for robust, reliable MR connectome estimation</h1>
-	<br>
+	<h1>Open Connectome Project Documentation</h1>
 
-.. image:: images/m2g.png
-
-
-.. raw:: html
-  
-  <hr>
-  <p>This page describes how brain graphs are generated in our service from Diffusion Weighted MRI (dMRI), and structural MRI (sMRI) images of human brains. The MRImages to Graphs (M2G) pipeline is the successor of MRCAP and MIGRAINE. M2G combines dMRI and sMRI data from a single subject to estimate a high-level connectome. The connectomes returned describe regions of connectivity within the brain at multiple levels of resolution - from a single voxel scale (O(1 mm3)) to large cortical regions (O(20 cm3)).</p>
-
-  <p> M2G has been developed in the LONI pipelining environment. This environment enforces that the pipeline be modular in construction, and all created workflows and modules are command-line executable. This makes M2G efficient and allows users or researchers to modify algorithms for their specific requirements. </p>
-
-
-.. raw:: html
-
-   <div class="container-fluid">
-   <div class="row">
-   <div class="col-md-4">
-   <h2>Documentation</h2>
+This site provides an overview to the services currently offered by the Open Connectome Project (OCP).
+We provide visualization, data access, query, and analytics capabilities for neuroscientists, computer scientists,
+and the broader scientific community.  Our mission is to enhance big data neuroscience.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: Overview
 
-   docs/introduction
-   docs/local_config
-   docs/cluster_config
-   docs/cloud_computing
-   docs/contributing
-   docs/style
-   docs/faq
-   Release Notes <https://github.com/openconnectome/m2g/releases/>
+   overview/why
+   overview/data
+   overview/capabilities
+   tutorials/getting_started
+   tutorials/demos
 
-.. raw:: html
-
-  </div>
-  <div class="col-md-4">
-  <h2>Tutorials</h2>
-  
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: Background
 
-   tutorials/basic_usage
-   tutorials/data
-   tutorials/algorithms
-   tutorials/validation
-   tutorials/analysis
+   overview/spatialdb
+   overview/ramon
+   overview/annodb
+   overview/dbaccess
+   overview/loni
+   overview/distributed_computing
+   tutorials/object_detection
 
-.. raw:: html
-
-   </div>
-   <div class="col-md-4">
-   <h2>Further reading</h2>
-   
 .. toctree::
-   :maxdepth: 1
-   
-   docs/functions
-   Gitter chatroom <https://gitter.im/openconnectome/m2g>
-   Mailing list <https://groups.google.com/forum/#!forum/ocp-support/>
-   Github repo <https://github.com/openconnectome/m2g>
-   Project page <https://openconnectome.github.io/m2g/>
+   :maxdepth: 2
+   :caption: Visualize
 
-.. raw:: html
+   viz/browser
+   viz/client
+   viz/cluster
 
-   </div>
-   </div>
-   </div>
+.. toctree::
+   :maxdepth: 2
+   :caption: Exchange
 
+   exchange/browser
+   exchange/client
+   exchange/cluster
+
+   exchange/getdata
+   exchange/putdata
+   exchange/cajal
+   exchange/ocpy
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Analyze
+
+  analyze/browser
+  analyze/client
+  analyze/cluster
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Case Studies
+
+   tutorials/map
+   tutorials/demos
+   tutorials/casestudies
+
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Further Reading
+
+  Gitter chatroom <https://gitter.im/openconnectome/>
+  Mailing list <https://groups.google.com/forum/#!forum/ocp-support/>
+  Github repo <https://github.com/openconnectome/>
+  Project page <https://openconnecto.me/>
+  overview/configuration
+  overview/contributing
+  overview/style
+  overview/faq
