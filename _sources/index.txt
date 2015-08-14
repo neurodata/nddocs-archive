@@ -15,15 +15,70 @@ We provide visualization, data access, query, and analytics capabilities for neu
 and the broader scientific community.  Our mission is to enhance big data neuroscience.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Overview
 
-   sphinx/introduction
+   sphinx/why
+   sphinx/capabilities
+   sphinx/data
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Overview
+
+   Spatial Database
+   RAMON
+   Annotation Database
+   CAJAL
+   LONI Pipeline
+   Object Detection
+
+
    sphinx/ramon
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Tutorials
+   :maxdepth: 2
+   :caption: Visualize
+
+   ocp viz
+   graph viz
+   big data viewer
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Exchange
+
+   Ingest
+   - image ingest
+   - anno ingest
+   - graph ingest
+   - Tips
+
+   Download
+   - image
+   - annotation
+   - graphs
+
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Analyze
+
+  sphinx/loni
+  sphinx/distributed_computing
+  sphinx/cloud_computing
+  m2g <http://m2g.io>
+  vesicle <http://ocp.me/vesicle>
+  images to graphs <http://i2g.io>
+  manno (Manual Annotation using OCP) <http://ocp.me/manno>
+  macho (Machine Annotation using OCP) <http://ocp.me/macho>
+  sphinx/other_tools
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Case Studies
 
    tutorials/map
    tutorials/getting_started
@@ -39,28 +94,13 @@ and the broader scientific community.  Our mission is to enhance big data neuros
 
 .. toctree::
    :maxdepth: 1
-   :caption: Access
+   :caption: Exchange
 
    tutorials/get_data
    tutorials/put_data
    tutorials/query
    tutorials/cajal
    tutorials/ocpy
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Analyze
-
-   sphinx/loni
-   sphinx/distributed_computing
-   sphinx/cloud_computing
-   m2g <http://m2g.io>
-   vesicle <http://ocp.me/vesicle>
-   images to graphs <http://i2g.io>
-   manno (Manual Annotation using OCP) <http://ocp.me/manno>
-   macho (Machine Annotation using OCP) <http://ocp.me/macho>
-   sphinx/other_tools
-
 
 .. toctree::
   :maxdepth: 1

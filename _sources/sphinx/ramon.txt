@@ -45,6 +45,24 @@ RAMONNeuron
 
 RAMONVolume
 ===============
+* Inherits from RAMONBase
+* Superclass to all RAMON data types that contain voxel data
+
+Voxel data can be represented as:
+
+* Cutout – 3D array with unlabeled voxels set to 0 and labeled voxels set to the object’s ID
+* Voxel List – an Nx3 array representing the x,y,z coordinates of all labeled voxels
+
+Additional Properties
+~~~~~~~~~~~~~~~~~~~~~
+
+* xyzOffset – x,y,z coordinates of the minimum corner of the cube (if data is a cutout), otherwise empty
+* resolution – level in the database resolution hierarchy
+* name - identifier for volume (string)
+* dataFormat - format of data; options include bounding box, dense, and voxel list
+* data – voxel data represented as either a cutout or a voxel list
+* uploadType - data type of data in target database
+* dataType - data type of existing data, such as annotation or probabilities
 
 RAMONGeneric
 ===============
