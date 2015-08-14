@@ -18,99 +18,61 @@ and the broader scientific community.  Our mission is to enhance big data neuros
    :maxdepth: 2
    :caption: Overview
 
-   sphinx/why
-   sphinx/capabilities
-   sphinx/data
+   overview/why
+   overview/data
+   overview/capabilities
+   tutorials/getting_started
+   tutorials/demos
 
 .. toctree::
    :maxdepth: 2
-   :caption: Overview
+   :caption: Background
 
-   Spatial Database
-   RAMON
-   Annotation Database
-   CAJAL
-   LONI Pipeline
-   Object Detection
-   RAMON Interface with OCP
-   ------------------------
-
-   To post data to OCP, three things are required.  A data o
-
-
-
-   sphinx/ramon
+   overview/spatialdb
+   overview/ramon
+   overview/annodb
+   overview/dbaccess
+   overview/loni
+   overview/distributed_computing
+   tutorials/object_detection
 
 .. toctree::
    :maxdepth: 2
    :caption: Visualize
 
-   ocp viz
-   graph viz
-   big data viewer
+   viz/browser
+   viz/client
+   viz/cluster
 
 .. toctree::
    :maxdepth: 2
    :caption: Exchange
 
-   Ingest
-   - image ingest
-   - anno ingest
-   - graph ingest
-   - Tips
+   exchange/browser
+   exchange/client
+   exchange/cluster
 
-   Download
-   - image
-   - annotation
-   - graphs
-
-   .. toctree::
-      :maxdepth: 1
-      :caption: Exchange
-
-      tutorials/get_data
-      tutorials/put_data
-      tutorials/query
-      tutorials/cajal
-      tutorials/ocpy
-
-
-
-
-
-
+   exchange/getdata
+   exchange/putdata
+   exchange/cajal
+   exchange/ocpy
 
 .. toctree::
   :maxdepth: 1
   :caption: Analyze
 
-  sphinx/loni
-  sphinx/distributed_computing
-  sphinx/cloud_computing
-  m2g <http://m2g.io>
-  vesicle <http://ocp.me/vesicle>
-  images to graphs <http://i2g.io>
-  manno (Manual Annotation using OCP) <http://ocp.me/manno>
-  macho (Machine Annotation using OCP) <http://ocp.me/macho>
-  sphinx/other_tools
-
-
+  analyze/browser
+  analyze/client
+  analyze/cluster
 
 .. toctree::
    :maxdepth: 2
    :caption: Case Studies
 
    tutorials/map
-   tutorials/getting_started
-   tutorials/user_stories
    tutorials/demos
+   tutorials/casestudies
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Visualize
-
-   tutorials/browse_data
-   tutorials/visualize_data
 
 .. toctree::
   :maxdepth: 1
@@ -120,7 +82,7 @@ and the broader scientific community.  Our mission is to enhance big data neuros
   Mailing list <https://groups.google.com/forum/#!forum/ocp-support/>
   Github repo <https://github.com/openconnectome/>
   Project page <https://openconnecto.me/>
-  sphinx/configuration
-  sphinx/contributing
-  sphinx/style
-  sphinx/faq
+  overview/configuration
+  overview/contributing
+  overview/style
+  overview/faq
