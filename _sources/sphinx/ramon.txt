@@ -30,21 +30,31 @@ There are currently 9 RAMON types:
 RAMONBase
 ===============
 * Superclass to all RAMON data types
-* Contains common information to all annotations
+* Contains information common to all annotations
+* Is not used directly by the OCP backend infrastructure - used for building more complicated objects
 
 Properties
 ~~~~~~~~~~
-* id – Unique 32 bit value assigned by the OCP database on upload (can be set manually as well if you’d like to “force” an id value)
-* confidence – value 0-1 indicating an estimated confidence in an annotation
-* dynamicMetadata – a flexible key-value pair store
-* status – an integer value used to indicate some sort of status (enumeration provided and can be extended)
-* author – string indicating who created the annotation
+* id (uint32): **Primary Key** Assigned by the OCP database on upload, or set manually
+* confidence (float): Indicates estimated confidence in an annotation [0,1]
+* dynamicMetadata (string): a flexible key-value pair store
+* status (int): used to indicate processing status
+* author (string): indicating who created the annotation
 
 RAMONNeuron
 ===============
+Container for assembling SEGMENTs.  Useful for building up complete neurons; each SEGMENT has its own voxel data and properties.
+
+Properties
+~~~~~~~~~~
+* segments (int[]): A collection of segments associated with this neuron.
+* RAMONBase fields
 
 RAMONVolume
 ===============
+Used to store pixel label information; inherited by many other types.  This object type is often used to post
+raw label data, which may be linked later with metadata.
+
 * Inherits from RAMONBase
 * Superclass to all RAMON data types that contain voxel data
 
@@ -53,37 +63,98 @@ Voxel data can be represented as:
 * Cutout – 3D array with unlabeled voxels set to 0 and labeled voxels set to the object’s ID
 * Voxel List – an Nx3 array representing the x,y,z coordinates of all labeled voxels
 
-Additional Properties
-~~~~~~~~~~~~~~~~~~~~~
+Properties
+~~~~~~~~~~
 
-* xyzOffset – x,y,z coordinates of the minimum corner of the cube (if data is a cutout), otherwise empty
-* resolution – level in the database resolution hierarchy
-* name - identifier for volume (string)
-* dataFormat - format of data; options include bounding box, dense, and voxel list
-* data – voxel data represented as either a cutout or a voxel list
-* uploadType - data type of data in target database
-* dataType - data type of existing data, such as annotation or probabilities
+* xyzOffset (int[3]):  x,y,z coordinates of the minimum corner of the cube (if data is a cutout), otherwise empty
+* resolution (int): level in the database resolution hierarchy - defaults to project resolution
+* cutout (int32):  dense matrix of data; left empty when using voxel lists
+* voxels (int32[][3]): list of voxels making up annotation
+* RAMONBase fields
 
 RAMONGeneric
 ===============
+Extensible, used to specify arbitrary, user-defined information for a voxel set.  Used to create RAMON objects
+without an assigned type or special fields
+
+Properties
+~~~~~~~~~~
+
+* RAMONBase, RAMONVolume fields
 
 RAMONSynapse
 ===============
+Junction between two NEURONs is used to connect SEGMENTs when building a GRAPH
+
+Properties
+~~~~~~~~~~
+
+* synapsetype (int):  Used to specify a synapse type (e.g., excitatory)
+* weight (float):  Synaptic weight, as defined by the user
+* segments (int[][2]): Segments associated with this synapse, and their direction
+* RAMONBase, RAMONVolume fields
 
 RAMONSegment
 ===============
+A labeled region of a neuron (e.g., a neurite); typically a contiguous voxel set.
+
+Properties
+~~~~~~~~~~
+
+* class (int):  Specifies the type of segment (e.g., axon, dendrite, soma)
+* neuron (int):  Neuron parent associated with this segment.  No more than one id permitted
+* synapses (int[]):  Synapses associated with this segment.
+* organelles (int[]): Organelle IDs associated with this segment.  This is a unidirectional linkage
+* RAMONBase, RAMONVolume fields
 
 RAMONOrganelle
 ===============
+Represents internal cell structures (e.g., mitochondria, vesicles).
 
-RAMONROI
-===============
+Properties
+~~~~~~~~~~
+
+* organelleclass (int): Used to specify the organelle type (e.g., mitochondria)
+* RAMONBase, RAMONVolume fields
+
+RAMONROI (proposed)
+===================
+An attributed region of interest, often used for atlases and other collections of labels.  In combination with key-value specified metadata, this can be used to define any object type,
+although query support may be more limited than if the more defined data standard is used.
+
+Properties
+~~~~~~~~~~
+
+* parent (int): ids of parent objects
+* child (int): ids of children objects
+* RAMONBase, RAMONVolume fields
 
 RAMONNode
 ===============
+Sparse annotation format for tracing processes or objects.
+
+Properties
+~~~~~~~~~~
+
+* nodetype: TBD
+* parentid: TBD
+* skeletonid: TBD
+* radius: TBD
+* children: TBD
+* location: TBD
+* RAMONBase: TBD
 
 RAMONSkeleton
 ===============
+An (organized) collection of NODEs, often used to represent a NEURON or arbor.
+
+Properties
+~~~~~~~~~~
+
+* skeletontype: TBD
+* rootnode: TBD
+
+**Note that the following data types have been deprecated and should not be used:  RAMONSeed, RAMONAttributedRegion, and RAMONNonNeuron**
 
 RAMON Inheritance Diagram
 =========================
@@ -92,10 +163,8 @@ A visual depiction of the inheritance between the different RAMON types can be s
 
 .. image:: ../images/ramon_inheritance.png
 
-
-RAMON Fields
-------------
-
-
 RAMON Queries
 -------------
+
+RAMON Enumerations
+------------------

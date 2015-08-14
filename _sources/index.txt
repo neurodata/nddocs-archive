@@ -32,6 +32,11 @@ and the broader scientific community.  Our mission is to enhance big data neuros
    CAJAL
    LONI Pipeline
    Object Detection
+   RAMON Interface with OCP
+   ------------------------
+
+   To post data to OCP, three things are required.  A data o
+
 
 
    sphinx/ramon
@@ -58,6 +63,21 @@ and the broader scientific community.  Our mission is to enhance big data neuros
    - image
    - annotation
    - graphs
+
+   .. toctree::
+      :maxdepth: 1
+      :caption: Exchange
+
+      tutorials/get_data
+      tutorials/put_data
+      tutorials/query
+      tutorials/cajal
+      tutorials/ocpy
+
+
+
+
+
 
 
 .. toctree::
@@ -91,16 +111,6 @@ and the broader scientific community.  Our mission is to enhance big data neuros
 
    tutorials/browse_data
    tutorials/visualize_data
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Exchange
-
-   tutorials/get_data
-   tutorials/put_data
-   tutorials/query
-   tutorials/cajal
-   tutorials/ocpy
 
 .. toctree::
   :maxdepth: 1
