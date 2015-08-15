@@ -25,7 +25,8 @@ key-value pairs.
 RAMON types
 -----------
 
-There are currently 9 RAMON types, as detailed below.
+There are currently 9 RAMON types:  RAMONBase, RAMONNeuron, RAMONVolume, RAMONGeneric,
+RAMONSynapse, RAMONSegment, RAMONOrganelle, RAMONROI, RAMONNode, and RAMONSkeleton.
 
 RAMONBase
 ===============
