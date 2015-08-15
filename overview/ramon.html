@@ -32,7 +32,9 @@
   
 
   
-    <link rel="top" title="docs v0.1 documentation" href="../index.html"/> 
+    <link rel="top" title="docs v0.1 documentation" href="../index.html"/>
+        <link rel="next" title="RAMON + OCP" href="ramonocp.html"/>
+        <link rel="prev" title="SpatialDB" href="spatialdb.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -75,36 +77,120 @@
           
           
               <p class="caption"><span class="caption-text">Overview</span></p>
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="why.html">Why OCP?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="capabilities.html">Capabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/demos.html">Demos</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Overview</span></p>
-<ul class="simple">
+<p class="caption"><span class="caption-text">Background</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="spatialdb.html">SpatialDB</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">RAMON Data Standard</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ramon-types">RAMON types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ramonbase">RAMONBase</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonneuron">RAMONNeuron</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonvolume">RAMONVolume</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramongeneric">RAMONGeneric</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonsynapse">RAMONSynapse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonsegment">RAMONSegment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonorganelle">RAMONOrganelle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonroi-proposed">RAMONROI (proposed)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonnode">RAMONNode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramonskeleton">RAMONSkeleton</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ramon-inheritance-diagram">RAMON Inheritance Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ramon-enumerations">RAMON Enumerations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#eramonannostatus">eRAMONAnnoStatus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramonannotype">eRAMONAnnoType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramondataformat">eRAMONDataFormat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramondatatype">eRAMONDataType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramonflowdirection">eRAMONFlowDirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramonorganelleclass">eRAMONOrganelleClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramonsegmentclass">eRAMONSegmentClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">eRAMONFlowDirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eramonsynapsetype">eRAMONSynapseType</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ramonocp.html">RAMON + OCP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ramonocp.html#ramon-queries">RAMON Queries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="annodb.html">AnnoDB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="annodb.html#ramon-interface-with-ocp">RAMON Interface with OCP</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dbaccess.html">Database Access</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dbaccess.html#cajal">CAJAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbaccess.html#ocpy">OCPy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loni.html">LONI Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="distributed_computing.html">Distributed Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/object_detection.html">Object Detection</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Visualize</span></p>
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../viz/browser.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../viz/client.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../viz/cluster.html">Cluster</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Exchange</span></p>
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/browser.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/client.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/cluster.html">Cluster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/getdata.html">Get Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/putdata.html">Put Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/cajal.html">CAJAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exchange/ocpy.html">ocpy</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Analyze</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference external" href="http://m2g.io">m2g</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://ocp.me/vesicle">vesicle</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://i2g.io">images to graphs</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://ocp.me/manno">manno (Manual Annotation using OCP)</a></li>
-<li class="toctree-l1"><a class="reference external" href="http://ocp.me/macho">macho (Machine Annotation using OCP)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analyze/browser.html">Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analyze/client.html">Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analyze/cluster.html">Cluster</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Case Studies</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/map.html">Map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/user_stories.html">User Stories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/demos.html">Demos</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Visualize</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/browse_data.html">Browse Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorials/visualize_data.html">Visualize Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/casestudies.html">Case Studies</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Further Reading</span></p>
 <ul>
@@ -112,6 +198,10 @@
 <li class="toctree-l1"><a class="reference external" href="https://groups.google.com/forum/#!forum/ocp-support/">Mailing list</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/openconnectome/">Github repo</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://openconnecto.me/">Project page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
 </ul>
 
           
@@ -171,7 +261,7 @@ key-value pairs.</p>
 </div>
 <div class="section" id="ramon-types">
 <h2>RAMON types<a class="headerlink" href="#ramon-types" title="Permalink to this headline">¶</a></h2>
-<p>There are currently 9 RAMON types:</p>
+<p>There are currently 9 RAMON types, as detailed below.</p>
 <div class="section" id="ramonbase">
 <h3>RAMONBase<a class="headerlink" href="#ramonbase" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -313,6 +403,7 @@ although query support may be more limited than if the more defined data standar
 <li>rootnode: TBD</li>
 </ul>
 <p><strong>Note that the following data types have been deprecated and should not be used:  RAMONSeed, RAMONAttributedRegion, and RAMONNonNeuron</strong></p>
+<p><em>Graphs are an integral part of our framework, but are not currently represented as part of the RAMON data standard.</em></p>
 </div>
 </div>
 <div class="section" id="ramon-inheritance-diagram">
@@ -321,17 +412,127 @@ although query support may be more limited than if the more defined data standar
 <img alt="../_images/ramon_inheritance.png" src="../_images/ramon_inheritance.png" />
 </div>
 </div>
-<div class="section" id="ramon-queries">
-<h2>RAMON Queries<a class="headerlink" href="#ramon-queries" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="ramon-enumerations">
 <h2>RAMON Enumerations<a class="headerlink" href="#ramon-enumerations" title="Permalink to this headline">¶</a></h2>
+<p>The following enumerations are used to assist users in communicating commonly used metadata.</p>
+<div class="section" id="eramonannostatus">
+<h3>eRAMONAnnoStatus<a class="headerlink" href="#eramonannostatus" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of status field values for RAMON annotations</p>
+<ul class="simple">
+<li>0 = Unprocessed</li>
+<li>1 = Locked</li>
+<li>2 = Processing</li>
+<li>3 = Ignored</li>
+</ul>
+</div>
+<div class="section" id="eramonannotype">
+<h3>eRAMONAnnoType<a class="headerlink" href="#eramonannotype" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of the types of RAMON annotations
+that can be stored in the OCP annotation database</p>
+<ul class="simple">
+<li>1 = GENERIC</li>
+<li>2 = SYNAPSE</li>
+<li>4 = SEGMENT</li>
+<li>5 = NEURON</li>
+<li>6 = ORGANELLE</li>
+<li>8 = VOLUME</li>
+</ul>
+</div>
+<div class="section" id="eramondataformat">
+<h3>eRAMONDataFormat<a class="headerlink" href="#eramondataformat" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of the data formats supported by RAMON and OCP</p>
+<ul class="simple">
+<li>0 = dense</li>
+<li>1 = voxel list</li>
+<li>2 = bounding box</li>
+</ul>
+</div>
+<div class="section" id="eramondatatype">
+<h3>eRAMONDataType<a class="headerlink" href="#eramondatatype" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of the types of data in OCP DB
+TODO</p>
+<ul class="simple">
+<li>0 =  8bit Image Data</li>
+<li>1 = 32bit Annotation Data</li>
+<li>2 = 16bit Multichannel data</li>
+<li>3 = 8bit Multichannel data</li>
+<li>4 = 32bit Probability Map</li>
+<li>5 = Bitmask</li>
+<li>6 = 64bit Annotation Data</li>
+<li>7 = Image 16 bit data</li>
+<li>8 = RGBA 32 bit data</li>
+<li>9 = RGBA 64 bit data</li>
+</ul>
+</div>
+<div class="section" id="eramonflowdirection">
+<h3>eRAMONFlowDirection<a class="headerlink" href="#eramonflowdirection" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of information flow direction for synapse and segments</p>
+<ul class="simple">
+<li>0 = Unknown</li>
+<li>1 = Pre-Synaptic</li>
+<li>2 = Post-Synaptic</li>
+<li>3 = Bi-Directional</li>
+</ul>
+</div>
+<div class="section" id="eramonorganelleclass">
+<h3>eRAMONOrganelleClass<a class="headerlink" href="#eramonorganelleclass" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of organelle types</p>
+<ul class="simple">
+<li>0 = Unknown</li>
+<li>1 = Mitochondria</li>
+<li>2 = Vesicle</li>
+<li>3 = Axoplasmic Reticula</li>
+<li>4 = Microtubules</li>
+<li>5 = Nucleus</li>
+</ul>
+</div>
+<div class="section" id="eramonsegmentclass">
+<h3>eRAMONSegmentClass<a class="headerlink" href="#eramonsegmentclass" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of segment class type</p>
+<ul class="simple">
+<li>0 = Unknown</li>
+<li>1 = Axon (fragment)</li>
+<li>2 = Dendrite (fragment)</li>
+<li>3 = Soma (fragment)</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h3>eRAMONFlowDirection<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of information flow direction for
+synapse and segments</p>
+<ul class="simple">
+<li>0 = Unknown</li>
+<li>1 = Pre-Synaptic</li>
+<li>2 = Post-Synaptic</li>
+<li>3 = Bi-Directional</li>
+</ul>
+</div>
+<div class="section" id="eramonsynapsetype">
+<h3>eRAMONSynapseType<a class="headerlink" href="#eramonsynapsetype" title="Permalink to this headline">¶</a></h3>
+<p>Enumeration of synapse type</p>
+<ul class="simple">
+<li>0 = Unknown</li>
+<li>1 = Excitatory synapse</li>
+<li>2 = Inhibitory synapse</li>
+<li>3 = Gap Junction</li>
+</ul>
+<p>Deprecated enumerations include:  eRAMONCubeOrientation, eRAMONUploadDataType</p>
+</div>
 </div>
 </div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ramonocp.html" class="btn btn-neutral float-right" title="RAMON + OCP" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="spatialdb.html" class="btn btn-neutral" title="SpatialDB" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

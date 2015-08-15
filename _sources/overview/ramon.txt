@@ -25,7 +25,7 @@ key-value pairs.
 RAMON types
 -----------
 
-There are currently 9 RAMON types:
+There are currently 9 RAMON types, as detailed below.
 
 RAMONBase
 ===============
@@ -156,6 +156,8 @@ Properties
 
 **Note that the following data types have been deprecated and should not be used:  RAMONSeed, RAMONAttributedRegion, and RAMONNonNeuron**
 
+*Graphs are an integral part of our framework, but are not currently represented as part of the RAMON data standard.*
+
 RAMON Inheritance Diagram
 =========================
 
@@ -163,8 +165,101 @@ A visual depiction of the inheritance between the different RAMON types can be s
 
 .. image:: ../images/ramon_inheritance.png
 
-RAMON Queries
--------------
-
 RAMON Enumerations
 ------------------
+The following enumerations are used to assist users in communicating commonly used metadata.
+
+eRAMONAnnoStatus
+================
+Enumeration of status field values for RAMON annotations
+
+- 0 = Unprocessed
+- 1 = Locked
+- 2 = Processing
+- 3 = Ignored
+
+eRAMONAnnoType
+================
+Enumeration of the types of RAMON annotations
+that can be stored in the OCP annotation database
+
+- 1 = GENERIC
+- 2 = SYNAPSE
+- 4 = SEGMENT
+- 5 = NEURON
+- 6 = ORGANELLE
+- 8 = VOLUME
+
+eRAMONDataFormat
+================
+Enumeration of the data formats supported by RAMON and OCP
+
+- 0 = dense
+- 1 = voxel list
+- 2 = bounding box
+
+eRAMONDataType
+================
+Enumeration of the types of data in OCP DB
+TODO
+
+- 0 =  8bit Image Data
+- 1 = 32bit Annotation Data
+- 2 = 16bit Multichannel data
+- 3 = 8bit Multichannel data
+- 4 = 32bit Probability Map
+- 5 = Bitmask
+- 6 = 64bit Annotation Data
+- 7 = Image 16 bit data
+- 8 = RGBA 32 bit data
+- 9 = RGBA 64 bit data
+
+eRAMONFlowDirection
+===================
+Enumeration of information flow direction for synapse and segments
+
+- 0 = Unknown
+- 1 = Pre-Synaptic
+- 2 = Post-Synaptic
+- 3 = Bi-Directional
+
+eRAMONOrganelleClass
+====================
+Enumeration of organelle types
+
+- 0 = Unknown
+- 1 = Mitochondria
+- 2 = Vesicle
+- 3 = Axoplasmic Reticula
+- 4 = Microtubules
+- 5 = Nucleus
+
+eRAMONSegmentClass
+==================
+Enumeration of segment class type
+
+- 0 = Unknown
+- 1 = Axon (fragment)
+- 2 = Dendrite (fragment)
+- 3 = Soma (fragment)
+
+eRAMONFlowDirection
+===================
+Enumeration of information flow direction for
+synapse and segments
+
+- 0 = Unknown
+- 1 = Pre-Synaptic
+- 2 = Post-Synaptic
+- 3 = Bi-Directional
+
+eRAMONSynapseType
+=================
+Enumeration of synapse type
+
+- 0 = Unknown
+- 1 = Excitatory synapse
+- 2 = Inhibitory synapse
+- 3 = Gap Junction
+
+Deprecated enumerations include:  eRAMONCubeOrientation, eRAMONUploadDataType
