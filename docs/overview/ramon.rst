@@ -170,7 +170,7 @@ RAMON Enumerations
 The following enumerations are used to assist users in communicating commonly used metadata.
 
 eRAMONAnnoStatus
-~~~~~~~~~~~~~~~~
+================
 Enumeration of status field values for RAMON annotations
 
 - 0 = Unprocessed
@@ -179,7 +179,7 @@ Enumeration of status field values for RAMON annotations
 - 3 = Ignored
 
 eRAMONAnnoType
-~~~~~~~~~~~~~~~~
+================
 Enumeration of the types of RAMON annotations
 that can be stored in the OCP annotation database
 
@@ -191,7 +191,7 @@ that can be stored in the OCP annotation database
 - 8 = VOLUME
 
 eRAMONDataFormat
-~~~~~~~~~~~~~~~~
+================
 Enumeration of the data formats supported by RAMON and OCP
 
 - 0 = dense
@@ -199,7 +199,7 @@ Enumeration of the data formats supported by RAMON and OCP
 - 2 = bounding box
 
 eRAMONDataType
-~~~~~~~~~~~~~~
+================
 Enumeration of the types of data in OCP DB
 TODO
 
@@ -215,7 +215,7 @@ TODO
 - 9 = RGBA 64 bit data
 
 eRAMONFlowDirection
-~~~~~~~~~~~~~~~~~~~
+===================
 Enumeration of information flow direction for synapse and segments
 
 - 0 = Unknown
@@ -224,7 +224,7 @@ Enumeration of information flow direction for synapse and segments
 - 3 = Bi-Directional
 
 eRAMONOrganelleClass
-~~~~~~~~~~~~~~~~~~~~
+====================
 Enumeration of organelle types
 
 - 0 = Unknown
@@ -235,7 +235,7 @@ Enumeration of organelle types
 - 5 = Nucleus
 
 eRAMONSegmentClass
-~~~~~~~~~~~~~~~~~~
+==================
 Enumeration of segment class type
 
 - 0 = Unknown
@@ -244,7 +244,7 @@ Enumeration of segment class type
 - 3 = Soma (fragment)
 
 eRAMONFlowDirection
-~~~~~~~~~~~~~~~~~~~
+===================
 Enumeration of information flow direction for
 synapse and segments
 
@@ -254,7 +254,7 @@ synapse and segments
 - 3 = Bi-Directional
 
 eRAMONSynapseType
-~~~~~~~~~~~~~~~~~
+=================
 Enumeration of synapse type
 
 - 0 = Unknown
