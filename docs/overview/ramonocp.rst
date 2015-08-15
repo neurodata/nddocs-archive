@@ -30,3 +30,6 @@ RAMON Queries
 * overlaySlice – this returns a single slice in the desired slice plane in matrix format of annotation data overlaid onto image data
 * RAMONBoundingBox – This returns a bounding box around the RAMON object associated with the provided id
 * voxelId – This returns the id of a voxel based on provided x,y,z coordinates
+
+Details of how to Get and Put data, including RAMONObjects, is detailed in the Open Connectome Project RESTful calls section of this documentation,
+found here:  http://openconnectome.github.io/open-connectome/
