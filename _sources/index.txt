@@ -4,7 +4,7 @@
 
    :keywords: neuroscience, connectome, help, documentation
 
-.. title::  OCP Docs
+.. title::  NeuroData Docs
 
 .. raw:: html
 
