@@ -22,20 +22,20 @@
 
 #### machine annotation
 
-- **vesicle**
+- [vesicle](http://docs.neurodata.io/vesicle/)
 - **membrane detection**
 - **3rd party tools**
 - **utilities**
 
 #### time-varying images
 
-- **oopsi for calcium imaging (https://github.com/jovo/oopsi)**
-- **mr. sid for fmri (https://github.com/shachen/PLDS/)**
+- [oopsi for calcium imaging](https://github.com/jovo/oopsi)
+- [mr. sid for fmri](https://github.com/shachen/PLDS/)
 
 #### electrophysiology
 
-- **spike-sorting (https://github.com/jovo/spike-sorting)**
-- **online-spike-sorting (https://github.com/decarlson/opass)**
+- [spike-sorting](https://github.com/jovo/spike-sorting)
+- [online-spike-sorting](https://github.com/decarlson/opass)
 
 #### infrastructure
 
@@ -46,8 +46,8 @@
 
 #### graph inference
 
-- **i2g**
-- **m2g**
+- [i2g](i2g.io)
+- [m2g](m2g.io)
 
 
 #### access
@@ -66,15 +66,15 @@
 
 - **FlashR**
 - **FlashGraph**
-- **Fast Approximate QAP (https://github.com/jovo/FastApproximateQAP)**
-- **Signal Subgraph Classifier (https://github.com/jovo/signal-subgraph-classifier)**
+- [Fast Approximate QAP](https://github.com/jovo/FastApproximateQAP)
+- [Signal Subgraph Classifier] (https://github.com/jovo/signal-subgraph-classifier)
 
 ### machine learning
 
-- **LOL (https://github.com/jovo/LOL)**
-- **Randomer Forest (https://github.com/ttomita/RandomerForest)**
-- **Iterative Denoising Trees (https://github.com/youngser/behaviotypes)**
-- **Multiscale Dictionary Learning for Estimating Conditional Distributions (https://github.com/jovo/conditional-density-estimation)**
+- [LOL](https://github.com/jovo/LOL)
+- [Randomer Forest](https://github.com/ttomita/RandomerForest)
+- [Iterative Denoising Trees](https://github.com/youngser/behaviotypes)
+- [Multiscale Dictionary Learning for Estimating Conditional Distributions](https://github.com/jovo/conditional-density-estimation)
 
 ## Web-services
 
