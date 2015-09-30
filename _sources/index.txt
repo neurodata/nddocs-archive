@@ -82,14 +82,13 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 ### neuroimages
 
-- **open-connectome**
-- **tilecache**
-- **AMI**
-- **2D (misha's stuff)**
+- [open-connectome](openconnectome.github.io/open-connectome)
+- [tilecache](openconnectome.github.io/ocptilecache)
+- [AMI](aws.amazon.com) (AMI id: ami-63661a06)
+- [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
 
 
 ### neurographs
 
-- **Graph Explorer**
-- **m2g**
-- c4/mrocp
+- [m2g](m2g.io)
+- [c4](http://openconnecto.me/graph-services/c4/)
