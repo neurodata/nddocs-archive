@@ -5,9 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta content="Open Connectome Project Documentation:  This site contains a collection of pages explaining how to access data, analyze data, and visualize both raw and derived data products. " name="description" />
-<meta content="neuroscience, connectome, help, documentation" name="keywords" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>NeuroData Docs &mdash; docs v0.1 documentation</title>
@@ -34,8 +32,7 @@
   
 
   
-    <link rel="top" title="docs v0.1 documentation" href="#"/>
-        <link rel="next" title="Why OCP?" href="overview/why.html"/> 
+    <link rel="top" title="docs v0.1 documentation" href="#"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -77,134 +74,35 @@
         
           
           
-              <p class="caption"><span class="caption-text">Overview</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview/why.html">Why OCP?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/data.html">Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/capabilities.html">Capabilities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/demos.html">Demos</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Background</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview/spatialdb.html">SpatialDB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ramon.html">RAMON Data Standard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#ramon-types">RAMON types</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonbase">RAMONBase</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#properties">Properties</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">NeuroData Docs</a><ul>
+<li><a class="reference internal" href="#code">code</a><ul>
+<li><a class="reference internal" href="#neuroimages">neuroimages</a><ul>
+<li><a class="reference internal" href="#image-processing">image processing</a></li>
+<li><a class="reference internal" href="#mannual-annotation">mannual annotation</a></li>
+<li><a class="reference internal" href="#machine-annotation">machine annotation</a></li>
+<li><a class="reference internal" href="#time-varying-images">time-varying images</a></li>
+<li><a class="reference internal" href="#electrophysiology">electrophysiology</a></li>
+<li><a class="reference internal" href="#infrastructure">infrastructure</a></li>
+<li><a class="reference internal" href="#graph-inference">graph inference</a></li>
+<li><a class="reference internal" href="#access">access</a></li>
+<li><a class="reference internal" href="#analytics-framework">analytics framework</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonneuron">RAMONNeuron</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id1">Properties</a></li>
+<li><a class="reference internal" href="#neurographs">neurographs</a></li>
+<li><a class="reference internal" href="#machine-learning">machine learning</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonvolume">RAMONVolume</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id2">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramongeneric">RAMONGeneric</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id3">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonsynapse">RAMONSynapse</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id4">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonsegment">RAMONSegment</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id5">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonorganelle">RAMONOrganelle</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id6">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonroi-proposed">RAMONROI (proposed)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id7">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonnode">RAMONNode</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id8">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramonskeleton">RAMONSkeleton</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="overview/ramon.html#id9">Properties</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#ramon-inheritance-diagram">RAMON Inheritance Diagram</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#ramon-enumerations">RAMON Enumerations</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonannostatus">eRAMONAnnoStatus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonannotype">eRAMONAnnoType</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramondataformat">eRAMONDataFormat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramondatatype">eRAMONDataType</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonflowdirection">eRAMONFlowDirection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonorganelleclass">eRAMONOrganelleClass</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonsegmentclass">eRAMONSegmentClass</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#id10">eRAMONFlowDirection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="overview/ramon.html#eramonsynapsetype">eRAMONSynapseType</a></li>
+<li><a class="reference internal" href="#web-services">Web-services</a><ul>
+<li><a class="reference internal" href="#neuroimages">neuroimages</a></li>
+<li><a class="reference internal" href="#neurographs">neurographs</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ramonocp.html">RAMON + OCP</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramonocp.html#ramon-queries">RAMON Queries</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/annodb.html">AnnoDB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/annodb.html#ramon-interface-with-ocp">RAMON Interface with OCP</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/dbaccess.html">Database Access</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/dbaccess.html#cajal">CAJAL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/dbaccess.html#ocpy">OCPy</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/loni.html">LONI Pipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/distributed_computing.html">Distributed Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/object_detection.html">Object Detection</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Visualize</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="viz/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz/cluster.html">Cluster</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Exchange</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="exchange/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/cluster.html">Cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/getdata.html">Get Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/putdata.html">Put Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/cajal.html">CAJAL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/ocpy.html">ocpy</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Analyze</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="analyze/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze/cluster.html">Cluster</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Case Studies</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/map.html">Map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/demos.html">Demos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/casestudies.html">Case Studies</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Further Reading</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://gitter.im/openconnectome/">Gitter chatroom</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://groups.google.com/forum/#!forum/ocp-support/">Mailing list</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/openconnectome/">Github repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://openconnecto.me/">Project page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/contributing.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/style.html">Style</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/faq.html">Frequently Asked Questions (FAQ)</a></li>
-</ul>
-
+</div>
           
         
       </div>
@@ -240,107 +138,128 @@
 </div>
           <div role="main" class="document">
             
-  <h1>Open Connectome Project Documentation</h1><p>This site provides an overview to the services currently offered by the Open Connectome Project (OCP).
-We provide visualization, data access, query, and analytics capabilities for neuroscientists, computer scientists,
-and the broader scientific community.  Our mission is to enhance big data neuroscience.</p>
-<div class="toctree-wrapper compound" id="overview">
-<p class="caption"><span class="caption-text">Overview</span><a class="headerlink" href="#overview" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview/why.html">Why OCP?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/data.html">Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/capabilities.html">Capabilities</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/demos.html">Demos</a></li>
+  <div class="section" id="neurodata-docs">
+<span id="neurodata-docs"></span><h1>NeuroData Docs<a class="headerlink" href="#neurodata-docs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="code">
+<span id="code"></span><h2>code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="neuroimages">
+<span id="neuroimages"></span><h3>neuroimages<a class="headerlink" href="#neuroimages" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="image-processing">
+<span id="image-processing"></span><h4>image processing<a class="headerlink" href="#image-processing" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>2D (misha&#8217;s stuff)</strong></li>
+<li>3D (misha&#8217;s other stuff)</li>
+<li>volume reconstruct</li>
+<li>volume align</li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="background">
-<p class="caption"><span class="caption-text">Background</span><a class="headerlink" href="#background" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview/spatialdb.html">SpatialDB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ramon.html">RAMON Data Standard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#ramon-types">RAMON types</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramon.html#ramon-enumerations">RAMON Enumerations</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/ramonocp.html">RAMON + OCP</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/ramonocp.html#ramon-queries">RAMON Queries</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/annodb.html">AnnoDB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/annodb.html#ramon-interface-with-ocp">RAMON Interface with OCP</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/dbaccess.html">Database Access</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/dbaccess.html#cajal">CAJAL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/dbaccess.html#ocpy">OCPy</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="overview/loni.html">LONI Pipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/distributed_computing.html">Distributed Computing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/object_detection.html">Object Detection</a></li>
+<div class="section" id="mannual-annotation">
+<span id="mannual-annotation"></span><h4>mannual annotation<a class="headerlink" href="#mannual-annotation" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>manno</strong></li>
+<li>vast</li>
+<li>catmaid</li>
+<li>parity</li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="visualize">
-<p class="caption"><span class="caption-text">Visualize</span><a class="headerlink" href="#visualize" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="viz/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viz/cluster.html">Cluster</a></li>
+<div class="section" id="machine-annotation">
+<span id="machine-annotation"></span><h4>machine annotation<a class="headerlink" href="#machine-annotation" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>vesicle</strong></li>
+<li><strong>membrane detection</strong></li>
+<li><strong>3rd party tools</strong></li>
+<li><strong>utilities</strong></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="exchange">
-<p class="caption"><span class="caption-text">Exchange</span><a class="headerlink" href="#exchange" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="exchange/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/cluster.html">Cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/getdata.html">Get Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/putdata.html">Put Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/cajal.html">CAJAL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exchange/ocpy.html">ocpy</a></li>
+<div class="section" id="time-varying-images">
+<span id="time-varying-images"></span><h4>time-varying images<a class="headerlink" href="#time-varying-images" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>oopsi for calcium imaging (https://github.com/jovo/oopsi)</strong></li>
+<li><strong>mr. sid for fmri (https://github.com/shachen/PLDS/)</strong></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="analyze">
-<p class="caption"><span class="caption-text">Analyze</span><a class="headerlink" href="#analyze" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="analyze/browser.html">Browser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze/client.html">Client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analyze/cluster.html">Cluster</a></li>
+<div class="section" id="electrophysiology">
+<span id="electrophysiology"></span><h4>electrophysiology<a class="headerlink" href="#electrophysiology" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>spike-sorting (https://github.com/jovo/spike-sorting)</strong></li>
+<li><strong>online-spike-sorting (https://github.com/decarlson/opass)</strong></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="case-studies">
-<p class="caption"><span class="caption-text">Case Studies</span><a class="headerlink" href="#case-studies" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/map.html">Map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/demos.html">Demos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/casestudies.html">Case Studies</a></li>
+<div class="section" id="infrastructure">
+<span id="infrastructure"></span><h4>infrastructure<a class="headerlink" href="#infrastructure" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>open-connectome</strong></li>
+<li><strong>tilecache</strong></li>
+<li><strong>surface extraction</strong></li>
 </ul>
 </div>
-<div class="toctree-wrapper compound" id="further-reading">
-<p class="caption"><span class="caption-text">Further Reading</span><a class="headerlink" href="#further-reading" title="Permalink to this toctree">¶</a></p>
-<ul>
-<li class="toctree-l1"><a class="reference external" href="https://gitter.im/openconnectome/">Gitter chatroom</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://groups.google.com/forum/#!forum/ocp-support/">Mailing list</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com/openconnectome/">Github repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://openconnecto.me/">Project page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/configuration.html">Configuration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/contributing.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/style.html">Style</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview/faq.html">Frequently Asked Questions (FAQ)</a></li>
+<div class="section" id="graph-inference">
+<span id="graph-inference"></span><h4>graph inference<a class="headerlink" href="#graph-inference" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>i2g</strong></li>
+<li><strong>m2g</strong></li>
 </ul>
+</div>
+<div class="section" id="access">
+<span id="access"></span><h4>access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>CAJAL</strong></li>
+<li><strong>ndio</strong></li>
+</ul>
+</div>
+<div class="section" id="analytics-framework">
+<span id="analytics-framework"></span><h4>analytics framework<a class="headerlink" href="#analytics-framework" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>AMI</strong></li>
+<li>LONI</li>
+<li>AMI cluster</li>
+</ul>
+</div>
+</div>
+<div class="section" id="neurographs">
+<span id="neurographs"></span><h3>neurographs<a class="headerlink" href="#neurographs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>FlashR</strong></li>
+<li><strong>FlashGraph</strong></li>
+<li><strong>Fast Approximate QAP (https://github.com/jovo/FastApproximateQAP)</strong></li>
+<li><strong>Signal Subgraph Classifier (https://github.com/jovo/signal-subgraph-classifier)</strong></li>
+</ul>
+</div>
+<div class="section" id="machine-learning">
+<span id="machine-learning"></span><h3>machine learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>LOL (https://github.com/jovo/LOL)</strong></li>
+<li><strong>Randomer Forest (https://github.com/ttomita/RandomerForest)</strong></li>
+<li><strong>Iterative Denoising Trees (https://github.com/youngser/behaviotypes)</strong></li>
+<li><strong>Multiscale Dictionary Learning for Estimating Conditional Distributions (https://github.com/jovo/conditional-density-estimation)</strong></li>
+</ul>
+</div>
+</div>
+<div class="section" id="web-services">
+<span id="web-services"></span><h2>Web-services<a class="headerlink" href="#web-services" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="neuroimages">
+<span id="id1"></span><h3>neuroimages<a class="headerlink" href="#neuroimages" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>open-connectome</strong></li>
+<li><strong>tilecache</strong></li>
+<li><strong>AMI</strong></li>
+<li><strong>2D (misha&#8217;s stuff)</strong></li>
+</ul>
+</div>
+<div class="section" id="neurographs">
+<span id="id2"></span><h3>neurographs<a class="headerlink" href="#neurographs" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Graph Explorer</strong></li>
+<li><strong>m2g</strong></li>
+<li>c4/mrocp</li>
+</ul>
+</div>
+</div>
 </div>
 
 
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="overview/why.html" class="btn btn-neutral float-right" title="Why OCP?" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>

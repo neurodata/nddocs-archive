@@ -1,89 +1,94 @@
-.. meta::
-   :description: Open Connectome Project Documentation:  This site contains a collection
-    of pages explaining how to access data, analyze data, and visualize both raw and derived data products.
 
-   :keywords: neuroscience, connectome, help, documentation
+# NeuroData Docs
 
-.. title::  NeuroData Docs
+## code
 
-.. raw:: html
+### neuroimages
 
-	<h1>Open Connectome Project Documentation</h1>
+#### image processing
 
-This site provides an overview to the services currently offered by the Open Connectome Project (OCP).
-We provide visualization, data access, query, and analytics capabilities for neuroscientists, computer scientists,
-and the broader scientific community.  Our mission is to enhance big data neuroscience.
+- **2D (misha's stuff)**
+- 3D (misha's other stuff)
+- volume reconstruct
+- volume align
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Overview
+#### mannual annotation
 
-   overview/why
-   overview/data
-   overview/capabilities
-   tutorials/getting_started
-   tutorials/demos
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Background
-
-   overview/spatialdb
-   overview/ramon
-   overview/ramonocp
-   overview/annodb
-   overview/dbaccess
-   overview/loni
-   overview/distributed_computing
-   tutorials/object_detection
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Visualize
-
-   viz/browser
-   viz/client
-   viz/cluster
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Exchange
-
-   exchange/browser
-   exchange/client
-   exchange/cluster
-
-   exchange/getdata
-   exchange/putdata
-   exchange/cajal
-   exchange/ocpy
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Analyze
-
-  analyze/browser
-  analyze/client
-  analyze/cluster
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Case Studies
-
-   tutorials/map
-   tutorials/demos
-   tutorials/casestudies
+- **manno**
+- vast
+- catmaid
+- parity
 
 
-.. toctree::
-  :maxdepth: 1
-  :caption: Further Reading
+#### machine annotation
 
-  Gitter chatroom <https://gitter.im/openconnectome/>
-  Mailing list <https://groups.google.com/forum/#!forum/ocp-support/>
-  Github repo <https://github.com/openconnectome/>
-  Project page <https://openconnecto.me/>
-  overview/configuration
-  overview/contributing
-  overview/style
-  overview/faq
+- **vesicle**
+- **membrane detection**
+- **3rd party tools**
+- **utilities**
+
+#### time-varying images
+
+- **oopsi for calcium imaging (https://github.com/jovo/oopsi)**
+- **mr. sid for fmri (https://github.com/shachen/PLDS/)**
+
+#### electrophysiology
+
+- **spike-sorting (https://github.com/jovo/spike-sorting)**
+- **online-spike-sorting (https://github.com/decarlson/opass)**
+
+#### infrastructure
+
+- **open-connectome**
+- **tilecache**
+- **surface extraction**
+
+
+#### graph inference
+
+- **i2g**
+- **m2g**
+
+
+#### access
+
+- **CAJAL**
+- **ndio**
+
+#### analytics framework
+
+- **AMI**
+- LONI
+- AMI cluster
+
+
+### neurographs
+
+- **FlashR**
+- **FlashGraph**
+- **Fast Approximate QAP (https://github.com/jovo/FastApproximateQAP)**
+- **Signal Subgraph Classifier (https://github.com/jovo/signal-subgraph-classifier)**
+
+### machine learning
+
+- **LOL (https://github.com/jovo/LOL)**
+- **Randomer Forest (https://github.com/ttomita/RandomerForest)**
+- **Iterative Denoising Trees (https://github.com/youngser/behaviotypes)**
+- **Multiscale Dictionary Learning for Estimating Conditional Distributions (https://github.com/jovo/conditional-density-estimation)**
+
+## Web-services
+
+
+### neuroimages
+
+- **open-connectome**
+- **tilecache**
+- **AMI**
+- **2D (misha's stuff)**
+
+
+### neurographs
+
+- **Graph Explorer**
+- **m2g**
+- c4/mrocp
