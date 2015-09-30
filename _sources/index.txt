@@ -17,7 +17,7 @@ Finally, as our services mature, we migrate our raw code to web-services, to fac
 
 These tools help users to preprocess and convert raw neuroscience data for manual or machine annotation.
 
-- [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
+- [2D Color Correction](https://github.com/openconnectome/dmg)
 - [Volume Reconstruct](https://github.com/openconnectome/AT-reconstruction-service)
 
 #### mannual annotation
@@ -27,7 +27,7 @@ These tools exist to help users manually annotate their neuroimaging data for do
 - [manno](https://github.com/openconnectome/manno)
 - [vast](https://software.rc.fas.harvard.edu/lichtman/vast/) (3rd party)
 - [catmaid](http://fly.mpi-cbg.de/~saalfeld/catmaid/) (3rd party)
-- [parity](www.openconnecto.me/stem)
+- [parity](http://www.openconnecto.me/stem) (not live)
 
 
 #### machine annotation
@@ -35,7 +35,7 @@ These tools exist to help users manually annotate their neuroimaging data for do
 These tools exist to help users automatically annotate their neuroimaging data for downstream analysis.
 
 - [vesicle](http://docs.neurodata.io/vesicle/)
-- [macho](openconnectome.github.io/macho)
+- [macho](http://openconnectome.github.io/macho)
 - [deep learning](https://github.com/iscoe/coca)
 
 #### time-varying images
@@ -50,19 +50,19 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 #### infrastructure
 
-- [open-connectome](openconnectome.github.io/open-connectome)
-- [tilecache](openconnectome.github.io/ocptilecache)
+- [open-connectome](http://openconnectome.github.io/open-connectome)
+- [tilecache](http://openconnectome.github.io/ocptilecache)
 
 #### graph inference
 
-- [i2g](i2g.io)
-- [m2g](m2g.io)
+- [i2g](http://i2g.io)
+- [m2g](http://m2g.io)
 
 
 #### access
 
-- [CAJAL](openconnectome.github.io/CAJAL)
-- [ndio](github.com/openconnectome/ndio)
+- [CAJAL](http://openconnectome.github.io/CAJAL)
+- [ndio](http://github.com/openconnectome/ndio)
 
 ### neurographs
 
@@ -82,13 +82,13 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 ### neuroimages
 
-- [open-connectome](openconnectome.github.io/open-connectome)
-- [tilecache](openconnectome.github.io/ocptilecache)
-- [AMI](aws.amazon.com) (AMI id: ami-63661a06)
-- [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
+- [open-connectome](http://openconnectome.github.io/open-connectome)
+- [tilecache](http://openconnectome.github.io/ocptilecache)
+- [AMI](http://aws.amazon.com) (AMI name: neurodata)
+- [2D Color Correction](https://github.com/openconnectome/dmg)
 
 
 ### neurographs
 
-- [m2g](m2g.io)
+- [m2g](http://m2g.io)
 - [c4](http://openconnecto.me/graph-services/c4/)
