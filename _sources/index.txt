@@ -20,11 +20,11 @@ These tools help users to preprocess and convert raw neuroscience data for manua
 - [2D Color Correction](https://github.com/openconnectome/dmg)
 - [Volume Reconstruct](https://github.com/openconnectome/AT-reconstruction-service)
 
-#### mannual annotation
+#### manual annotation
 
 These tools exist to help users manually annotate their neuroimaging data for downstream analysis.
 
-- [manno](https://github.com/openconnectome/manno)
+- [manno](openconnectome.github.io/manno)
 - [vast](https://software.rc.fas.harvard.edu/lichtman/vast/) (3rd party)
 - [catmaid](http://fly.mpi-cbg.de/~saalfeld/catmaid/) (3rd party)
 - [parity](http://www.openconnecto.me/stem) (not live)
@@ -77,6 +77,12 @@ These tools exist to help users automatically annotate their neuroimaging data f
 - [Randomer Forest](https://github.com/ttomita/RandomerForest)
 - [Iterative Denoising Trees](https://github.com/youngser/behaviotypes)
 - [Multiscale Dictionary Learning for Estimating Conditional Distributions](https://github.com/jovo/conditional-density-estimation)
+
+#### analytics framework
+
+- [AMI](overview/ami.rst)
+- [LONI](overview/loni.rst)
+- [distributed computing](overview/distributed_computing.rst)
 
 ## Web-services
 

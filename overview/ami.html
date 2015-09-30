@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating the NeuroData Analytics AMI &mdash; docs v0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/ocp_favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="docs v0.1 documentation" href="../index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> docs
+        
+
+        
+          
+          <img src="../_static/ocp_main.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Creating the NeuroData Analytics AMI</a><ul>
+<li><a class="reference internal" href="#basic-setup">Basic Setup</a><ul>
+<li><a class="reference internal" href="#updates-and-package-libraries">Updates and Package Libraries</a></li>
+<li><a class="reference internal" href="#basic-development-tools">Basic Development Tools</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vnc-setup">VNC Setup</a><ul>
+<li><a class="reference internal" href="#desktop">Desktop</a></li>
+<li><a class="reference internal" href="#vnc-server">VNC Server</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#installing-further-dependencies">Installing Further Dependencies</a><ul>
+<li><a class="reference internal" href="#initial-positioning">Initial Positioning</a></li>
+<li><a class="reference internal" href="#oracle-java">Oracle Java</a></li>
+<li><a class="reference internal" href="#loni-pipeline">LONI Pipeline</a></li>
+<li><a class="reference internal" href="#python-2-7">Python 2.7</a></li>
+<li><a class="reference internal" href="#popular-python-packages">Popular Python Packages</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#matlab-for-jhu-users">MATLAB for JHU Users</a></li>
+<li><a class="reference internal" href="#neurodata-analytics">Neurodata Analytics</a></li>
+<li><a class="reference internal" href="#flashgraph">FlashGraph</a></li>
+<li><a class="reference internal" href="#m2g">m2g</a><ul>
+<li><a class="reference internal" href="#igraph">igraph</a></li>
+<li><a class="reference internal" href="#camino">Camino</a></li>
+<li><a class="reference internal" href="#fsl">FSL</a></li>
+<li><a class="reference internal" href="#id1">m2g</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bash-files">bash files</a></li>
+<li><a class="reference internal" href="#publishing-ami">Publishing AMI</a></li>
+<li><a class="reference internal" href="#connecting-to-ami">Connecting to AMI</a><ul>
+<li><a class="reference internal" href="#creating-and-instance">Creating and Instance</a></li>
+<li><a class="reference internal" href="#ssh">SSH</a></li>
+<li><a class="reference internal" href="#vnc-through-ssh-tunnel">VNC through SSH Tunnel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Creating the NeuroData Analytics AMI</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/overview/ami.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="creating-the-neurodata-analytics-ami">
+<h1>Creating the NeuroData Analytics AMI<a class="headerlink" href="#creating-the-neurodata-analytics-ami" title="Permalink to this headline">¶</a></h1>
+<p>To begin, launch an instance with the following AMI:&#8217;&#8216;ami-eec75e87&#8217;&#8216;. Note, you may need to modify the partition of the instance in order to occupy the entire hard drive instead of a small subset (initially 5 GB). This can be done by unmounting the volume, mounting it as a secondary volume to another instance, creating a new partition at the same starting block using &#8216;&#8217;parted&#8217;&#8216;, reattaching to the original instance, and expanding the file system using &#8216;&#8217;resize2fs /dev/sdba1&#8217;&#8216;.</p>
+<div class="section" id="basic-setup">
+<h2>Basic Setup<a class="headerlink" href="#basic-setup" title="Permalink to this headline">¶</a></h2>
+<p>Once the instance has been launched, log in using your public key and run the following setup.</p>
+<div class="section" id="updates-and-package-libraries">
+<h3>Updates and Package Libraries<a class="headerlink" href="#updates-and-package-libraries" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="basic-development-tools">
+<h3>Basic Development Tools<a class="headerlink" href="#basic-development-tools" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="vnc-setup">
+<h2>VNC Setup<a class="headerlink" href="#vnc-setup" title="Permalink to this headline">¶</a></h2>
+<p>In order to have a valid vnc server, you need to install a desktop and configure vnc users appropriately.</p>
+<div class="section" id="desktop">
+<h3>Desktop<a class="headerlink" href="#desktop" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="vnc-server">
+<h3>VNC Server<a class="headerlink" href="#vnc-server" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="installing-further-dependencies">
+<h2>Installing Further Dependencies<a class="headerlink" href="#installing-further-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Many other packages are necessary to use our analytics stack, install either all of the below or the subset which are required for your subset of the stack.</p>
+<div class="section" id="initial-positioning">
+<h3>Initial Positioning<a class="headerlink" href="#initial-positioning" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="oracle-java">
+<h3>Oracle Java<a class="headerlink" href="#oracle-java" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="loni-pipeline">
+<h3>LONI Pipeline<a class="headerlink" href="#loni-pipeline" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="python-2-7">
+<h3>Python 2.7<a class="headerlink" href="#python-2-7" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="popular-python-packages">
+<h3>Popular Python Packages<a class="headerlink" href="#popular-python-packages" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="matlab-for-jhu-users">
+<h2>MATLAB for JHU Users<a class="headerlink" href="#matlab-for-jhu-users" title="Permalink to this headline">¶</a></h2>
+<p>This is currently restricted to JHU students and faculty only for licensing reasons.  If you have a matlab license we can help provide instructions.</p>
+<p>To launch matlab, run the following command:</p>
+</div>
+<div class="section" id="neurodata-analytics">
+<h2>Neurodata Analytics<a class="headerlink" href="#neurodata-analytics" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="flashgraph">
+<h2>FlashGraph<a class="headerlink" href="#flashgraph" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="m2g">
+<h2>m2g<a class="headerlink" href="#m2g" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="igraph">
+<h3>igraph<a class="headerlink" href="#igraph" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="camino">
+<h3>Camino<a class="headerlink" href="#camino" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fsl">
+<h3>FSL<a class="headerlink" href="#fsl" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id1">
+<h3>m2g<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="bash-files">
+<h2>bash files<a class="headerlink" href="#bash-files" title="Permalink to this headline">¶</a></h2>
+<p>///etc/profile.d/neurodata.sh//</p>
+<p>///etc/profile.d/m2g.sh//</p>
+</div>
+<div class="section" id="publishing-ami">
+<h2>Publishing AMI<a class="headerlink" href="#publishing-ami" title="Permalink to this headline">¶</a></h2>
+<p>Prior to releasing the AMI on the AWS marketplace, a few housekeeping commands must be run to ensure security of both the developer and the users. Run the following as root.</p>
+</div>
+<div class="section" id="connecting-to-ami">
+<h2>Connecting to AMI<a class="headerlink" href="#connecting-to-ami" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-and-instance">
+<h3>Creating and Instance<a class="headerlink" href="#creating-and-instance" title="Permalink to this headline">¶</a></h3>
+<p>Currently the AMI is only released in the US-East Community Marketplace on AWS. Enter the dialog to create a new EC2 instance, select Community AMIs, and then search for &#8216;neurodata&#8217; and select the version of the AMI you wish to use. You can then proceed with EC2 setup as you would with any other instance type.</p>
+</div>
+<div class="section" id="ssh">
+<h3>SSH<a class="headerlink" href="#ssh" title="Permalink to this headline">¶</a></h3>
+<p>The user should locate the instance in the Amazon Marketplace and create an instance based on the AMI. Then, when connecting, the following command should be used: &#8216;&#8217;ssh <a class="reference external" href="mailto:neurodata&#37;&#52;&#48;${ip">neurodata<span>&#64;</span>${ip</a>}&#8217;&#8216;; the user will be prompted with the password for this user (default pass should be &#8216;&#8217;neurodata&#8217;&#8216;).</p>
+</div>
+<div class="section" id="vnc-through-ssh-tunnel">
+<h3>VNC through SSH Tunnel<a class="headerlink" href="#vnc-through-ssh-tunnel" title="Permalink to this headline">¶</a></h3>
+<p>To connect, from your machine type:</p>
+<p>Then in your VNC client connect to &#8216;&#8217;localhost:5901&#8217;&#8217; and enter the vnc password you set during setup.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, OCP.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
