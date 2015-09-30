@@ -1,0 +1,94 @@
+
+# NeuroData Docs
+
+This site contains a collection of pages explaining how to access data, analyze data, and visualize both raw and derived data products.
+
+All of our code is open source and available via our github repository.  Individual packages and repositories can be found by navigating the packages below.  For mesoscale problems or proof-of-concept testing, we have integrated our analytics stack into an AMI, which can also be found below.  
+
+Finally, as our services mature, we migrate our raw code to web-services, to facilitate one-click analysis and discovery.
+
+![Overview of Neurodata Derivatives](images/ocp_example.png)
+
+## code
+
+### neuroimages
+
+#### image processing
+
+These tools help users to preprocess and convert raw neuroscience data for manual or machine annotation.
+
+- [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
+- [Volume Reconstruct](https://github.com/openconnectome/AT-reconstruction-service)
+
+#### mannual annotation
+
+These tools exist to help users manually annotate their neuroimaging data for downstream analysis.
+
+- [manno](https://github.com/openconnectome/manno)
+- [vast](https://software.rc.fas.harvard.edu/lichtman/vast/) (3rd party)
+- [catmaid](http://fly.mpi-cbg.de/~saalfeld/catmaid/) (3rd party)
+- [parity](www.openconnecto.me/stem)
+
+
+#### machine annotation
+
+These tools exist to help users automatically annotate their neuroimaging data for downstream analysis.
+
+- [vesicle](http://docs.neurodata.io/vesicle/)
+- [macho](openconnectome.github.io/macho)
+- [deep learning](https://github.com/iscoe/coca)
+
+#### time-varying images
+
+- [oopsi for calcium imaging](https://github.com/jovo/oopsi)
+- [mr. sid for fmri](https://github.com/shachen/PLDS/)
+
+#### electrophysiology
+
+- [spike-sorting](https://github.com/jovo/spike-sorting)
+- [online-spike-sorting](https://github.com/decarlson/opass)
+
+#### infrastructure
+
+- [open-connectome](openconnectome.github.io/open-connectome)
+- [tilecache](openconnectome.github.io/ocptilecache)
+
+#### graph inference
+
+- [i2g](i2g.io)
+- [m2g](m2g.io)
+
+
+#### access
+
+- [CAJAL](openconnectome.github.io/CAJAL)
+- [ndio](github.com/openconnectome/ndio)
+
+### neurographs
+
+- [FlashR](https://github.com/openconnectome/FlashR)
+- [FlashGraph](http://www.flashgraph.net/)
+- [Fast Approximate QAP](https://github.com/jovo/FastApproximateQAP)
+- [Signal Subgraph Classifier](https://github.com/jovo/signal-subgraph-classifier)
+
+### machine learning
+
+- [LOL](https://github.com/jovo/LOL)
+- [Randomer Forest](https://github.com/ttomita/RandomerForest)
+- [Iterative Denoising Trees](https://github.com/youngser/behaviotypes)
+- [Multiscale Dictionary Learning for Estimating Conditional Distributions](https://github.com/jovo/conditional-density-estimation)
+
+## Web-services
+
+### neuroimages
+
+- [open-connectome](openconnectome.github.io/open-connectome)
+- [tilecache](openconnectome.github.io/ocptilecache)
+- [AMI](aws.amazon.com) (AMI id: ami-63661a06)
+- [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
+
+
+### neurographs
+
+- [m2g](m2g.io)
+- [c4](http://openconnecto.me/graph-services/c4/)
