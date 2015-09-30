@@ -80,9 +80,9 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 #### analytics framework
 
-- [AMI](overview/ami.rst)
-- [LONI](overview/loni.rst) 
-- [distributed computing](overview/distributed_computing.rst)
+- [AMI](./overview/ami.html)
+- [LONI](./overview/loni.html)
+- [distributed computing](./overview/distributed_computing.html)
 
 ## Web-services
 

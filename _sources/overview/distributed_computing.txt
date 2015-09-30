@@ -16,4 +16,4 @@ If you wish to standup our software stack on your own, or are wondering how the 
 Captive Cluster
 ---------------
 
-For those of you who work closely with us at JHU, we have a cluster named Braincloud which you can make use of to process your data. Please contact a member of the team for more dtails.
+For those of you who work closely with us at JHU, we have a cluster named Braincloud which you can make use of to process your data. Please contact a member of the team for more details.

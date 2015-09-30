@@ -10,20 +10,22 @@ Updates and Package Libraries
 -----------------------------
 
 .. code-block:: none
+
   sudo su
   sudo echo "ALL        ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-  
+
   ##Manual step##
   vi /etc/ssh/sshd_config # replace "PasswordAuthentication no" with "PasswordAuthentication yes"
-  
+
   /etc/init.d/sshd restart
   yum -y update
   yum -y install epel-release
-  
+
 Basic Development Tools
 -----------------------
 
 .. code-block:: none
+
   sudo su
   yum -y install wget gcc elfutils-libelf-devel libstdc++-devel glibc-devel libaio-devel gcc-c++
   yum -y groupinstall "Development tools" "X Window System" "Fonts"
@@ -39,14 +41,16 @@ Desktop
 -------
 
 .. code-block:: none
+
   yum -y groupinstall Desktop Xfce
   yum -y install xorg-x11-fonts-Type1 xorg-x11-fonts-misc
   #startxfce4 to launch
-  
+
 VNC Server
 ----------
 
 .. code-block:: none
+
   yum -y install vnc-server tigervnc-server
   yum -y install vnc tigervnc
   yum -y install xterm
@@ -70,6 +74,7 @@ Initial Positioning
 -------------------
 
 .. code-block:: none
+
   export base=/share0
   export m2g=${base}/m2g
   export M2G_HOME=${m2g} #duplicate for legacy reasons
@@ -78,6 +83,7 @@ Oracle Java
 -----------
 
 .. code-block:: none
+
   mkdir -p ${base}/src/java
   cd ${base}/src/java
   wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebac    kup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-linux-x64.tar.gz"
@@ -90,17 +96,17 @@ Oracle Java
   alternatives --install /usr/bin/jar jar ${base}/src/java/jdk1.7.0_71/bin/jar 2
   alternatives --set jar ${base}/src/java/jdk1.7.0_71/bin/jar
   export JAVA_HOME=${base}/src/java/jdk1.7.0_71
-  
+
 LONI Pipeline
 -------------
 
 .. code-block:: none
+
   mkdir -p ${base}/src/loni
   cd ${base}/src/loni
   wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.0.1-unix.tar.bz2
   mkdir loni_6.0.1
   tar -xvf Pipeline-6.0.1-unix.tar.bz2 -C loni_6.0.1
-  
   wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.1-unix.tar.bz2
   mkdir loni_6.1
   tar -xvf Pipeline-6.1-unix.tar.bz2 -C loni_6.1
@@ -109,6 +115,7 @@ Python 2.7
 ----------
 
 .. code-block:: none
+
   mkdir -p ${base}/src/python
   cd ${base}/src/python
   wget http://python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz
@@ -122,11 +129,12 @@ Python 2.7
   wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
   python ez_setup.py
   easy_install pip
-  
+
 Popular Python Packages
 -----------------------
 
 .. code-block:: none
+
   easy_install argparse ipython
   pip install numpy nibabel cython
   pip install scipy
@@ -138,34 +146,38 @@ MATLAB for JHU Users
 This is currently restricted to JHU students and faculty only for licensing reasons.  If you have a matlab license we can help provide instructions.
 
 .. code-block:: none
+
   sudo mkdir ${base}/src/matlab
   sudo mkdir ${base}/src/matlab/matlabinst
   cd ${base}/src/matlab
-  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/matlab_r2015a_install.iso . 
-  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/installer_input_neurodataAMI.txt . 
-  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/AWS_network_license_20150901-rev1.dat . 
+  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/matlab_r2015a_install.iso .
+  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/installer_input_neurodataAMI.txt .
+  scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/AWS_network_license_20150901-rev1.dat .
   sudo mount -o loop matlab_r2015a_install.iso matlabinst
-  sudo ${base}/src/matlab/matlabinst/install -mode silent -inputFile ${base}/src/matlab/installer_input_neurodataAMI.txt 
+  sudo ${base}/src/matlab/matlabinst/install -mode silent -inputFile ${base}/src/matlab/installer_input_neurodataAMI.txt
 
 To launch matlab, run the following command:
 
 .. code-block:: none
+
   /usr/local/R2015a/bin/matlab -nodesktop
-  
+
 Neurodata Analytics
 ===================
 
 .. code-block:: none
+
   cd ${base}
-  git clone https://github.com/openconnectome/vesicle 
-  git clone https://github.com/openconnectome/cajal 
-  git clone https://github.com/openconnectome/manno 
-  git clone https://github.com/openconnectome/macho 
+  git clone https://github.com/openconnectome/vesicle
+  git clone https://github.com/openconnectome/cajal
+  git clone https://github.com/openconnectome/manno
+  git clone https://github.com/openconnectome/macho
 
 FlashGraph
 ==========
 
 .. code-block:: none
+
   sudo yum install gcc-c++.x86_64 cmake.x86_64 git.x86_64
   sudo yum install boost-devel.x86_64 boost-static.x86_64 numactl-devel.x86_64 libaio-devel.x86_64
   sudo yum install zlib-devel.x86_64
@@ -173,7 +185,7 @@ FlashGraph
   sudo wget -O /etc/yum.repos.d/slc6-devtoolset.repo http://linuxsoft.cern.ch/cern/devtoolset/slc6-devtoolset.repo
   sudo yum install devtoolset-2 --nogpgcheck
   scl enable devtoolset-2 bash
-  
+
   cd ${base}/
   git clone https://github.com/icoming/FlashGraph.git
   cd FlashGraph
@@ -181,7 +193,7 @@ FlashGraph
   cd build
   cmake ../ -DBoost_NO_BOOST_CMAKE=BOOL:ON
   make
-  
+
 m2g
 ===
 
@@ -189,6 +201,7 @@ igraph
 ------
 
 .. code-block:: none
+
   yum -y install xml2 libxml2-devel
   mkdir -p ${base}/src/igraph
   cd ${base}/src/igraph
@@ -209,6 +222,7 @@ Camino
 ------
 
 .. code-block:: none
+
   cd ${base}/src/
   git clone git://git.code.sf.net/p/camino/code camino
   cd camino
@@ -221,6 +235,7 @@ FSL
 ---
 
 .. code-block:: none
+
   mkdir -p ${base}/src/fsl
   cd ${base}/src/fsl
   wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/fsl-5.0.8-centos6_64.tar.gz
@@ -232,6 +247,7 @@ m2g
 ---
 
 .. code-block:: none
+
   export m2g=${base}/m2g
   export M2G_HOME=${m2g}
   cd ${base}
@@ -246,50 +262,51 @@ m2g
 bash files
 ==========
 
-
 ///etc/profile.d/neurodata.sh//
 
-.. code-block:: none  
+.. code-block:: none
+
   export base=/share0
   export JAVA_HOME=${base}/src/java/jdk1.7.0_71
   export PATH='/usr/local/bin':${PATH}
-  
-///etc/profile.d/m2g.sh//
+
+  ///etc/profile.d/m2g.sh//
 
 .. code-block:: none
+
   export base=/share0
   # m2g
   export m2g=${base}/m2g
   export M2G_HOME=${m2g} #both exist for legacy reasons
-  
   export PATH=${PATH}:${m2g}/MR-OCP/mrcap
   export PATH=${PATH}:${m2g}/packages/*
   export PYTHONPATH=${m2g}/MR-OCP
   export PYTHONPATH=${PYTHONPATH}:${m2g}/MR-OCP/MROCPdjango:${m2g}/MR-OCP/mrcap:${m2g}
-  
+
   # Camino
   export PATH=${base}/src/camino/bin:$PATH
   export CAMINO_HEAP_SIZE=16000
-  
+
   # FSL
   FSLDIR=${base}/src/fsl
   . ${FSLDIR}/etc/fslconf/fsl.sh
   PATH=${FSLDIR}/bin:${PATH}
   export FSLDIR PATH
-  
+
 Publishing AMI
 ==============
 Prior to releasing the AMI on the AWS marketplace, a few housekeeping commands must be run to ensure security of both the developer and the users. Run the following as root.
 
 .. code-block:: none
+
   groupadd nd-users
   usermod -g nd-users neurodata
   usermod -g nd-users ec2-user
   chown -R neurodata:nd-users ${base}
   rm -rf ~/.bash_history  ~/.viminfo
   touch ~/.bash_history  ~/.viminfo
-  
-  
+
+
 Connecting to AMI
 =================
 
@@ -306,6 +323,7 @@ VNC through SSH Tunnel
 To connect, from your machine type:
 
 .. code-block:: none
+
   ssh -L 5901:127.0.0.1:5901 -N -f -l neurodata ${ip}
 
 Then in your VNC client connect to ''localhost:5901'' and enter the vnc password you set during setup.
