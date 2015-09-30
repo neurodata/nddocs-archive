@@ -1,6 +1,14 @@
 
 # NeuroData Docs
 
+This site contains a collection of pages explaining how to access data, analyze data, and visualize both raw and derived data products.
+
+All of our code is open source and available via our github repository.  Individual packages and repositories can be found by navigating the packages below.  For mesoscale problems or proof-of-concept testing, we have integrated our analytics stack into an AMI, which can also be found below.  
+
+Finally, as our services mature, we migrate our raw code to web-services, to facilitate one-click analysis and discovery.
+
+![Overview of Neurodata Derivatives](images/ocp_example.png)
+
 ## code
 
 ### neuroimages
@@ -11,7 +19,6 @@ These tools help users to preprocess and convert raw neuroscience data for manua
 
 - [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
 - [Volume Reconstruct](https://github.com/openconnectome/AT-reconstruction-service)
-
 
 #### mannual annotation
 
@@ -28,9 +35,8 @@ These tools exist to help users manually annotate their neuroimaging data for do
 These tools exist to help users automatically annotate their neuroimaging data for downstream analysis.
 
 - [vesicle](http://docs.neurodata.io/vesicle/)
-- **membrane detection**
-- **3rd party tools**
-- **utilities**
+- [macho](openconnectome.github.io/macho)
+- [deep learning](https://github.com/iscoe/coca)
 
 #### time-varying images
 
@@ -44,10 +50,8 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 #### infrastructure
 
-- **open-connectome**
-- **tilecache**
-- **surface extraction**
-
+- [open-connectome](openconnectome.github.io/open-connectome)
+- [tilecache](openconnectome.github.io/ocptilecache)
 
 #### graph inference
 
@@ -59,13 +63,6 @@ These tools exist to help users automatically annotate their neuroimaging data f
 
 - [CAJAL](openconnectome.github.io/CAJAL)
 - [ndio](github.com/openconnectome/ndio)
-
-#### analytics framework
-
-- **AMI**
-- LONI
-- AMI cluster
-
 
 ### neurographs
 
@@ -82,7 +79,6 @@ These tools exist to help users automatically annotate their neuroimaging data f
 - [Multiscale Dictionary Learning for Estimating Conditional Distributions](https://github.com/jovo/conditional-density-estimation)
 
 ## Web-services
-
 
 ### neuroimages
 
