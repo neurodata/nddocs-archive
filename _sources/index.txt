@@ -11,8 +11,6 @@ These tools help users to preprocess and convert raw neuroscience data for manua
 
 - [Distributed Gradient-Domain Processing](https://github.com/openconnectome/dmg)
 - [Volume Reconstruct](https://github.com/openconnectome/AT-reconstruction-service)
-[//]: # (- volume align)
-[//]: # (- 3D (misha's other stuff)
 
 
 #### mannual annotation
