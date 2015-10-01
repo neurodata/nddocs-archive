@@ -262,7 +262,7 @@ m2g
 bash files
 ==========
 
-///etc/profile.d/neurodata.sh//
+/etc/profile.d/neurodata.sh
 
 .. code-block:: none
 
@@ -270,7 +270,7 @@ bash files
   export JAVA_HOME=${base}/src/java/jdk1.7.0_71
   export PATH='/usr/local/bin':${PATH}
 
-  ///etc/profile.d/m2g.sh//
+/etc/profile.d/m2g.sh
 
 .. code-block:: none
 
