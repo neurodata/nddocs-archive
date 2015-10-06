@@ -67,6 +67,24 @@ VNC Server
   /sbin/chkconfig vncserver on
   /sbin/service   vncserver start
 
+S3 Credentials
+--------------
+
+To access the NeuroData S3 buckets, you need to configure S3 commandline utilities. This is shown using the credentials of the generic neurodata s3 user account, below. All lines starting with '#>' should be entered at the prompt. 
+
+.. code-block:: none
+
+  s3cmd --configure
+  #>AKIAI7F56EQ2VFCDECBQ
+  #>RJfa7VF+FiQZwMIDYy/k9bg4T3g8bv6Lx8eHZ0Z2
+  #>[accept default]
+  #>neurodata
+  #>[accept default]
+  #>Yes
+  #>Y
+  #>y
+
+
 Installing Further Dependencies
 ===============================
 Many other packages are necessary to use our analytics stack, install either all of the below or the subset which are required for your subset of the stack.
@@ -174,6 +192,29 @@ Neurodata Analytics
   git clone https://github.com/openconnectome/manno
   git clone https://github.com/openconnectome/macho
 
+Gala
+----
+
+.. code-block:: none
+
+  pip install scikit-learn
+  yum -y install hdf5 hdf5-devel
+  easy_install h5py
+  yum -y install python-imaging
+  pip install viridis
+  pip install gala
+
+ilastik
+-------
+
+.. code-block:: none 
+
+  cd ${base}/src
+  wget http://openconnecto.me/data/public/misc/ilastik-master-no-tracking-Linux.tar.gz
+  tar -xvf ilastik-master-no-tracking-Linux.tar.gz
+  mv ilastik-master-no-tracking-Linux ilastik
+  mv ilastik-master-no-tracking-Linux.tar.gz ilastik
+
 FlashGraph
 ==========
 
@@ -231,6 +272,15 @@ Camino
   git checkout voxelSpaceStreamlines
   make clean
   make
+
+Camino is developed in Java, which means that sometimes extra threads are unintentionally spun up when launching cluster jobs. Some modifications must then be made to the java calls in the camino executable directory. A gist has been created which should automate this process for you.
+
+.. code-block:: none
+
+  cd ${base}/src/camino
+  git clone https://gist.github.com/f76897351be151ec228e.git fix_java
+  chmod -R +x fix_java/
+  ./fix_java/single_java.sh
 
 FSL
 ---

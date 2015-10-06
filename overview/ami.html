@@ -85,6 +85,7 @@
 <li><a class="reference internal" href="#vnc-setup">VNC Setup</a><ul>
 <li><a class="reference internal" href="#desktop">Desktop</a></li>
 <li><a class="reference internal" href="#vnc-server">VNC Server</a></li>
+<li><a class="reference internal" href="#s3-credentials">S3 Credentials</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#installing-further-dependencies">Installing Further Dependencies</a><ul>
@@ -96,7 +97,11 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#matlab-for-jhu-users">MATLAB for JHU Users</a></li>
-<li><a class="reference internal" href="#neurodata-analytics">Neurodata Analytics</a></li>
+<li><a class="reference internal" href="#neurodata-analytics">Neurodata Analytics</a><ul>
+<li><a class="reference internal" href="#gala">Gala</a></li>
+<li><a class="reference internal" href="#ilastik">ilastik</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#flashgraph">FlashGraph</a></li>
 <li><a class="reference internal" href="#m2g">m2g</a><ul>
 <li><a class="reference internal" href="#igraph">igraph</a></li>
@@ -214,6 +219,21 @@ exit
 </pre></div>
 </div>
 </div>
+<div class="section" id="s3-credentials">
+<h3>S3 Credentials<a class="headerlink" href="#s3-credentials" title="Permalink to this headline">¶</a></h3>
+<p>To access the NeuroData S3 buckets, you need to configure S3 commandline utilities. This is shown using the credentials of the generic neurodata s3 user account, below. All lines starting with &#8216;#&gt;&#8217; should be entered at the prompt.</p>
+<div class="highlight-none"><div class="highlight"><pre>s3cmd --configure
+#&gt;AKIAI7F56EQ2VFCDECBQ
+#&gt;RJfa7VF+FiQZwMIDYy/k9bg4T3g8bv6Lx8eHZ0Z2
+#&gt;[accept default]
+#&gt;neurodata
+#&gt;[accept default]
+#&gt;Yes
+#&gt;Y
+#&gt;y
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="installing-further-dependencies">
 <h2>Installing Further Dependencies<a class="headerlink" href="#installing-further-dependencies" title="Permalink to this headline">¶</a></h2>
@@ -312,6 +332,27 @@ git clone https://github.com/openconnectome/manno
 git clone https://github.com/openconnectome/macho
 </pre></div>
 </div>
+<div class="section" id="gala">
+<h3>Gala<a class="headerlink" href="#gala" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-none"><div class="highlight"><pre>pip install scikit-learn
+yum -y install hdf5 hdf5-devel
+easy_install h5py
+yum -y install python-imaging
+pip install viridis
+pip install gala
+</pre></div>
+</div>
+</div>
+<div class="section" id="ilastik">
+<h3>ilastik<a class="headerlink" href="#ilastik" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-none"><div class="highlight"><pre>cd ${base}/src
+wget http://openconnecto.me/data/public/misc/ilastik-master-no-tracking-Linux.tar.gz
+tar -xvf ilastik-master-no-tracking-Linux.tar.gz
+mv ilastik-master-no-tracking-Linux ilastik
+mv ilastik-master-no-tracking-Linux.tar.gz ilastik
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="flashgraph">
 <h2>FlashGraph<a class="headerlink" href="#flashgraph" title="Permalink to this headline">¶</a></h2>
@@ -364,6 +405,13 @@ make
 git checkout voxelSpaceStreamlines
 make clean
 make
+</pre></div>
+</div>
+<p>Camino is developed in Java, which means that sometimes extra threads are unintentionally spun up when launching cluster jobs. Some modifications must then be made to the java calls in the camino executable directory. A gist has been created which should automate this process for you.</p>
+<div class="highlight-none"><div class="highlight"><pre>cd ${base}/src/camino
+git clone https://gist.github.com/f76897351be151ec228e.git fix_java
+chmod -R +x fix_java/
+./fix_java/single_java.sh
 </pre></div>
 </div>
 </div>
