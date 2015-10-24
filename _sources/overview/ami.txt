@@ -75,8 +75,8 @@ To access the NeuroData S3 buckets, you need to configure S3 commandline utiliti
 .. code-block:: none
 
   s3cmd --configure
-  #>AKIAI7F56EQ2VFCDECBQ
-  #>RJfa7VF+FiQZwMIDYy/k9bg4T3g8bv6Lx8eHZ0Z2
+  #>[IAM Public Key]
+  #>[IAM Secret Key]
   #>[accept default]
   #>neurodata
   #>[accept default]
