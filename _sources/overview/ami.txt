@@ -207,7 +207,7 @@ Gala
 ilastik
 -------
 
-.. code-block:: none 
+.. code-block:: 
 
   cd ${base}/src
   wget http://openconnecto.me/data/public/misc/ilastik-master-no-tracking-Linux.tar.gz
