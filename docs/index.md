@@ -11,8 +11,8 @@ Finally, as our services mature, we migrate our raw code to web-services, to fac
 
 ## overview
 
-- [RAMON Spec](ramon.rst)
-- [Tutorials](overview/tutorials.md)
+- [RAMON Spec](./overview/ramon.html)
+- [Tutorials](./overview/tutorials.html)
 
 ## code
 
