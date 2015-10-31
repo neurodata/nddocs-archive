@@ -19,7 +19,7 @@ facilitate one-click analysis and discovery.
 
 ## Tutorials
 
-If you are new to NeuroData, we recommend that you start with our [tutorials](source/tutorials.md),
+If you are new to NeuroData, we recommend that you start with our [tutorials](source/tutorials.html),
  which cover a quick, easy-to-understand overview of our services, taught by example.
 
 The rest of this page includes a detailed description of our standards and links
@@ -27,11 +27,9 @@ to each of our code repositories and associated documentation, and is more suita
 
 ## Overview
 
-[test](<source/ramon.md>)
-
--   [RAMON Spec](https://github.com/openconnectome/nddocs/blob/gh-pages/source/ramon.md)
--   [RAMON + NeuroData](./source/ramonnd.md)
--   [Datamap](./source/datamap.md)
+-   [RAMON Spec](source/ramon.html)
+-   [RAMON + NeuroData](./source/ramonnd.html)
+-   [Datamap](./source/datamap.html)
 
 ## code
 
