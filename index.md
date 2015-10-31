@@ -2,8 +2,7 @@
 title: NeuroData Docs
 ---
 
-NeuroData Docs
-==============
+# NeuroData Docs
 
 This site contains a collection of pages explaining how to access data, analyze
 data, and visualize both raw and derived data products.
@@ -16,14 +15,21 @@ our analytics stack into an AMI, which can also be found below.
 Finally, as our services mature, we migrate our raw code to web-services, to
 facilitate one-click analysis and discovery.
 
-![Overview of Neurodata Derivatives](<images/ocp_example.png>)
+![](<images/ocp_example.png>)
 
-overview
---------
 
--   [RAMON Spec](<./overview/ramon.html>)
+## Tutorials
 
--   [Tutorials](<./overview/tutorials.html>)
+If you are new to NeuroData, we recommend that you start with our [tutorials](<overview/tutorials.md),
+ which cover a quick, easy-to-understand overview of our services, taught by example.
+
+The rest of this page includes a detailed description of our standards and links
+to each of our code repositories and associated documentation, and is more suitable as a reference.
+
+## Overview
+
+-   [RAMON Spec](<source/ramon.rst>)
+-   [RAMON + NeuroData](<source/ramon-ocp.rst>)
 
 code
 ----
