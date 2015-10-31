@@ -28,8 +28,8 @@ to each of our code repositories and associated documentation, and is more suita
 ## Overview
 
 -   [RAMON Spec](source/ramon.html)
--   [RAMON + NeuroData](./source/ramonnd.html)
--   [Datamap](./source/datamap.html)
+-   [RAMON + NeuroData](source/ramonnd.html)
+-   [Datamap](source/datamap.html)
 
 ## code
 
