@@ -1,5 +1,6 @@
 ---
 title: Data Map
+
 ---
 
 # Datamap
@@ -32,6 +33,4 @@ These annotations were produced with a variety of machine vision algorithms (doc
 | cv_kasthuri11_membrane_2014 | <a href="http://openconnecto.me/ocp/overlay/0.3/openconnecto.me/kasthuri11cc/image/openconnecto.me/cv_kasthuri11_membrane_2014/image/xy/1/4400,5424/5440,6464/920/">image </a>  | computer vision membrane detection reference for kasthuri volume | 2300, 8300  | 4300, 9300  | 1, 1850 | 1 |
 | cv_kasthuri11_vesicle_2014 | <a href="http://openconnecto.me/ocp/overlay/0.3/openconnecto.me/kasthuri11cc/image/openconnecto.me/cv_kasthuri11_vesicle_2014/annotation/xy/1/4400,5424/5440,6464/920/">annotation</a>  | computer vision vesicle detection reference for kasthuri volume | 4400, 5424  | 5440, 6464  | 1100, 1200 | 1 |
 | cv_ac3_membrane_2014 | <a href="http://openconnecto.me/ocp/overlay/0.3/openconnecto.me/kasthuri11cc/image/openconnecto.me/cv_ac3_membrane_2014/image/xy/1/5500,6500/8500,9500/1000/"> image </a> | computer vision membrane detection reference for ac3 created for i2g paper   | 5200, 6700  | 8500, 10000  | 975, 1275 | 1  |
-| cv_ac3_vesicle_2014 | <a href="http://openconnecto.me/ocp/overlay/0.3/openconnecto.me/kasthuri11cc/image/openconnecto.me/cv_ac3_vesicle_2014/annotation/xy/1/5500,6500/8500,9500/1000/">annotation </a>  | computer vision vesicle detection for i2g paper  | 5200, 6700  | 8500, 10000    | 975, 1275 | 1  |                                                                                              
-[//]: # (http://openconnecto.me/ocp/overlay/0.6/openconnecto.me/kasthuri11cc/image/openconnecto.me/ac3ac4/ac3_neuron_truth/xy/1/5472,6496/8712,9736/1205/)
-[//]:# (http://openconnecto.me/ocp/overlay/0.6/openconnecto.me/kasthuri11cc/image/openconnecto.me/ac3ac4/ac4_synapse_truth/xy/1/4400,5424/5440,6464/1120/)
+| cv_ac3_vesicle_2014 | <a href="http://openconnecto.me/ocp/overlay/0.3/openconnecto.me/kasthuri11cc/image/openconnecto.me/cv_ac3_vesicle_2014/annotation/xy/1/5500,6500/8500,9500/1000/">annotation </a>  | computer vision vesicle detection for i2g paper  | 5200, 6700  | 8500, 10000    | 975, 1275 | 1  |                                                                                          
