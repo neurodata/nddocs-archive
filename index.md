@@ -27,11 +27,11 @@ to each of our code repositories and associated documentation, and is more suita
 
 ## Overview
 
--   [RAMON Spec](source/ramon.rst>)
--   [RAMON + NeuroData](source/ramon-ocp.rst>)
+-   [RAMON Spec](source/ramon.md)
+-   [RAMON + NeuroData](source/ramonnd.md)
+-   [Datamap](source/datamap.md)
 
-code
-----
+## code
 
 ### neuroimages
 
