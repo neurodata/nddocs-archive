@@ -27,7 +27,9 @@ to each of our code repositories and associated documentation, and is more suita
 
 ## Overview
 
--   [RAMON Spec](./source/ramon.md)
+[test](<source/ramon.md>)
+
+-   [RAMON Spec](https://github.com/openconnectome/nddocs/blob/gh-pages/source/ramon.md)
 -   [RAMON + NeuroData](./source/ramonnd.md)
 -   [Datamap](./source/datamap.md)
 
