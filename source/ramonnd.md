@@ -1,5 +1,8 @@
-RAMON + OCP
-***********
+---
+title: RAMON + NeuroData
+---
+
+# RAMON + NeuroData
 
 Our RAMON data standard may be used alone, although is designed for seamless
 integration with the Open Connectome Project spatial database.
@@ -16,8 +19,7 @@ Delete:  Used to delete an existing RAMON object in the database
 
 Reading from the database uses an expanded set of queries to promote flexibility and scientific discovery.  The available RESTful queries are shown below.
 
-RAMON Queries
--------------
+## RAMON Queries
 
 * RAMONIdList – This returns a list of ids that meet some list of predicates (e.g. type equal to synapse and status equal to unprocessed)
 * imageDense – this returns a RAMONVolume containing a image voxel data in cutout format
@@ -35,4 +37,4 @@ Details of how to Get and Put data, including RAMONObjects, is detailed in the O
 found here:  http://openconnectome.github.io/open-connectome/
 
 A MATLAB API called CAJAL wraps these functions into a toolbox that is easy to use.
-A stripped down version of the data standard and RESTful calls is also available in a beta package called OCPy.
+A stripped down version of the data standard and RESTful calls is also available in a beta package called ndio.

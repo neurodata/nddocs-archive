@@ -15,12 +15,11 @@ our analytics stack into an AMI, which can also be found below.
 Finally, as our services mature, we migrate our raw code to web-services, to
 facilitate one-click analysis and discovery.
 
-![](<images/ocp_example.png>)
-
+![](images/ocp_example.png)
 
 ## Tutorials
 
-If you are new to NeuroData, we recommend that you start with our [tutorials](<overview/tutorials.md),
+If you are new to NeuroData, we recommend that you start with our [tutorials](<source/tutorials.md),
  which cover a quick, easy-to-understand overview of our services, taught by example.
 
 The rest of this page includes a detailed description of our standards and links
