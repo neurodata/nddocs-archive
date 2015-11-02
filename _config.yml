@@ -2,3 +2,16 @@ name: "NeuroData Docs"
 markdown: kramdown
 highlighter: pygments
 permalink: /:title/
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
