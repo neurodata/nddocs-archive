@@ -158,7 +158,7 @@ easy_install pip
 
 This is currently restricted to JHU students and faculty only for licensing reasons.  If you have a matlab license we can help provide instructions.
 
-```
+~~~
 sudo mkdir ${base}/src/matlab
 sudo mkdir ${base}/src/matlab/matlabinst
 cd ${base}/src/matlab
@@ -167,7 +167,7 @@ scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/installer_input_neurodataAMI.
 scp <user>@braincloud1.cs.jhu.edu:/share0/transfer/AWS_network_license_20150901-rev1.dat .
 sudo mount -o loop matlab_r2015a_install.iso matlabinst
 sudo ${base}/src/matlab/matlabinst/install -mode silent -inputFile ${base}/src/matlab/installer_input_neurodataAMI.txt
-```
+~~~
 
 To launch matlab, run the following command:
 
