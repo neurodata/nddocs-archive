@@ -1,5 +1,5 @@
 ---
-title: NeuroData Docs
+title: home
 ---
 
 <link href="{{ site.baseurl }}/styles.css" rel="stylesheet">
