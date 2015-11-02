@@ -2,6 +2,8 @@
 title: NeuroData Docs
 ---
 
+<link href="{{ site.baseurl }}/styles.css" rel="stylesheet">
+
 # NeuroData Docs
 
 This site contains a collection of pages explaining how to access data, analyze
