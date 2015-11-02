@@ -4,7 +4,7 @@ highlighter: pygments
 permalink: /:title/
 
 baseurl: /nddocs
-url: http://docs.neurodata.io/
+url: http://docs.neurodata.io
 
 # Use the following plug-ins
 gems:
