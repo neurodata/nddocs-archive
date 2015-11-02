@@ -1,5 +1,6 @@
 ---
 title: ramon
+layout: default
 ---
 
 # RAMON Data Standard
