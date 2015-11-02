@@ -1,5 +1,6 @@
 ---
 title: RAMON + NeuroData
+layout: default
 ---
 
 # RAMON + NeuroData

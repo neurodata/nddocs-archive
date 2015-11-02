@@ -1,6 +1,6 @@
 ---
 title: Data Map
-
+layout: default
 ---
 
 # Datamap
