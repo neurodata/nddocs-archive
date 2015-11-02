@@ -33,7 +33,7 @@ to each of our code repositories and associated documentation, and is more suita
 -   [RAMON Spec](ramon.html)
 -   [RAMON + NeuroData](ramonnd.html)
 -   [Datamap](datamap.html)
-
+-   [AMI](ami.html)
 ## code
 
 ### neuroimages
@@ -126,9 +126,9 @@ for downstream analysis.
 
 #### analytics framework
 
--   [AMI](<./overview/ami.html>)
+-   [AMI](ami.html>)
 
--   [LONI](<./overview/loni.html>)
+-   [LONI]()
 
 -   [distributed computing](<./overview/distributed_computing.html>)
 
