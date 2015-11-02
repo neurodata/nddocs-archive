@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>NeuroData Docs by openconnectome</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>NeuroData Docs</h1>
+      <h1>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</h1>
         <p></p>
 
         <p class="view"><a href="https://github.com/openconnectome/nddocs">View the Project on GitHub <small>openconnectome/nddocs</small></a></p>
