@@ -16,3 +16,8 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+
+defaults:
+    values:
+      layout: "default"
