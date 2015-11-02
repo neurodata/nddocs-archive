@@ -22,7 +22,7 @@ facilitate one-click analysis and discovery.
 
 ## Tutorials
 
-If you are new to NeuroData, we recommend that you start with our [tutorials](source/tutorials.html),
+If you are new to NeuroData, we recommend that you start with our [tutorials](tutorials.html),
  which cover a quick, easy-to-understand overview of our services, taught by example.
 
 The rest of this page includes a detailed description of our standards and links
