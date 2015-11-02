@@ -27,14 +27,14 @@ yum -y install epel-release
 
 ### Basic Development Tools
 
-```
+~~~
 sudo su
 yum -y install wget gcc elfutils-libelf-devel libstdc++-devel glibc-devel libaio-devel gcc-c++
 yum -y groupinstall "Development tools" "X Window System" "Fonts"
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel xz-devel
 yum -y install java-1.6.0-openjdk-devel cmake vim screen bc R openssl-devel libpng-devel
 yum -y --enablerepo epel-testing install s3cmd
-```
+~~~
 
 ## VNC Setup
 
@@ -43,15 +43,15 @@ In order to have a valid vnc server, you need to install a desktop and configure
 
 ### Desktop
 
-```
+~~~
 yum -y groupinstall Desktop Xfce
 yum -y install xorg-x11-fonts-Type1 xorg-x11-fonts-misc
 #startxfce4 to launch
-```
+~~~
 
 ### VNC Server
 
-```
+~~~
 yum -y install vnc-server tigervnc-server
 yum -y install vnc tigervnc
 yum -y install xterm
@@ -66,13 +66,13 @@ exit
 /sbin/service   vncserver stop
 /sbin/chkconfig vncserver on
 /sbin/service   vncserver start
-```
+~~~
 
 ### S3 Credentials
 
 To access the NeuroData S3 buckets, you need to configure S3 commandline utilities. This is shown using the credentials of the generic neurodata s3 user account, below. All lines starting with '#>' should be entered at the prompt.
 
-```
+~~~
 s3cmd --configure
 #>[IAM Public Key]
 #>[IAM Secret Key]
@@ -82,7 +82,7 @@ s3cmd --configure
 #>Yes
 #>Y
 #>y
-```
+~~~
 
 
 ## Installing Further Dependencies
@@ -91,15 +91,15 @@ Many other packages are necessary to use our analytics stack, install either all
 
 ### Initial Positioning
 
-```
+~~~
 export base=/share0
 export m2g=${base}/m2g
 export M2G_HOME=${m2g} #duplicate for legacy reasons
-```
+~~~
 
 ### Oracle Java
 
-```
+~~~
 mkdir -p ${base}/src/java
 cd ${base}/src/java
 wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebac    kup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-linux-x64.tar.gz"
@@ -112,11 +112,11 @@ alternatives --set javac ${base}/src/java/jdk1.7.0_71/bin/javac
 alternatives --install /usr/bin/jar jar ${base}/src/java/jdk1.7.0_71/bin/jar 2
 alternatives --set jar ${base}/src/java/jdk1.7.0_71/bin/jar
 export JAVA_HOME=${base}/src/java/jdk1.7.0_71
-```
+~~~
 
 ### LONI Pipeline
 
-```
+~~~
 mkdir -p ${base}/src/loni
 cd ${base}/src/loni
 wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.0.1-unix.tar.bz2
@@ -125,11 +125,11 @@ tar -xvf Pipeline-6.0.1-unix.tar.bz2 -C loni_6.0.1
 wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.1-unix.tar.bz2
 mkdir loni_6.1
 tar -xvf Pipeline-6.1-unix.tar.bz2 -C loni_6.1
-```
+~~~
 
 ### Python 2.7
 
-```
+~~~
 mkdir -p ${base}/src/python
 cd ${base}/src/python
 wget http://python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz
@@ -143,17 +143,17 @@ cd ${base}/src/python
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
 python ez_setup.py
 easy_install pip
-```
+~~~
 
 ### Popular Python Packages
 
-```
+~~~
   easy_install argparse ipython
   pip install numpy nibabel cython
   pip install scipy
   pip install scikit-image
   easy_install -U distribute
-```
+~~~
 
 ## MATLAB for JHU Users
 
@@ -172,44 +172,44 @@ sudo ${base}/src/matlab/matlabinst/install -mode silent -inputFile ${base}/src/m
 
 To launch matlab, run the following command:
 
-```
+~~~
 /usr/local/R2015a/bin/matlab -nodesktop
-```
+~~~
 
 ## Neurodata Analytics
 
-```
+~~~
 cd ${base}
 git clone https://github.com/openconnectome/vesicle
 git clone https://github.com/openconnectome/cajal
 git clone https://github.com/openconnectome/manno
 git clone https://github.com/openconnectome/macho
-```
+~~~
 
 ### Gala
 
-```
+~~~
 pip install scikit-learn
 yum -y install hdf5 hdf5-devel
 easy_install h5py
 yum -y install python-imaging
 pip install viridis
 pip install gala
-```
+~~~
 
 ### ilastik
 
-```
+~~~
 cd ${base}/src
 wget http://openconnecto.me/data/public/misc/ilastik-master-no-tracking-Linux.tar.gz
 tar -xvf ilastik-master-no-tracking-Linux.tar.gz
 mv ilastik-master-no-tracking-Linux ilastik
 mv ilastik-master-no-tracking-Linux.tar.gz ilastik
-```
+~~~
 
 ## FlashGraph
 
-```
+~~~
 sudo yum install gcc-c++.x86_64 cmake.x86_64 git.x86_64
 sudo yum install boost-devel.x86_64 boost-static.x86_64 numactl-devel.x86_64 libaio-devel.x86_64
 sudo yum install zlib-devel.x86_64
@@ -225,13 +225,13 @@ mkdir build
 cd build
 cmake ../ -DBoost_NO_BOOST_CMAKE=BOOL:ON
 make
-```
+~~~
 
 ## m2g
 
 ### igraph
 
-```
+~~~
 yum -y install xml2 libxml2-devel
 mkdir -p ${base}/src/igraph
 cd ${base}/src/igraph
@@ -247,11 +247,11 @@ git clone https://gist.github.com/15015a9485d87d8c22e6.git
 cd 15015a9485d87d8c22e6
 yum -y install freeglut-devel mesa-libGL-devel
 Rscript installRigraph.R
-```
+~~~
 
 ### Camino
 
-```
+~~~
 cd ${base}/src/
 git clone git://git.code.sf.net/p/camino/code camino
 cd camino
@@ -259,31 +259,31 @@ make
 git checkout voxelSpaceStreamlines
 make clean
 make
-```
+~~~
 
 Camino is developed in Java, which means that sometimes extra threads are unintentionally spun up when launching cluster jobs. Some modifications must then be made to the java calls in the camino executable directory. A gist has been created which should automate this process for you.
 
-```
+~~~
 cd ${base}/src/camino
 git clone https://gist.github.com/f76897351be151ec228e.git fix_java
 chmod -R +x fix_java/
 ./fix_java/single_java.sh
-```
+~~~
 
 ### FSL
 
-```
+~~~
 mkdir -p ${base}/src/fsl
 cd ${base}/src/fsl
 wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/fsl-5.0.8-centos6_64.tar.gz
 tar zxvf fsl-5.0.8-centos6_64.tar.gz
 mv fsl/* ./
 rm -r fsl
-```
+~~~
 
 ### m2g
 
-```
+~~~
 export m2g=${base}/m2g
 export M2G_HOME=${m2g}
 cd ${base}
@@ -294,21 +294,21 @@ cd ${m2g}
 python ${m2g}/packages/utils/setup.py
 cd ${base}
 git clone https://github.com/openconnectome/FlashR.git
-```
+~~~
 
 ## bash files
 
 /etc/profile.d/neurodata.sh
 
-```
+~~~
 export base=/share0
 export JAVA_HOME=${base}/src/java/jdk1.7.0_71
 export PATH='/usr/local/bin':${PATH}
-```
+~~~
 
 /etc/profile.d/m2g.sh
 
-```
+~~~
 export base=/share0
 # m2g
 export m2g=${base}/m2g
@@ -327,20 +327,20 @@ FSLDIR=${base}/src/fsl
 . ${FSLDIR}/etc/fslconf/fsl.sh
 PATH=${FSLDIR}/bin:${PATH}
 export FSLDIR PATH
-```
+~~~
 
 ## Publishing AMI
 
 Prior to releasing the AMI on the AWS marketplace, a few housekeeping commands must be run to ensure security of both the developer and the users. Run the following as root.
 
-```
+~~~
 groupadd nd-users
 usermod -g nd-users neurodata
 usermod -g nd-users ec2-user
 chown -R neurodata:nd-users ${base}
 rm -rf ~/.bash_history  ~/.viminfo
 touch ~/.bash_history  ~/.viminfo
-```
+~~~
 
 ## Connecting to AMI
 
@@ -356,8 +356,8 @@ The user should locate the instance in the Amazon Marketplace and create an inst
 
 To connect, from your machine type:
 
-```
+~~~
   ssh -L 5901:127.0.0.1:5901 -N -f -l neurodata ${ip}
-```
+~~~
 
 Then in your VNC client connect to ''localhost:5901'' and enter the vnc password you set during setup.
