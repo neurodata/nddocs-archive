@@ -13,7 +13,7 @@ Once the instance has been launched, log in using your public key and run the fo
 
 ### Updates and Package Libraries
 
-```
+~~~
 sudo su
 sudo echo "ALL        ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -23,7 +23,7 @@ vi /etc/ssh/sshd_config # replace "PasswordAuthentication no" with "PasswordAuth
 /etc/init.d/sshd restart
 yum -y update
 yum -y install epel-release
-```
+~~~
 
 ### Basic Development Tools
 
