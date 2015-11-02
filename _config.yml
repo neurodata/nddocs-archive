@@ -1,0 +1,4 @@
+name: "NeuroData Docs"
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
