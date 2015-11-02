@@ -1,5 +1,5 @@
 name: "NeuroData Docs"
-markdown: kramdown
+markdown: red-carpet
 highlighter: pygments
 permalink: /:title/
 
