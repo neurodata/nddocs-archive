@@ -3,6 +3,7 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
+baseurl: http://docs.neurodata.io/nddocs/
 
 # Use the following plug-ins
 gems:
