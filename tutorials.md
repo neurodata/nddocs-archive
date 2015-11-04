@@ -29,20 +29,6 @@ layout: default
 
 #### Load graphs in gephi
 
-### Third Party tools
-
-- ITK Snap
-  - see data
-  - overlay
-- bigdataviewer
-- catmaid
-- vaa3d
-- knossos
-- viking
-- neutube
-- janelia-workstation
-- reconstruct
-
 ## How do I look at Graphs?
 
 - web viewer: graph explorer
@@ -69,16 +55,6 @@ ocpviz:
 - http://brainviz1.cs.jhu.edu/ocp/viz/project/kharris15apical/
 - http://openconnecto.me/ocp/viz/project/kasthuri15ramon/
 - catmaid
-
-# local client viewers:
-- ITK-SNAP
-- bigdataviewer
-- vaa3d
-- knossos
-- viking
-- neutube
-- janelia-workstation
-- reconstruct
 
 ### Graphs
 
