@@ -3,11 +3,64 @@ title: Tutorials
 layout: default
 ---
 
-Tutorials
+# Tutorials
 
-# Infrastructure
+## How do I look at images and annotations?
 
-## Look at some data?
+
+### OCPViz
+
+#### Viewing a project
+
+#### Adding layers
+
+#### Changing the colors of layers
+
+#### Example projects
+
+- http://brainviz1.cs.jhu.edu/ocp/viz/project/kharris15apical/
+- http://openconnecto.me/ocp/viz/project/kasthuri15ramon/
+
+### Graph explorer
+
+### MROCP 
+
+#### Description and Access
+
+#### Load graphs in gephi
+
+### Third Party tools
+
+- ITK Snap
+  - see data
+  - overlay
+- bigdataviewer
+- catmaid
+- vaa3d
+- knossos
+- viking
+- neutube
+- janelia-workstation
+- reconstruct
+
+## How do I look at Graphs?
+
+- web viewer: graph explorer
+- local client viewers: gephi
+
+
+
+## Download some data to play with on my computer?
+
+### Images
+
+- web-form < 2 GB
+- CAJAL < 1 TB
+- ndio < 1 TB
+- get: arbitrary size
+
+### Graphs
+
 
 ### Images
 
