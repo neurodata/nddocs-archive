@@ -132,6 +132,8 @@ LONI stuff
 
 ## Estimate statistical properties?
 
+## Computing Resources
+
 ## Third Party Tools Integration Status
 
 - ITK Snap:  Works in manno for annotation purposes.  No one has written a tutorial about actually visualizing things otherwise, but should be possible
