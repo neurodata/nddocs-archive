@@ -155,3 +155,16 @@ LONI stuff
 - ndio
 
 ## Estimate statistical properties?
+
+## Third Party Tools Integration Status
+
+- ITK Snap:  Works in manno for annotation purposes.  No one has written a tutorial about actually visualizing things otherwise, but should be possible
+- bigdataviewer:  Broke when we switched to channel interface.  Stephan is fixing.
+catmaid:  [ask alex]
+- vaa3d:  Nathan and Dean did this.  Code broke when we switched to channel interface.
+- knossos:  Kunal wrote a backend so that they could pull data.  Status unknown.  No import capability.
+- viking:   Kunal wrote a backend so that they could pull data.  Status unknown.  No import capability.
+- neutube:  none yet
+- janelia-workstation:  ??
+- reconstruct:  Alex has some scripts.
+- VAST:  can pull data from neurodata
