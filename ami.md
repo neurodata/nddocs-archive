@@ -23,6 +23,8 @@ vi /etc/ssh/sshd_config # replace "PasswordAuthentication no" with "PasswordAuth
 /etc/init.d/sshd restart
 yum -y update
 yum -y install epel-release
+
+ulimit -c unlimited
 ~~~
 
 ### Basic Development Tools
@@ -32,7 +34,7 @@ sudo su
 yum -y install wget gcc elfutils-libelf-devel libstdc++-devel glibc-devel libaio-devel gcc-c++
 yum -y groupinstall "Development tools" "X Window System" "Fonts"
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel xz-devel
-yum -y install java-1.6.0-openjdk-devel cmake vim screen bc R openssl-devel libpng-devel
+yum -y install java-1.6.0-openjdk-devel cmake vim screen bc R openssl-devel libpng-devel ImageMagick
 yum -y --enablerepo epel-testing install s3cmd
 ~~~
 
