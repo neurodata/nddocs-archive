@@ -5,7 +5,7 @@ layout: default
 
 # Tutorials
 
-## Access = Visualize, Download & Upload
+## Access
 
 ### How do I look at images?
 
@@ -25,21 +25,25 @@ There are many other viewers out there, with complementary features.  The ones t
 
 We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](https://www.shinyapps.io/) that allows you to upload any graph to both visualize and analyze it.  Other 3rd party graph visualization/analysis tools can also be used with any of our graphs.
 
-### Download some data to play with on my computer?
+## Download some data to play with on my computer?
 
 ### Images
 
-- web-form < 2 GB
-- CAJAL < 1 TB
-- ndio < 1 TB
-- get: arbitrary size
+- The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options: 
+  - "Ready-to-go" downloads provide frequently requested cubes as a PNG stack
+  - If you know the token, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly. 
+- [ndio](http://docs.neurodata.io/ndio/) is our Python library that lets you get and put data into NeuroData.  As long as you are transfering < 1 TB of data, this should work fine.
+- [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transfering data up to about 1 TB.
+- [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html): you can also download arbitrarily large data via using the RESTful calls directly.  Examples are provided at the above link.
 
 ### Graphs
 
-
+Downloading graphs is easy, simply go to our [graph download](http://openconnecto.me/graph-services/download/) Web-page.  From there, you can select the format (eg, MATLAB, graphml, etc.), and even scale for the human MR derived graphs.  Many other graph services are available from there as well. 
 
 
 ## Show some image data to labmates/colleagues?
+
+### Images
 
 - web-form < 200 GB
 - CAJAL < 1 TB
@@ -47,6 +51,7 @@ We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](http
 - auto-ingest < 2 TB https://github.com/openconnectome/open-connectome/blob/master/ingest/autoingest/verifyjson.py
 - (s)ftp/(s)http/open-s3: abritrary size https://github.com/openconnectome/open-connectome/tree/master/ingest/
 
+### Graphs
 
 ## Computer Vision
 
