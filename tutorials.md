@@ -11,7 +11,7 @@ layout: default
 
 We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  An example URL:
 
-* Visit http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/
+* Visit [kharris15apical](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
 * Image metadata is available via the *Project Info* button in the menubar. 
 * From the menubar, select *Query*, then *kharris15apical / ramon_test*.
 * The blue cell in the center of the image has a corresponding ramon object. Clicking on the blue cell will bring up RAMON metadata. No other cells/objects have ramon objects.
