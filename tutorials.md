@@ -9,12 +9,16 @@ layout: default
 
 ### How do I look at images?
 
-We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  An example URL:
+We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  Here are two different example URLs:
 
-* Visit [kharris15apical](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/)
-* Image metadata is available via the *Project Info* button in the menubar. 
-* From the menubar, select *Query*, then *kharris15apical / ramon_test*.
-* The blue cell in the center of the image has a corresponding ramon object. Clicking on the blue cell will bring up RAMON metadata. No other cells/objects have ramon objects.
+* [kharris15apical](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/) demonstrates annotation overlays and metadata capabilities
+  * Image metadata is available via the *Project Info* button in the menubar. 
+  * From the menubar, select *Query*, then *kharris15apical / ramon_test*.
+  * The blue cell in the center of the image has a corresponding ramon object. Clicking on the blue cell will bring up RAMON metadata. No other cells/objects have ramon objects.
+
+* [aratome15c][http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/] demonstrates multi-spectral color blending capabilities
+  * play with opacity, brightness, and contrast
+  * change the blend mode to enable different color blends
 
 To see other data in NeuroDataViz, browse to our [projects](http://neurodata.io/projects) page, and select a dataset of interest.  Many of those datasets automatically link to NeuroDataViz.  Of note, they are not yet all currently centered, so you might have to move around a bit to find the data. 
 
