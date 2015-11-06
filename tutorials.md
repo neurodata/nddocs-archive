@@ -16,7 +16,7 @@ We have developed our own lightweight Web-visualization tool called [NeuroDataVi
   * From the menubar, select *Query*, then *kharris15apical / ramon_test*.
   * The blue cell in the center of the image has a corresponding ramon object. Clicking on the blue cell will bring up RAMON metadata. No other cells/objects have ramon objects.
 
-* [aratome15c](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/] demonstrates multi-spectral color blending capabilities
+* [aratome15c](http://brainviz1.cs.jhu.edu/ndv/project/Aratome15c_S17_W10/1/5818/527/0/) demonstrates multi-spectral color blending capabilities
   * play with opacity, brightness, and contrast
   * change the blend mode to enable different color blends
 
