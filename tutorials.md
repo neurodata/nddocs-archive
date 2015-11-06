@@ -23,9 +23,7 @@ There are many other viewers out there, with complementary features.  The ones t
 
 ### How do I look at Graphs?
 
-#### web viewer: graph explorer
-
-#### local client viewers: gephi
+We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](https://www.shinyapps.io/) that allows you to upload any graph to both visualize and analyze it.  Other 3rd party graph visualization/analysis tools can also be used with any of our graphs.
 
 ### Download some data to play with on my computer?
 
@@ -120,3 +118,4 @@ catmaid:  [ask alex]
 - janelia-workstation:  ??
 - reconstruct:  Alex has some scripts.
 - VAST:  can pull data from neurodata
+- [Gephi](http://gephi.github.io/): can load any graph downloaded from [here](http://openconnecto.me/graph-services/download/)
