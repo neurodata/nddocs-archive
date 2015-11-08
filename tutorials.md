@@ -9,7 +9,7 @@ layout: default
 
 ### How do I look at images?
 
-We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  Here are two different example URLs:
+We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  Here are a few different examples:
 
 * [kharris15apical](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/) demonstrates annotation overlays and metadata capabilities
   * Image metadata is available via the *Project Info* button in the menubar. 
