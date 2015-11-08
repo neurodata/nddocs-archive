@@ -20,6 +20,8 @@ We have developed our own lightweight Web-visualization tool called [NeuroDataVi
   * play with opacity, brightness, and contrast
   * change the blend mode to enable different color blends
 
+* [freeman14](http://openconnecto.me/ocp/viz/freeman14/) demonstrates 3D time-series capabilities.
+
 To see other data in NeuroDataViz, browse to our [projects](http://neurodata.io/projects) page, and select a dataset of interest.  Many of those datasets automatically link to NeuroDataViz.  Of note, they are not yet all currently centered, so you might have to move around a bit to find the data. 
 
 There are many other viewers out there, with complementary features.  The ones that we support are listed below in the 3rd party apps section.
