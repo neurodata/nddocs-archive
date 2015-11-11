@@ -109,16 +109,21 @@ example in loni sweeping over a set of hyperparameters
 
 ## m2g
 
-### How do I generate multiscale graphs from MRI data?
+1.  How do I generate multiscale graphs from MRI data?
 
-#### Code
+We have developed a one-click pipeline called [m2g](http://m2g.io).  The code for the pipeline can be found on our (github site)[https://github.com/openconnectome/m2g].  
 
+We offer several ways to interact with m2g:
 
-#### Instructions
+-  (webservice)[http://openconnecto.me/graph-services/c4/]
+- (standalone cluster instructions)[http://m2g.io/sphinx/cloud_computing.html#using-m2g-on-captive-cluster]
+- (Amazon EC2 instructions)[http://m2g.io/sphinx/cloud_computing.html#using-m2g-in-an-ami]
+- Our graph service engine, `MROCP <http://mrbrain.cs.jhu.edu/graph-services/welcome/>`_, hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
+- Raw graphs may also be found at:  XXX 
 
-### How do I know that the graphs I made are reliable?
+2.  How do I know that the graphs I made are reliable?  How long does it take to run the pipeline?
 
-### How long does it take to generate graphs?
+Please see the following page for our reliability assessment methodology and most recent results:  http://m2g.io/tutorials/validation.html
 
 
 
