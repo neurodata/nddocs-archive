@@ -104,7 +104,23 @@ example in loni sweeping over a set of hyperparameters
 
 - LONI stuff
 
+
 ## Analysis
+
+## m2g
+
+### How do I generate multiscale graphs from MRI data?
+
+#### Code
+
+
+#### Instructions
+
+### How do I know that the graphs I made are reliable?
+
+### How long does it take to generate graphs?
+
+
 
 ### Query the scene?
 
