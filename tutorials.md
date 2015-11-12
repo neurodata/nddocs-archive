@@ -141,7 +141,16 @@ Please see the following page for our reliability assessment methodology and mos
 
 ### Third Party Tools Integration Status
 
-- ITK Snap:  Works in manno for annotation purposes.  No one has written a tutorial about actually visualizing things otherwise, but should be possible
+
+#### ITK Snap
+
+Works in manno for annotation purposes (see http://docs.neurodata.io/manno).
+
+#### VAST 
+
+VAST was developed by Daniel Berger at MIT and Harvard and can pull image data from OpenConnectome project for annotating EM volumes.  Details are available here:  https://software.rc.fas.harvard.edu/lichtman/vast/  (please also see details in the linked manual).
+
+#### Others
 - bigdataviewer:  Broke when we switched to channel interface.  Stephan is fixing.
 catmaid:  [ask alex]
 - vaa3d:  Nathan and Dean did this.  Code broke when we switched to channel interface.
