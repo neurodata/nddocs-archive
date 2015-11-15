@@ -8,11 +8,8 @@ layout: default
 ndio is a Python (2 and 3) module that enables direct interfacing with NeuroData
 workflows and servers. More complete documentation is available at {% include doclink.html repo="ndio" text="the ndio documentation website" %}.
 
-## Installation and Setup
-ndio can be installed via pip:
+You can view a list of tutorials [here](tutorials.html).
 
-~~~
-pip install ndio
-~~~
+You can learn more about what system requirements ndio has [here](importing.html).
 
-You can also install from the raw source using the [GitHub repository](https://github.com/openconnectome/ndio).
+Please submit bug reports, or get in touch at our [GitHub repository](https://github.com/openconnectome/ndio).
