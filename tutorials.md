@@ -111,15 +111,15 @@ example in loni sweeping over a set of hyperparameters
 
 ### How do I generate multiscale graphs from MRI data?
 
-We have developed a one-click pipeline called [m2g](http://m2g.io).  The code for the pipeline can be found on our [github page](https://github.com/openconnectome/m2g).  
+We have developed a one-click multi-modal MRI processing pipeline called [m2g](http://m2g.io) which estimates structural graphs from diffusion MRI. The pipeline and its sourcecode can be found on [github](https://github.com/openconnectome/m2g), and full documentation exists on our [m2g webpage](http://m2g.io).  
 
 We offer several ways to interact with m2g:
 
-- [Webservice](http://openconnecto.me/graph-services/c4/)
-- [Standalone Cluster](http://m2g.io/sphinx/cloud_computing.html#using-m2g-on-captive-cluster)
-- [Amazon EC2](http://m2g.io/sphinx/cloud_computing.html#using-m2g-in-an-ami)
-- Our graph service engine, [MROCP](http://mrbrain.cs.jhu.edu/graph-services/welcome/), hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
-- Derivatives and graphs may also be found in our public s3 bucket. Contact [support](mailto:support@neurodata.io) to get access.
+- Our [Webservice](http://openconnecto.me/graph-services/c4/) allows users to upload a brain image and have a connectome emailed to them after it has been generated.
+- A [Standalone Cluster](http://m2g.io/sphinx/cloud_computing.html#using-m2g-on-captive-cluster) exists on which we process large volumes of data with collaborators.
+- An [Amazon EC2](http://m2g.io/sphinx/cloud_computing.html#using-m2g-in-an-ami) machine image with the NeuroData stack and the m2g pipeline installed is publicly available for use.
+- Our [graph service engine](http://mrbrain.cs.jhu.edu/graph-services/welcome/) hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
+- Pipeline derivatives and graphs may also be found in our public s3 bucket. Contact [support](mailto:support@neurodata.io) to gain access.
 
 ### How do I know that the graphs I made are reliable?
 
