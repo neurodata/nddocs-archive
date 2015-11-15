@@ -125,6 +125,10 @@ We offer several ways to interact with m2g:
 
 We assess the quality of our graphs using a metric called reliability. Several test-retest (TRT) datasets have been chosen as benchmarks for performance, and a detailed explanation of how they were evaluated and their performance can be found on our [validation page](http://m2g.io/tutorials/validation.html).
 
+### Where can I find public data so that I may get started?
+
+We have processed and share several publicly available datasets on our s3 bucket. Contact [support@neurodata.io](mailto:support@neurodata.io) for information. 
+
 ###How long does it take to run the pipeline?
 
 In addition to recording reliability performance on our benchmark datasets (see above), we record [timing](http://m2g.io/tutorials/validation.html) as well. Currently, on our cluster, the pipeline takes approximately 6 hours/subject/core when running at saturation to produce small graphs.
