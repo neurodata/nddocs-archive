@@ -12,7 +12,7 @@ layout: default
 We have developed our own lightweight Web-visualization tool called [NeuroDataViz](http://docs.neurodata.io/NeuroDataViz/).  It has been designed specifically to enable:  volumetric annotations, multi-spectral data, and time-series data.  Here are a few different examples:
 
 * [kharris15apical](http://brainviz1.cs.jhu.edu/ndv/kharris15apical/em,ramon_test/3/507/469/90/) demonstrates annotation overlays and metadata capabilities
-  * Image metadata is available via the *Project Info* button in the menubar. 
+  * Image metadata is available via the *Project Info* button in the menubar.
   * From the menubar, select *Query*, then *kharris15apical / ramon_test*.
   * The blue cell in the center of the image has a corresponding ramon object. Clicking on the blue cell will bring up RAMON metadata. No other cells/objects have ramon objects.
 
@@ -22,7 +22,7 @@ We have developed our own lightweight Web-visualization tool called [NeuroDataVi
 
 * [freeman14](http://openconnecto.me/ocp/viz/freeman14/) demonstrates 3D time-series capabilities.
 
-To see other data in NeuroDataViz, browse to our [projects](http://neurodata.io/projects) page, and select a dataset of interest.  Many of those datasets automatically link to NeuroDataViz.  Of note, they are not yet all currently centered, so you might have to move around a bit to find the data. 
+To see other data in NeuroDataViz, browse to our [projects](http://neurodata.io/projects) page, and select a dataset of interest.  Many of those datasets automatically link to NeuroDataViz.  Of note, they are not yet all currently centered, so you might have to move around a bit to find the data.
 
 There are many other viewers out there, with complementary features.  The ones that we support are listed below in the 3rd party apps section.
 
@@ -35,16 +35,16 @@ We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](http
 
 ### Images
 
-- The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options: 
+- The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options:
   - "Ready-to-go" downloads provide frequently requested cubes as a PNG stack
-  - If you know the token, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly. 
+  - If you know the token, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly.
 - [ndio](http://docs.neurodata.io/ndio/) is our Python library that lets you get and put data into NeuroData.  As long as you are transfering < 1 TB of data, this should work fine.
-- [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transfering data up to about 1 TB.
-- [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html): you can also download arbitrarily large data via using the RESTful calls directly.  Examples are provided at the above link.
+- [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transferring data up to about 1 TB.
+- [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html): you can also download data < 2 GB via using the RESTful calls directly.  Examples are provided at the above link.
 
 ### Graphs
 
-Downloading graphs is easy, simply go to our [graph download](http://openconnecto.me/graph-services/download/) Web-page.  From there, you can select the format (eg, MATLAB, graphml, etc.), and even scale for the human MR derived graphs.  Many other graph services are available from there as well. 
+Downloading graphs is easy, simply go to our [graph download](http://openconnecto.me/graph-services/download/) Web-page.  From there, you can select the format (eg, MATLAB, graphml, etc.), and even scale for the human MR derived graphs.  Many other graph services are available from there as well.
 
 
 ## Show some image data to labmates/colleagues?
@@ -55,7 +55,7 @@ Downloading graphs is easy, simply go to our [graph download](http://openconnect
 - CAJAL < 1 TB
 - ndio < 1 TB
 - auto-ingest < 2 TB https://github.com/openconnectome/open-connectome/blob/master/ingest/autoingest/verifyjson.py
-- (s)ftp/(s)http/open-s3: abritrary size https://github.com/openconnectome/open-connectome/tree/master/ingest/
+- (s)ftp/(s)http/open-s3: arbitrary size https://github.com/openconnectome/open-connectome/tree/master/ingest/
 
 ### Graphs
 
@@ -119,7 +119,7 @@ We offer several ways to interact with m2g:
 - [Standalone Cluster](http://m2g.io/sphinx/cloud_computing.html#using-m2g-on-captive-cluster)
 - [Amazon EC2](http://m2g.io/sphinx/cloud_computing.html#using-m2g-in-an-ami)
 - Our graph service engine, [MROCP](http://mrbrain.cs.jhu.edu/graph-services/welcome/), hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
-- Raw graphs may also be found at:  XXX 
+- Raw graphs may also be found at:  XXX
 
 ### How do I know that the graphs I made are reliable?
 
@@ -146,7 +146,7 @@ Please see the following page for our reliability assessment methodology and mos
 
 Works in manno for annotation purposes (see http://docs.neurodata.io/manno).
 
-#### VAST 
+#### VAST
 
 VAST was developed by Daniel Berger at MIT and Harvard and can pull image data from OpenConnectome project for annotating EM volumes.  Details are available here:  https://software.rc.fas.harvard.edu/lichtman/vast/  (please also see details in the linked manual).
 
