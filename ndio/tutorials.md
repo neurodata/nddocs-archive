@@ -49,6 +49,12 @@ import ndio
 
     [How Big is NeuroData?](https://github.com/openconnectome/ndio-demos/blob/master/Logistics/How%20Big%20is%20NeuroData%3F.ipynb)
 
+- **How can I get metadata for a project?**
+
+    This folder includes tutorials on reading and writing metadata to the NeuroData LIM system.
+
+    [LIMS](https://github.com/openconnectome/ndio-demos/tree/master/LIMS)
+
 ## Data Download
 
 - **How do I download a 2D image [to use in a PowerPoint or publication or...]?**
@@ -56,11 +62,13 @@ import ndio
     This tutorial shows you how to download an image, save it to disk, or show it inside Python:
 
     [Downloading an Image](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20an%20Image.ipynb)
+
 - **How do I download a 3D volume?**
 
     This tutorial shows you how to download a piece of a 3D dense volume (such as a subvolume of image data).
 
     [Downloading a Volume](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20a%20Volume.ipynb)
+
 - **How do I know what to put in for `x_start`, `x_stop`, etc..?**
 
     This information can be found by reading the metadata of a project before downloading from it. The following tutorial explains how to get metadata for a project.
@@ -87,6 +95,12 @@ import ndio
 
 
 ## Uploading Data
+
+- **How can I set metadata for one of my projects?**
+
+    This folder includes tutorials on reading and writing metadata to the NeuroData LIM system.
+
+    [LIMS](https://github.com/openconnectome/ndio-demos/tree/master/LIMS)
 
 - **How do I upload volume data to a project?**
 
