@@ -5,41 +5,41 @@ layout: default
 
 # ndio: Tutorials
 
+* TOC
+{:toc}
+
 -----
 
 ## Getting Started
 
 -----
 
-### Downloading and Installing ndio
-You can download and install ndio automatically using pip, the python package manager. To install, simply open a new terminal window (OSX/Linux) or a command-line window (Windows) and type,
+- **Downloading and Installing ndio**
+    You can download and install ndio automatically using pip, the python package manager. To install, simply open a new terminal window (OSX/Linux) or a command-line window (Windows) and type,
 
-~~~
-pip install ndio
-~~~
+    ```
+    pip install ndio
+    ```
 
-You can also install from the raw source using the [GitHub repository](https://github.com/openconnectome/ndio).
+    You can also install from the raw source using the [GitHub repository](https://github.com/openconnectome/ndio).
 
-### Installing Requirements
-If you installed ndio with `pip`, then you should already have all the requisite python libraries. However, if you downloaded the code and are using a development copy, then you can download required libraries with the command
+- **Installing Requirements**
+    If you installed ndio with `pip`, then you should already have all the requisite python libraries. However, if you downloaded the code and are using a development copy, then you can download required libraries with the command
 
-~~~
-pip install -r requirements.txt
-~~~
+    ```
+    pip install -r requirements.txt
+    ```
 
-from the root ndio directory.
+    from the root ndio directory.
 
------
+- **Using ndio in a Python Script**
+    Using ndio is as simple as using any other Python library. Simply add the line,
 
-### Using ndio in a Python Script
-Using ndio is as simple as using any other Python library. Simply add the line,
+    ```
+    import ndio
+    ```
 
-~~~
-import ndio
-~~~
-{: .language-python}
-
-> <small>Note: There are parts of ndio that are not imported by this single line, because they are too large or require additional non-standard libraries. To learn more about these, go to the page on [Importing ndio](importing.html).</small>
+    > <small>Note: There are parts of ndio that are not imported by this single line, because they are too large or require additional non-standard libraries. To learn more about these, go to the page on [Importing ndio](importing.html).</small>
 
 ## Learning About the Project
 
@@ -49,6 +49,12 @@ import ndio
 
     [How Big is NeuroData?](https://github.com/openconnectome/ndio-demos/blob/master/Logistics/How%20Big%20is%20NeuroData%3F.ipynb)
 
+- **How can I get metadata for a project?**
+
+    This folder includes tutorials on reading and writing metadata to the NeuroData LIM system.
+
+    [LIMS](https://github.com/openconnectome/ndio-demos/tree/master/LIMS)
+
 ## Data Download
 
 - **How do I download a 2D image [to use in a PowerPoint or publication or...]?**
@@ -56,11 +62,13 @@ import ndio
     This tutorial shows you how to download an image, save it to disk, or show it inside Python:
 
     [Downloading an Image](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20an%20Image.ipynb)
+
 - **How do I download a 3D volume?**
 
     This tutorial shows you how to download a piece of a 3D dense volume (such as a subvolume of image data).
 
     [Downloading a Volume](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20a%20Volume.ipynb)
+
 - **How do I know what to put in for `x_start`, `x_stop`, etc..?**
 
     This information can be found by reading the metadata of a project before downloading from it. The following tutorial explains how to get metadata for a project.
@@ -87,6 +95,12 @@ import ndio
 
 
 ## Uploading Data
+
+- **How can I set metadata for one of my projects?**
+
+    This folder includes tutorials on reading and writing metadata to the NeuroData LIM system.
+
+    [LIMS](https://github.com/openconnectome/ndio-demos/tree/master/LIMS)
 
 - **How do I upload volume data to a project?**
 
