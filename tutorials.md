@@ -119,14 +119,15 @@ We offer several ways to interact with m2g:
 - [Standalone Cluster](http://m2g.io/sphinx/cloud_computing.html#using-m2g-on-captive-cluster)
 - [Amazon EC2](http://m2g.io/sphinx/cloud_computing.html#using-m2g-in-an-ami)
 - Our graph service engine, [MROCP](http://mrbrain.cs.jhu.edu/graph-services/welcome/), hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
-- Raw graphs may also be found at:  XXX
+- Derivatives and graphs may also be found in our public s3 bucket. Contact [support](mailto:support@neurodata.io) to get access.
 
 ### How do I know that the graphs I made are reliable?
 
-Please see the following page for our reliability assessment methodology and most recent results:  http://m2g.io/tutorials/validation.html
+We assess the quality of our graphs using a metric called reliability. Several test-retest (TRT) datasets have been chosen as benchmarks for performance, and a detailed explanation of how they were evaluated and their performance can be found on our [validation page](http://m2g.io/tutorials/validation.html).
 
 ###How long does it take to run the pipeline?
 
+In addition to recording reliability performance on our benchmark datasets (see above), we record [timing](http://m2g.io/tutorials/validation.html) as well. Currently, on our cluster, the pipeline takes approximately 6 hours/subject/core when running at saturation to produce small graphs.
 
 ### Query the scene?
 
