@@ -111,3 +111,21 @@ layout: default
     This tutorial includes information about how to download data from one location and upload it back to another location. This is useful if you're running your own copy of the OpenConnectome stack.
 
     [Transferring Data Between Remotes](https://github.com/openconnectome/ndio-demos/blob/master/Logistics/Transferring%20Data%20Between%20Development%20and%20Production%20Servers.ipynb)
+
+
+# Claims from *Kasthuri, et al. CELL 2015*
+
+## Analysis
+
+- ***The 64,000 um3 box imaged at high resolution had roughly 13.7 million cell profiles in its 1850 sections.***
+- ***Count: Dendrites = 193 (92% Spiny)***
+- ***Count: Unmyelinated Axons = 1407***
+- ***Count: Excitatory (Axons) Synapses = 93%***
+- ***There were 1,700 synapses at a density of one synapse per 1.13 μm<sup>3</sup>.***
+- ***Neuronal processes (axons and dendrites) occupy 92% of the cellular volume with glial processes, occupying much of the remaining 8%.***
+- ***The non-cellular (extracellular) space accounts for 6% of the total volume, less than half the extracellular space estimates from living brains.***
+- ***Each excitatory axon establishes slightly more synapses in the volume than each inhibitory axon (∼1.2 synapses/excitatory axon versus ∼0.9 synapses/inhibitory).***
+- ***The excitatory-to-inhibitory-synapse ratio (van Vreeswijk and Sompolinsky, 1996 and Wehr and Zador, 2003) is 20.2 for the dendrites of excitatory neurons (1,494 excitatory synapses versus 74 inhibitory synapses), whereas the ratio is only 9.7 (116 excitatory synapses and 12 inhibitory synapses) for the input to inhibitory dendrites.***
+- ***Excitatory axons establish synapses mostly on spines (94%; n = 1,406/1,700), and inhibitory axons establish mostly on shafts (81%, n = 70/86).***
+- ***The number of vesicles per synaptic varicosity range from 2 to 1,366 for varicosities with one postsynaptic target (mean = 153 ± 127), with significantly greater numbers of vesicles at multi-synaptic varicosities (mean = 200 ± 173; Wilcoxon rank-sum test; p = 0.0005).***
+- ***The number of vesicles is not significantly different in excitatory and inhibitory synapses.***
