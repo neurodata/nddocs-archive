@@ -31,9 +31,9 @@ There are many other viewers out there, with complementary features.  The ones t
 
 We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](https://www.shinyapps.io/) that allows you to upload any graph to both visualize and analyze it.  Other 3rd party graph visualization/analysis tools can also be used with any of our graphs.
 
-## Download some data to play with on my computer?
+### Download some data to play with on my computer?
 
-### Images
+#### Images
 
 - The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options:
   - "Ready-to-go" downloads provide frequently requested cubes as a PNG stack
@@ -42,14 +42,14 @@ We have developed [Graph Explorer](http://128.220.176.8/ge/), a [shiny app](http
 - [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transferring data up to about 1 TB.
 - [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html): you can also download data < 2 GB via using the RESTful calls directly.  Examples are provided at the above link.
 
-### Graphs
+#### Graphs
 
 Downloading graphs is easy, simply go to our [graph download](http://openconnecto.me/graph-services/download/) Web-page.  From there, you can select the format (eg, MATLAB, graphml, etc.), and even scale for the human MR derived graphs.  Many other graph services are available from there as well.
 
 
-## Show some image data to labmates/colleagues?
+### Show some image data to labmates/colleagues?
 
-### Images
+#### Images
 
 - web-form < 200 GB
 - CAJAL < 1 TB
@@ -57,20 +57,21 @@ Downloading graphs is easy, simply go to our [graph download](http://openconnect
 - auto-ingest < 2 TB https://github.com/openconnectome/open-connectome/blob/master/ingest/autoingest/verifyjson.py
 - (s)ftp/(s)http/open-s3: arbitrary size https://github.com/openconnectome/open-connectome/tree/master/ingest/
 
-### Graphs
+#### Graphs
+
+-----
 
 ## Computer Vision
 
+#### Stitch and align into volume?
 
-### Stitch and align into volume?
-
-### Color correct a volume?
+#### Color correct a volume?
 
 - 2D
 - 3D
 
 
-### Manually annotate some data?
+#### Manually annotate some data?
 
 - CATMAID
 - knossos
@@ -79,37 +80,38 @@ Downloading graphs is easy, simply go to our [graph download](http://openconnect
 - ITK-SNAP
 ….
 
-### Share annotations (RAMONify)?
+#### Share annotations (RAMONify)?
 
 csv ingest script (with spec)
 
-### Proofread and error correct metadata?
+#### Proofread and error correct metadata?
 
 - ocpviz: edit metadata
 - parity
 
-### Train my machine vision algorithm on some data?
+#### Train my machine vision algorithm on some data?
 
 Training paradigms are different for each use-case.  We provide examples for a random forest training example and a paradigm using ilastik.  Training is typically conducted using standalone functions (v. a distributed LONI approach)
 
 - vesicle RF example
 - ilastik example
 
-### Assess the performance of algorithms?
+#### Assess the performance of algorithms?
 
 example (in matlab), of making ROC curves on held out data from a separate volume
 example in loni sweeping over a set of hyperparameters
 
-### Run my machine vision algorithm at scale?
+#### Run my machine vision algorithm at scale?
 
 - LONI stuff
 
+-----
 
 ## Analysis
 
-## m2g
+### m2g
 
-### How do I generate multiscale graphs from MRI data?
+#### How do I generate multiscale graphs from MRI data?
 
 We have developed a one-click multi-modal MRI processing pipeline called [m2g](http://m2g.io) which estimates structural graphs from diffusion MRI. The pipeline and its sourcecode can be found on [github](https://github.com/openconnectome/m2g), and full documentation exists on our [m2g webpage](http://m2g.io).  
 
@@ -121,15 +123,15 @@ We offer several ways to interact with m2g:
 - Our [graph service engine](http://mrbrain.cs.jhu.edu/graph-services/welcome/) hosts graph data of a variety of species and scales, as well as enables downsampling and type conversion of graphs.
 - Pipeline derivatives and graphs may also be found in our public s3 bucket. Contact [support](mailto:support@neurodata.io) to gain access.
 
-### How do I know that the graphs I made are reliable?
+#### How do I know that the graphs I made are reliable?
 
 We assess the quality of our graphs using a metric called reliability. Several test-retest (TRT) datasets have been chosen as benchmarks for performance, and a detailed explanation of how they were evaluated and their performance can be found on our [validation page](http://m2g.io/tutorials/validation.html).
 
-### Where can I find public data so that I may get started?
+#### Where can I find public data so that I may get started?
 
 We have processed and share several publicly available datasets on our s3 bucket. Contact [support@neurodata.io](mailto:support@neurodata.io) for information. 
 
-###How long does it take to run the pipeline?
+#### How long does it take to run the pipeline?
 
 In addition to recording reliability performance on our benchmark datasets (see above), we record [timing](http://m2g.io/tutorials/validation.html) as well. Currently, on our cluster, the pipeline takes approximately 6 hours/subject/core when running at saturation to produce small graphs.
 
@@ -140,12 +142,13 @@ In addition to recording reliability performance on our benchmark datasets (see 
 
 ### Estimate statistical properties?
 
+-----
+
 ## Other stuff
 
 ### Computing Resources
 
 ### Third Party Tools Integration Status
-
 
 #### ITK Snap
 
