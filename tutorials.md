@@ -129,7 +129,7 @@ We assess the quality of our graphs using a metric called reliability. Several t
 
 #### Where can I find public data so that I may get started?
 
-We have processed and share several publicly available datasets on our s3 bucket. Contact [support@neurodata.io](mailto:support@neurodata.io) for information. 
+We have processed and share several publicly available datasets on our s3 bucket. Look at our [available data](http://m2g.io/tutorials/available_data.html) page for information about reading and accessing this data.
 
 #### How long does it take to run the pipeline?
 
