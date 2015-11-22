@@ -139,6 +139,12 @@ example in loni sweeping over a set of hyperparameters
 
 ## Analysis
 
+### FlashGraph
+
+[FlashGraph](http://www.flashgraph.net/) is an extremely fast, parallelized and highly scalable graph processing engine. It can operate in *Semi-External Memory* mode, meaning the RAM requirements are vastly reduced; this allows users to process graphs with billions of vertices even on personal computers.
+
+FlashGraph is written in `C++` for speed, but has an `R` interface, [FlashGraphR](https://github.com/icoming/FlashGraph/wiki/FlashGraphR-Quick-Start-Guide). Documentaion on how to install and use FlashGraph can be found [here](https://github.com/icoming/FlashGraph/wiki).
+
 ### m2g
 
 #### How do I generate multiscale graphs from MRI data?
