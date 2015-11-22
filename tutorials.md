@@ -37,11 +37,32 @@ We have developed [Graph Explorer]128.220.176.8/Graph-Explorer/shiny/), a [shiny
 
 - The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options:
   - "Ready-to-go" downloads provide frequently requested cubes as a PNG stack
-  - If you know the token, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly.
+  - If you know the token, channel, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly.
 - [ndio](http://docs.neurodata.io/ndio/) is our Python library that lets you get and put data into NeuroData.  As long as you are transfering < 1 TB of data, this should work fine.  An example ipython notebook can be found [here](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20a%20Volume.ipynb).  An example call is:
-
 `bock11_subvol = oo.get_cutout('bock11', 'image', 11000, 11100, 11000, 11100, 4000, 4010, resolution=3)`
-- [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transferring data up to about 1 TB.
+- [CAJAL](http://docs.neurodata.io/CAJAL/) is our MATLAB toolbox for NeuroData. It has all the functionality of ndio, and more.  It can also be used for transferring data up to about 1 TB.  A code snippet to download data can be found below.
+
+~~~
+%% Create OCP Interface and set tokens
+oo = OCP();
+oo.setServerLocation('http://openconnecto.me/');
+oo.setImageToken('kasthuri11cc');
+oo.setDefaultResolution(1);
+
+xstart = 5500;
+ystart = 6000;
+zstart = 400;
+
+% Build query to cutout IMAGE data.
+q = OCPQuery(eOCPQueryType.imageDense);
+q.setCutoutArgs([xstart xstart+500],...
+                [ystart ystart+500],...
+                [zstart zstart+5], 1);
+
+% Download the data into a RAMONVolume.
+cutout = oo.query(q);
+~~~
+
 - [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html): you can also download data < 2 GB via using the RESTful calls directly.  Examples are provided at the above link.
 
 #### Graphs
