@@ -67,6 +67,7 @@ cutout = oo.query(q);
 ~~~
 
 - [Data API](http://docs.neurodata.io/open-connectome/api/data_api.html#get): you can also download data < 2 GB via using the RESTful calls directly.  An example call follows:
+
 ~~~
 http://openconnecto.me/ocp/ca/kasthuri11cc/image/hdf5/1/5472,6496/8712,9736/1000,1100/
 ~~~
