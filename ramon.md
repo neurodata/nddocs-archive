@@ -23,6 +23,8 @@ generation and neuroscience exploration. Annotation metadata is trivially extens
 
 This is not a formal ontology; rather it facilitates the development of software and tools by providing a flexible, yet reliable, standard for representing annotation data. For example, our synapse annotation type has fields such as weight, type, confidence, associated neural segments, and is extensible with arbitrary, searchable key-value pairs.
 
+![](images/ramon_overview.jpg)
+
 ## RAMON types
 
 There are currently 9 RAMON types:  RAMONBase, RAMONNeuron, RAMONVolume, RAMONGeneric,
