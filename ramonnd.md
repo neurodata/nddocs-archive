@@ -10,7 +10,7 @@ integration with the Open Connectome Project spatial database.
 
 When interacting with OCP, there are three parts to each request.
 
-- **Target:** This contains information about the project database, including the server, token, and channel.  [WHERE the request is executed]
+- **Target:** This contains information about the project database, including the server, token, channel, and resolution.  [WHERE the request is executed]
 - **Request:** This is a RESTful call, and is the action of the request (create, read, update, delete) [the ACTION being taken]
 - **Payload:** This is the data that is being manipulated by the request, such as a RAMON object.  [WHAT is being affected]
 
@@ -19,6 +19,8 @@ Update:  Used to update an existing RAMON object in the database
 Delete:  Used to delete an existing RAMON object in the database
 
 Reading from the database uses an expanded set of queries to promote flexibility and scientific discovery.  The available RESTful queries are shown below.
+
+Finally, various information can be requested about available projects and their properties, such as extent and other metadata.
 
 ## RAMON Queries
 

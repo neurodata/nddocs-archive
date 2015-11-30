@@ -154,7 +154,7 @@ An (organized) collection of NODEs, often used to represent a NEURON or arbor.
 
 A visual depiction of the inheritance between the different RAMON types can be seen in the picture below.
 
-![](../images/ramon_inheritance.png)
+![](images/ramon_inheritance.png)
 
 ## RAMON Enumerations
 
