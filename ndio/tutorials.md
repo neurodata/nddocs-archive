@@ -32,12 +32,24 @@ layout: default
 
     from the root ndio directory.
 
+    You may also need to install other requirements, depending on your use case. `h5py` is required, which may require that you install `libhdf5`. On Ubuntu, you can run this line:
+
+    ```
+    sudo apt-get install libhdf5-serial-dev
+    ```
+
+    You will also need numpy and scipy. `numpy` can be installed with pip, and scipy's installation directions are available [here](http://www.scipy.org/install.html).
+
+    `ndio`'s in-house installation script for Ubuntu machines is available in the [TravisCI build file](https://github.com/openconnectome/ndio/blob/master/.travis.yml) inside the repository on GitHub.
+
 - **Using ndio in a Python Script**
     Using ndio is as simple as using any other Python library. Simply add the line,
 
     ```
     import ndio
     ```
+
+    You can see what version of ndio you have imported with `ndio.version`.
 
     > <small>Note: There are parts of ndio that are not imported by this single line, because they are too large or require additional non-standard libraries. To learn more about these, go to the page on [Importing ndio](importing.html).</small>
 
