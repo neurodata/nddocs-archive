@@ -3,15 +3,19 @@ title: ndio
 layout: default
 ---
 
-# ndio
+**ndio** is a Python 2.7 module that enables big-data neuroscience, as well as direct interfacing with NeuroData workflows and servers. More complete documentation is available at [the ndio documentation website](http://docs.neurodata.io/ndio).
 
-ndio is a Python (2 and 3) module that enables direct interfacing with NeuroData
-workflows and servers. More complete documentation is available at {% include doclink.html repo="ndio" text="the ndio documentation website" %}.
+## Getting Started
+You can view a list of tutorials, and some information about getting started, over [here](http://docs.neurodata.io/nddocs/ndio/tutorials.html). System- and library-requirements are listed [here](http://docs.neurodata.io/nddocs/ndio/importing.html).
 
-You can view a list of tutorials [here](tutorials.html).
+## Contributing
+Please submit bug reports, or get in touch at our [GitHub repository](https://github.com/openconnectome/ndio). When contributing, please follow the [Contribution Guidelines](https://github.com/openconnectome/ndio/blob/master/CONTRIBUTING.md).
 
-You can learn more about what system requirements ndio has [here](importing.html).
+## Documentation
+ndio is fully documented [here](http://docs.neurodata.io/ndio/).
 
-Please submit bug reports, or get in touch at our [GitHub repository](https://github.com/openconnectome/ndio).
+<img src="http://docs.neurodata.io/nddocs/images/ndio.jpg" width="25%">
 
-{% include image.html url="/nddocs/images/ndio.jpg" width="50%" description="ndio: A Python wrapper for brain science" %}
+
+
+Submit bug reports [here](https://github.com/openconnectome/ndio/issues/new).
