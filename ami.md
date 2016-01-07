@@ -121,10 +121,10 @@ export JAVA_HOME=${base}/src/java/jdk1.7.0_71
 ~~~
 mkdir -p ${base}/src/loni
 cd ${base}/src/loni
-wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.0.1-unix.tar.bz2
+wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/...
 mkdir loni_6.0.1
 tar -xvf Pipeline-6.0.1-unix.tar.bz2 -C loni_6.0.1
-wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/Pipeline-6.1-unix.tar.bz2
+wget http://openconnecto.me/data/public/MR/m2g_v1_1_0/deps/...
 mkdir loni_6.1
 tar -xvf Pipeline-6.1-unix.tar.bz2 -C loni_6.1
 ~~~
