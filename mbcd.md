@@ -1,3 +1,8 @@
+---
+title: mbcd
+layout: default
+---
+
 # Mouse Brain Cell Detection Pipeline Deliverable
 
 **January 15, 2016**

@@ -1,3 +1,8 @@
+---
+title: nddl
+layout: default
+---
+
 # Caffe-based Cell Detection Experiment
 
 This module provides code and models demonstrating a procedure for identifying structures in neural image data.  In particular, we focus on dense (i.e. per-pixel) classification problems where the goal is to discriminate between cell body pixels and non-cell body pixels.  The general approach is to apply a sliding window detector based on convolutional neural networks (CNNs); this technique has been used to solve similar problems in the past, e.g. [membrane detection](http://papers.nips.cc/paper/4741-deep-neural-networks-segment-neuronal-membranes-in-electron-microscopy-images).

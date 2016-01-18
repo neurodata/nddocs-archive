@@ -1,3 +1,8 @@
+---
+title: mano
+layout: default
+---
+
 # mano:  A Lightweight Annotation Protocol for the NeuroData Project using ITK-Snap and CAJAL 
 
 mano provides a protocol for creating NeuroData compatible manual annotations, leveraging [ITK Snap](http://www.itksnap.org/).  This tool allows users to quickly create and upload annotations to the Open Connectome Project for science, machine learning, and other applications.  This protocol uses the NIFTI format as a method to exchange data; other tools such as MRIStudio may also be able to use this protocol (but have not been extensively tested).
