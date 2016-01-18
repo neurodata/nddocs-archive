@@ -113,9 +113,9 @@ This repo contains the code needed to train, evaluate, and deploy code for parsi
 
 It contains the legacy code for manno and macho.  The current version of ndod is divided into the three major components required to parse neuroscience data at scale:
 
-- [**mano**](mano.html):  manual annotation for neuroscience operations
-- [**brain**](brain.html): big-data research algorithms to inform neuroscience
-- [**dragon**](dragon.html): deployment resources for annotation generation and open neuroscience 
+- [**mana**](mano.html):  manual annotation 
+- [**maca**](maca.html): big-data research algorithms to inform neuroscience
+- [**maxa**](maxa.html): deployment resources for annotation generation and open neuroscience 
 
 Documentation for each component can be found using the above links.  Additionally, users may find the following pages helpful:
 
@@ -124,9 +124,6 @@ Documentation for each component can be found using the above links.  Additional
 - [tutorial for mouse brain cell detection using ilastik](mbcd.html)
 - [tutorial for mouse brain cell detection using deep learning](nddl.html)
 - tutorial using NeuroData and Ilastik for generalizable object detection
-
-
-
 
 Web-services
 ------------
