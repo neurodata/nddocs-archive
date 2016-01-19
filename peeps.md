@@ -41,9 +41,18 @@
 
 ## Staff
 
-| step 			| name 											| PI | github | google | projects/repos | 
+| role 			| name 											| PI | github | google | projects/repos | 
 | :---:  		| :--- 											| :---  | :---  | :---    | :---   | 
 | data science 	| [Youngser Park](http://www.cis.jhu.edu/~parky/)| cep | youngser		|  				| semipar-cci, synapse-clustering | 
 | IT 			| [Anthony Kolasny](http://www.cis.jhu.edu/~akolasny/) | mim
 | financials 	| [Erika Lance](http://cis.jhu.edu/staff/elance.php)
 | logistics 	| [Heather Lockard-Wheeler](http://cis.jhu.edu/staff/hlockard-wheeler.php)
+
+## Alumni
+
+| role 			| name 											| PI | github | google | projects/repos | 
+| :---:  		| :--- 											| :---  | :---  | :---    | :---   | 
+| co-founder 	| [R. Jacob Vogelstein](http://www.iarpa.gov/index.php/our-program-managers)|   
+|  			| [Eric Perlman](http://www.yikes.com/~eric/) |
+| | [Priya Manavalan]
+| | [Ayushi]
