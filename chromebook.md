@@ -1,4 +1,9 @@
-=== Configuring a Chromebook ===
+---
+title: peeps
+layout: default
+---
+
+# Configuring a Chromebook ===
 
  1. back up your data
    * you may need to upgrade your browser to acquire the backup software through Google
