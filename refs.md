@@ -1,7 +1,12 @@
+---
+title: Tutorials
+layout: default
+---
+
 **﻿R E F E R E N C E S**
 
 The number of publications on connectomes and connectomics is rapidly increasing.  We provide here a growing list of publications which align with our open initiative, that is, either the data and/or code is open.
-﻿
+
 
 **Open Connectome Project References**
 
