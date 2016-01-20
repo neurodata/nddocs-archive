@@ -1,3 +1,8 @@
+---
+title: peeps
+layout: default
+---
+
 # NeuroDataFamily
 
 ## Faculty
