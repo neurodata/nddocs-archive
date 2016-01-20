@@ -1,4 +1,10 @@
-**P R E S S**
+---
+title: Tutorials
+layout: default
+---
+
+
+# P R E S S
 
 [[http://www.neuralsystemsandcircuits.com/content/1/1/16 | Neural Systems and Circuits interview]]
 
