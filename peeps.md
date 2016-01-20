@@ -7,12 +7,11 @@ layout: default
 
 ## Faculty
 
-| step 			| name 											| PI | github | google | projects/repos | 
-| :---:  		| :--- 											| :---  | :---  | :---    | :---   | 
-| infra 		| [Randal Burns](http://hssl.cs.jhu.edu/~randal/)| randalburns | randalburns 	| randalburns 	| tilecache |  
-| preprocess 	| [Misha Kazhdan](http://www.cs.jhu.edu/~misha/)| mkazhdan  | mkazhdan 		| 				| dmg, gdf, ShapeSPH | 
+| step 			| name 											|  github | google | projects/repos | 
+| infra 		| [Randal Burns](http://hssl.cs.jhu.edu/~randal/)|  randalburns 	| randalburns 	| tilecache |  
+| preprocess 	| [Misha Kazhdan](http://www.cs.jhu.edu/~misha/)| mkazhdan 		| 				| dmg, gdf, ShapeSPH | 
 | preprocess 	| [Michael I. Miller](http://cis.jhu.edu/faculty/mmiller.php) | 
-| parse 		| [Guillermo Sapiro](http://sapirolab.pratt.duke.edu/) 								| guillermo |  |  |  |
+| parse 		| [Guillermo Sapiro](http://sapirolab.pratt.duke.edu/) 								|   |  |  |
 | parse 		| [Greg Hager](http://www.cs.jhu.edu/~hager/)
 | parse 		| [Konrad Kording](http://koerding.com/)
 | infer:v 		| [Cencheng Shen](http://sites.temple.edu/cshen/)| cencheng  								| cshen6 		| 				| rankdcorr |   
@@ -25,8 +24,7 @@ layout: default
 
 
 | step 			| name 											| PI | status | github | google | projects/repos | 
-| :---:  		| :--- 											| :---  	| :--- | :--- | :---    | :---   | 
-| infra 		| Alex Eusman 									| randalburns | ugrad | [Aeusman](https://github.com/Aeusman) 		| Alex.Eusman 	| ae-chef|  
+| infra 		| Alex Eusman 									| randalburns | ugrad | [Aeusman](https://github.com/Aeusman) 		| Alex.Eusman 	| ae-chef| 
 | infra 		| Kunal Lillaney 							| randalburns | phd | [kunallillaney](https://github.com/kunallillaney) | kunallillaney | ocp, blaze  |  
 | infra 		| [Jordan Matelsky](http://jordan.matelsky.com) | jovo | ugrad | j6k4m8 		| j6k4m8 		| ndio, ndlims, ndprojects | 
 | explore 		| Alex Baden 									| randalburns | grad | [alexbaden](https://github.com/alexbaden) 	| alex.baden 	| ix  | 
@@ -47,17 +45,15 @@ layout: default
 ## Staff
 
 | role 			| name 											| PI | github | google | projects/repos | 
-| :---:  		| :--- 											| :---  | :---  | :---    | :---   | 
 | data science 	| [Youngser Park](http://www.cis.jhu.edu/~parky/)| cep | youngser		|  				| semipar-cci, synapse-clustering | 
 | IT 			| [Anthony Kolasny](http://www.cis.jhu.edu/~akolasny/) | mim
-| financials 	| [Erika Lance](http://cis.jhu.edu/staff/elance.php)
-| logistics 	| [Heather Lockard-Wheeler](http://cis.jhu.edu/staff/hlockard-wheeler.php)
+| financials 	| [Erika Lance](http://cis.jhu.edu/staff/elance.php) | 
+| logistics 	| [Heather Lockard-Wheeler](http://cis.jhu.edu/staff/hlockard-wheeler.php) | 
 
 ## Alumni
 
-| role 			| name 											| PI | github | google | projects/repos | 
-| :---:  		| :--- 											| :---  | :---  | :---    | :---   | 
+| role 			| name 											|  github | google | projects/repos | 
 | co-founder 	| [R. Jacob Vogelstein](http://www.iarpa.gov/index.php/our-program-managers)|   
 |  			| [Eric Perlman](http://www.yikes.com/~eric/) |
-| | [Priya Manavalan]
-| | [Ayushi]
+| | Priya Manavalan
+| | Ayushi Sinha
