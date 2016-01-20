@@ -3,7 +3,7 @@ title: peeps
 layout: default
 ---
 
-# Configuring a Chromebook ===
+# Configuring a Chromebook#
 
  1. back up your data
    * you may need to upgrade your browser to acquire the backup software through Google
@@ -13,7 +13,7 @@ layout: default
    * Press Esc+Refresh keys and push power button
    * If first time in developer mode, press Ctrl+D and enter through the warning screens
    * Process will clear the local disk, and should take about 15-25 minutes to clear all data
- 3. Download the latest crouton version from this [[https://goo.gl/fd3zc |link]]
+ 3. Download the latest crouton version from this [link](https://goo.gl/fd3zc)
  4. Enter terminal from the Chromebook
    * press Alt+Ctrl+t
    * open shell with command:
