@@ -1,3 +1,8 @@
+---
+title: Videos
+layout: default
+---
+
 ** V I D E O S**
 
 [[https://www.youtube.com/watch?v=Yt3uXIbRLmM | Neuroinformatics Keynote]]
