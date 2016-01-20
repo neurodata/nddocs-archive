@@ -15,7 +15,7 @@ layout: default
 | parse 		| [Greg Hager](http://www.cs.jhu.edu/~hager/)
 | parse 		| [Konrad Kording](http://koerding.com/)
 | infer:v 		| [Cencheng Shen](http://sites.temple.edu/cshen/)| cencheng  								| cshen6 		| 				| rankdcorr |   
-| explore, infer			| [Joshua T. Vogelstein](http://jovo.me)  		| jovo | jovo 		| joshuav 	| LOL, SIMPLEX, ndintro, ocp-journal-paper, neurodata.io  | 
+| explore, infer			| [Joshua T. Vogelstein](http://jovo.me)  		| jovo 		| joshuav 	| LOL, SIMPLEX, ndintro, ocp-journal-paper, neurodata.io  | 
 | infer 		| [Carey E. Priebe](http://www.ams.jhu.edu/~priebe/)
 
 
