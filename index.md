@@ -54,8 +54,6 @@ downstream analysis.
 These tools exist to help users automatically annotate their neuroimaging data
 for downstream analysis.
 
--   [vesicle](http://docs.neurodata.io/vesicle/)
--   [macho](http://openconnectome.github.io/macho)
 -   [deep learning](https://github.com/iscoe/coca)
 
 #### time-varying images
@@ -103,7 +101,7 @@ for downstream analysis.
 -   [LONI](#)
 -   [distributed computing](./overview/distributed_computing.html)
 
-## Parse
+## Parse <a name="parse"></a>
 
 **ndod** is the NeuroData Object Detection parent repository
 
@@ -113,7 +111,7 @@ This repo contains the code needed to train, evaluate, and deploy code for parsi
 
 It contains the legacy code for manno and macho.  The current version of ndod is divided into the three major components required to parse neuroscience data at scale:
 
-- [**mana**](mano.html):  manual annotation 
+- [**mana**](mana.html):  manual annotation 
 - [**maca**](maca.html): big-data research algorithms to inform neuroscience
 - [**maxa**](maxa.html): deployment resources for annotation generation and open neuroscience 
 
@@ -124,6 +122,7 @@ Documentation for each component can be found using the above links.  Additional
 - [tutorial for mouse brain cell detection using ilastik](mbcd.html)
 - [tutorial for mouse brain cell detection using deep learning](nddl.html)
 - tutorial using NeuroData and Ilastik for generalizable object detection
+- [vesicle](http://docs.neurodata.io/vesicle/)
 
 Web-services
 ------------
