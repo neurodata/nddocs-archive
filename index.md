@@ -103,13 +103,13 @@ for downstream analysis.
 
 ## Parse <a name="parse"></a>
 
-**ndod** is the NeuroData Object Detection parent repository
+**ndparse** is the NeuroData Parse parent repository
 
-This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images.  The source code can be downloaded [here](https://github.com/openconnectome/ndod).
+This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images.  The source code can be downloaded [here](https://github.com/openconnectome/ndparse).
 
 ![ndod example](images/ndod/ndod_example.png)
 
-It contains the legacy code for manno and macho.  The current version of ndod is divided into the three major components required to parse neuroscience data at scale:
+It contains the legacy code for manno and macho.  The current version of ndparse is divided into the three major components required to parse neuroscience data at scale:
 
 - [**mana**](mana.html):  manual annotation 
 - [**maca**](maca.html): big-data research algorithms to inform neuroscience
