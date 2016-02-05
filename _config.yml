@@ -1,7 +1,7 @@
 name: "NeuroData Docs"
 markdown: kramdown
 highlighter: rouge
-permalink: /:title.html/
+permalink: /:title/
 
 baseurl: /nddocs
 url: http://docs.neurodata.io
