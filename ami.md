@@ -1,6 +1,7 @@
 ---
 layout: default
 title: NeuroData AMI
+permalink: ami.html
 ---
 
 # Creating the NeuroData Analytics AMI
