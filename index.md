@@ -44,7 +44,7 @@ manual or machine annotation.
 These tools exist to help users manually annotate their neuroimaging data for
 downstream analysis.
 
--   [manno](https://openconnectome.github.io/manno)
+-   [manno](https://neurodata.github.io/manno)
 -   [vast](https://software.rc.fas.harvard.edu/lichtman/vast/) (3rd party)
 -   [catmaid](http://fly.mpi-cbg.de/~saalfeld/catmaid/) (3rd party)
 -   [parity](http://www.openconnecto.me/stem) (not live)
@@ -68,8 +68,8 @@ for downstream analysis.
 
 #### infrastructure
 
--   [open-connectome](http://openconnectome.github.io/open-connectome)
--   [tilecache](http://openconnectome.github.io/ocptilecache)
+-   [open-connectome](http://neurodata.github.io/open-connectome)
+-   [tilecache](http://neurodata.github.io/ndtilecache)
 
 #### graph inference
 
@@ -78,12 +78,12 @@ for downstream analysis.
 
 #### access
 
--   [CAJAL](http://openconnectome.github.io/CAJAL)
+-   [CAJAL](http://neurodata.github.io/CAJAL)
 -   [ndio](ndio/)
 
 ### neurographs
 
--   [FlashR](https://github.com/openconnectome/FlashR)
+-   [FlashR](https://github.com/neurodata/FlashR)
 -   [FlashGraph](http://www.flashgraph.net/)
 -   [Fast Approximate QAP](https://github.com/jovo/FastApproximateQAP)
 -   [Signal Subgraph Classifier](https://github.com/jovo/signal-subgraph-classifier)
@@ -105,7 +105,7 @@ for downstream analysis.
 
 **ndparse** is the NeuroData Parse parent repository
 
-This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images.  The source code can be downloaded [here](https://github.com/openconnectome/ndparse).
+This repo contains the code needed to train, evaluate, and deploy code for parsing volumes of NeuroData images.  The source code can be downloaded [here](https://github.com/neurodata/ndparse).
 
 ![ndod example](images/ndod/ndod_example.png)
 
@@ -129,8 +129,8 @@ Web-services
 
 ### neuroimages
 
--   [open-connectome](http://openconnectome.github.io/open-connectome)
--   [tilecache](http://openconnectome.github.io/ocptilecache)
+-   [open-connectome](http://neurodata.github.io/open-connectome)
+-   [tilecache](http://neurodata.github.io/ndtilecache)
 -   [AMI](http://aws.amazon.com) (AMI name: neurodata)
 -   [2D Color Correction](https://github.com/openconnectome/dmg)
 
