@@ -1,6 +1,6 @@
 name: "NeuroData Docs"
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 baseurl: /nddocs
