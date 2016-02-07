@@ -4,14 +4,7 @@ layout: default
 ---
 
 1. computer science
-	1. petascale data management
-		1. ndimagedb
-		1. ndgrutedb
-		1. ndlims
-		1. ndtilecache
-		1. CAJAL
-		1. ndio
-		1. hardware
+	1. *petascale data management* including image and graph databases, content distribution networks, MATLAB and Python API, LIM system, and hardware configuration.
 	1. interactive visualizations
 		1. images
 		1. graphs
