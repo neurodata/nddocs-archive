@@ -35,7 +35,7 @@ layout: default
 		- Random Forest
 		- Deep Networks
 
-## scalable machine learning library
+## scalable machine learning
 - FlashGraph
 - FlashMatrix
 - FlashR
