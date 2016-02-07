@@ -4,14 +4,23 @@ layout: default
 ---
 
 # computer science
+
 ## petascale data management
+
 ### image databases
+
 ### graph databases
+
 ### content distribution networks
+
 ### MATLAB API
+
 ### Python API
+
 ### Laboratory Information Management System
+
 ### Hardware configuration
+
 ## interactive visualizations
 ### images
 ### graphs
