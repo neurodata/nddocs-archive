@@ -23,9 +23,8 @@ layout: default
 - 2D stitching color correction 
 - 3D histogram normalization
 
-## distribution machine vision 
+## distributed machine vision 
 - graph inference
-	- calcium imaging
 	- serial electron microscopy
 	- diffusion MRI
 	- functional MRI
@@ -50,6 +49,7 @@ layout: default
 ## time-series
 - sequential monte carlo
 - non-negative deconvolution
+- graph inference
 - dictionary learning
 - variational inference
 - high-dimensional system identification
