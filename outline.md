@@ -1,3 +1,8 @@
+---
+title: outline
+layout: default
+---
+
 1. computer science
 	1. petascale data management
 		1. ndimagedb
