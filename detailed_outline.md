@@ -1,32 +1,14 @@
+---
+title: outline
+layout: default
+---
+
 1. computer science
-	1. petascale data management
-		1. ndimagedb
-		1. ndgrutedb
-		1. ndlims
-		1. ndtilecache
-		1. CAJAL
-		1. ndio
-		1. hardware
-	1. interactive visualizations
-		1. images
-		1. graphs
-		1. vectors
-	1. streaming image processing
-		1. 2D stitching color correction
-		1. 3D histogram normalization
-	1. distribution machine vision
-		1. graph inference from
-			1. calcium imaging
-			1. electron microscopy
-			1. functional mri
-			1. diffusion mri
-		1. object detection
-			1. MATLAB
-			1. Python
-	1. scalable machine learning library
-		1. FlashGraph
-		1. FlashMatrix
-		1. FlashR
+	1. **petascale data management** including image and graph databases, content distribution networks, MATLAB and Python API, LIM system, and hardware configuration.
+	1. **interactive visualizations** including images, graphs, and vectors
+	1. **streaming image processing** including 2D stitching color correction and 3D histogram normalization
+	1. **distribution machine vision** including graph inference and object detection pipelines
+	1. **scalable machine learning library** including FlashGraph, FlashMatrix, and FlashR
 1. data curation
 	1. images
 	1. annotations
