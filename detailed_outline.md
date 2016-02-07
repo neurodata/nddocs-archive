@@ -3,62 +3,79 @@ title: outline
 layout: default
 ---
 
-1. computer science
-	1. **petascale data management** including image and graph databases, content distribution networks, MATLAB and Python API, LIM system, and hardware configuration.
-	1. **interactive visualizations** including images, graphs, and vectors
-	1. **streaming image processing** including 2D stitching color correction and 3D histogram normalization
-	1. **distribution machine vision** including graph inference and object detection pipelines
-	1. **scalable machine learning library** including FlashGraph, FlashMatrix, and FlashR
-1. data curation
-	1. images
-	1. annotations
-	1. graphs
+# computer science
+## petascale data management
+### image databases
+### graph databases
+### content distribution networks
+### MATLAB API
+### Python API
+### Laboratory Information Management System
+### Hardware configuration
+## interactive visualizations
+### images
+### graphs
+### vectors
+## streaming image processing
+### 2D stitching color correction 
+### 3D histogram normalization
+## distribution machine vision 
+### graph inference
+### object detection pipelines
+## scalable machine learning library
+### FlashGraph
+### FlashMatrix
+### FlashR
+# big data sharing
+### images
+### annotations
+### graphs
 
-1. statistical science
-	1. time-series
-		1. sequential monte carlo
-		1. non-negative deconvolution
-		1. dictionary learning
-		1. variational inference
-		1. high-dimensional system identification
-	1. graphs
-		1. vertex clustering
-			1. unsupervised
-			1. semi-supervised
-			1. supervised
-		1. testing
-			1. non-parametric two-sample tests
-			1. semi-parametric two-sample tests
-		1. matching
-			1. graph matching
-			1. seeded graph matching
-			1. large seeded graph matching
-		1. similarity/dissimilarity
-			1. Deltacon
-		1. graph classification
-			1. nonparametric
-			1. shuffled
-			1. signal subgraph
-		1. models
-			1. random dot product model
-			1. bayesian random dot product model
-	1. shapes
-		1. LDDMM
-		1. shape descriptors
-	1. vectors
-		1. high-dimensional linear classification
-		1. non-parametric classification
-		1. density estimation
+# statistical science
+### time-series
+## sequential monte carlo
+## non-negative deconvolution
+## dictionary learning
+## variational inference
+## high-dimensional system identification
+## graphs
+### vertex clustering
+## unsupervised
+## semi-supervised
+## supervised
+### testing
+## non-parametric two-sample tests
+## semi-parametric two-sample tests
+### matching
+## graph matching
+## seeded graph matching
+## large seeded graph matching
+### similarity/dissimilarity
+## Deltacon
+### graph classification
+## nonparametric
+## shuffled
+## signal subgraph
+### models
+## random dot product model
+## bayesian random dot product model
+## shapes
+### LDDMM
+### shape descriptors
+## vectors
+### high-dimensional linear classification
+### non-parametric classification
+### density estimation
 
-1. neuroscience
-	1. anatomy
-		1. kasthuri15
-		2. kharris15
-		1. weiler14
-	1. physiology
-		1. hofer11
-	1. systems
-		1. ms lesion detection
-		1. behavioromics
-	1. connectome coding
-		1. sex coding
+# neuroscience
+## anatomy
+### kasthuri15
+### kharris15
+### weiler14
+## physiology
+### hofer11
+## systems
+### ms lesion detection
+### behavioromics
+## connectome coding
+### sex coding
