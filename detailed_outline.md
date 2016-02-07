@@ -1,12 +1,13 @@
 ---
 title: outline
-layout: default- --
+layout: default
+---
 
 # computer science
 
 ## petascale data management
-- image databases
-- graph databases
+- [image databases](https://github.com/neurodata/open-connectome)
+- [graph databases](https://github.com/neurodata/ndgrutedb)
 - utilities
 	- content distribution networks
 	- MATLAB & Python APIs
@@ -24,7 +25,15 @@ layout: default- --
 
 ## distribution machine vision 
 - graph inference
+	- calcium imaging
+	- serial electron microscopy
+	- diffusion MRI
+	- functional MRI
 - object detection pipelines
+	- MATLAB
+	- Python
+		- Random Forest
+		- Deep Networks
 
 ## scalable machine learning library
 - FlashGraph
