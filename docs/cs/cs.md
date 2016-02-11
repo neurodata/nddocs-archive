@@ -26,14 +26,16 @@ layout: default
 	- 2D stitching color correction 
 	- 3D histogram normalization
 - graph inference
-	- serial electron microscopy
-	- diffusion MRI
+	- [serial electron microscopy](http://i2g.io)
+	- [diffusion MRI](http://m2g.io)
 	- functional MRI
 - object detection pipelines
 	- MATLAB
 	- Python
 		- Random Forest
 		- Deep Networks
+- examples
+
 
 ## scalable machine learning
 - FlashGraph
