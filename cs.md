@@ -25,10 +25,11 @@ layout: default
 - streaming image processing
 	- 2D stitching color correction 
 	- 3D histogram normalization
+	- volume registration
 - graph inference
 	- [serial electron microscopy](http://i2g.io)
 	- [diffusion MRI](http://m2g.io)
-	- functional MRI
+	- [functional MRI](http://fcp-indi.github.io/)
 - object detection pipelines
 	- MATLAB
 	- Python
