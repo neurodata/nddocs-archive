@@ -1,15 +1,10 @@
 ---
-title: outline
+title: ndmg
 layout: default
 ---
 
 ![](./nutmeg.png)
 # ndmg
-
-[![](https://img.shields.io/pypi/v/ndmg.svg)](https://pypi.python.org/pypi/ndmg)
-![](https://travis-ci.org/neurodata/ndmg.svg?branch=master)
-![](https://img.shields.io/badge/pep8-0E-green.svg?style=flat)
-[![Neurodata.io](https://img.shields.io/badge/Visit-neurodata.io-ff69b4.svg)](http://neurodata.io/)
 
 NeuroData's MR Graphs package, **ndmg** (pronounced "***nutmeg***"), is the successor of the MRCAP, MIGRAINE, and m2g pipelines. **ndmg** combines dMRI and sMRI data from a single subject to estimate a high-level connectome reliably and scalably.
 
@@ -32,8 +27,10 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 
 ### Documentation
 
+- [function and class definitions](http://docs.neurodata.io/ndmg/)
+- [example pipeline](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb)
+
 
 ### Help
-Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include 'ndmg'.
-
-Find a problem with our code? Submit a [bug report](https://github.com/neurodata/ndmg/issues/new)
+Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include 'ndmg'. <br/>
+Find a problem with our code? Submit a [bug report](https://github.com/neurodata/ndmg/issues/new).
