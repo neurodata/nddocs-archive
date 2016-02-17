@@ -3,6 +3,7 @@ title: outline
 layout: default
 ---
 
+![](./nutmeg.png)
 # ndmg
 
 [![](https://img.shields.io/pypi/v/ndmg.svg)](https://pypi.python.org/pypi/ndmg)
@@ -20,11 +21,8 @@ Using **ndmg**, we are processing brain scans on an ongoing basis, and the resul
 Here are a few guides so you can start playing with **ndmg**:
 
 - [understanding ndmg structure](#)
-
 - [installing ndmg](#)
-
 - [preparing your data](#)
-
 - [generate your brain graphs](#)
 
 
