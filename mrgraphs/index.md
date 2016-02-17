@@ -16,10 +16,10 @@ Using **ndmg**, we are processing brain scans on an ongoing basis, and the resul
 
 Here are a few guides so you can start playing with **ndmg**:
 
-- [understanding ndmg structure](./architecture.md)
-- [installing ndmg](./install.md)
-- [preparing your data](./data.md)
-- [generate your brain graphs](./use-ndmg.md)
+- [understanding ndmg structure](./architecture.html)
+- [installing ndmg](./install.html)
+- [preparing your data](./data.html)
+- [generate your brain graphs](./use_ndmg.html)
 
 
 ### Code & Contributing
