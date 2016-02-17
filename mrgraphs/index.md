@@ -4,6 +4,7 @@ layout: default
 ---
 
 ![](./nutmeg.png)
+
 # ndmg
 
 NeuroData's MR Graphs package, **ndmg** (pronounced "***nutmeg***"), is the successor of the MRCAP, MIGRAINE, and m2g pipelines. **ndmg** combines dMRI and sMRI data from a single subject to estimate a high-level connectome reliably and scalably.
