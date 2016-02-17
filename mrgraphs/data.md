@@ -1,3 +1,8 @@
+---
+title: ndmg data requirements
+layout: default
+---
+
 ## Readying your data
 Once **ndmg** is installed, the next thing you need to do is track down your data. If you don't have data readily available, you can [borrow some of ours](http://openconnecto.me/mrdata/share/demo_data.zip). The data you'll need are the following:
 

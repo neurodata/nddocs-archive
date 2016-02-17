@@ -1,3 +1,8 @@
+---
+title: ndmg install
+layout: default
+---
+
 ## Installing ndmg
 Installing **ndmg** is very simple! We have a few dependencies which must be installed, but once that's taken care of you are ready to dive in!
 

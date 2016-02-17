@@ -1,3 +1,8 @@
+---
+title: ndmg usage
+layout: default
+---
+
 ### Using ndmg
 Now that your data is all set and ready to use, let's put **ndmg** to work! Let's give our end-to-end pipeline a shot. We're going to assume that you are using our demo data and you've stored it in your home directory. Open a new terminal and type the following:
 
