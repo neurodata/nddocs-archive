@@ -5,40 +5,45 @@ layout: default
 
 # computer science
 
-## petascale data management
-- [image databases](https://github.com/neurodata/open-connectome)
-	- spatial database
-	- object metadata database
-- [graph databases](https://github.com/neurodata/ndgrutedb)
+## petascale data storage and management
+- Databases
+	- [spatial database](http://docs.neurodata.io/ndstore/)
+	- [object metadata database](http://docs.neurodata.io/nddocs/ndparse/ramon.html)
+	- [graph databases](https://github.com/neurodata/ndgrutedb)
 - utilities
-	- content distribution networks
-	- Python & MATLAB APIs
-	- Laboratory Information Management System
-- hardware configuration
+	- [content distribution networks](http://docs.neurodata.io/ndtilecache/api/tilecache_api.html)
+	- [Python API](http://docs.neurodata.io/nddocs/ndio/) 
+	- [MATLAB API](http://docs.neurodata.io/CAJAL/) 
+	- [Laboratory Information Management System](https://github.com/neurodata/ndlims)
 
 ## interactive visualizations
-- images
-- graphs
-- vectors
+
+- [images](http://ix.neurodata.io)
+- [graphs](http://gx.neurodata.io)
+- [matrices](http://vx.neurodata.io)
+
 
 ## scalable machine vision 
 - streaming image processing
-	- 2D stitching color correction 
-	- 3D histogram normalization
-	- volume registration
+	- [2D Stitching Artifact Removal](https://github.com/mkazhdan/DMG) 
+	- [3D Histogram Normalization](http://www.cs.jhu.edu/~misha/Code/GradientDomainFusion/Version1.0/)
+	- [Volume Registration](https://github.com/neurodata/ndreg)
 - graph inference
 	- [serial electron microscopy](http://i2g.io)
 	- [diffusion MRI](http://m2g.io)
 	- [functional MRI](http://fcp-indi.github.io/)
 - object detection pipelines
-	- MATLAB
-	- Python
-		- Random Forest
-		- Deep Networks
-- examples
+	- [Label](http://docs.neurodata.io/nddocs/ndparse/mana.html)
+	- [Learn](http://docs.neurodata.io/nddocs/ndparse/maca.html)
+	- [Deploy](http://docs.neurodata.io/nddocs/ndparse/maxa.html)
+		- [MATLAB Synapse Detection from EM data](http://docs.neurodata.io/vesicle/)
+		- [Random Forest](http://docs.neurodata.io/nddocs/ndparse/mbcd.html)
+		- [Deep Networks](http://docs.neurodata.io/nddocs/ndparse/nddl.html)
 
 
-## scalable machine learning
-- FlashGraph
-- FlashMatrix
-- FlashR
+
+## scalable analytics
+- [Images](http://docs.neurodata.io/ndstore/api/stats_api.html)
+- [Shapes](https://github.com/mkazhdan/ShapeSPH)
+- [Graphs](http://flashx.io/)
+- [Matrices](http://flashx.io/)
