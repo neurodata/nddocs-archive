@@ -1,0 +1,2 @@
+
+![](ndmg_architecture.png)

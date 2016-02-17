@@ -16,7 +16,7 @@ Using **ndmg**, we are processing brain scans on an ongoing basis, and the resul
 
 Here are a few guides so you can start playing with **ndmg**:
 
-- [understanding ndmg structure](#)
+- [understanding ndmg structure](./architecture.md)
 - [installing ndmg](#)
 - [preparing your data](#)
 - [generate your brain graphs](#)
