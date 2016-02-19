@@ -30,7 +30,7 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 
 - [function and class definitions](http://docs.neurodata.io/ndmg/)
 - [example pipeline](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb)
-
+- [validation](./validation.html)
 
 ### Help
 Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include 'ndmg'. <br/>
