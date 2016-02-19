@@ -33,5 +33,5 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 - [validation](./validation.html)
 
 ### Help
-Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include 'ndmg'. <br/>
+Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include '**ndmg**'. <br/>
 Find a problem with our code? Submit a [bug report](https://github.com/neurodata/ndmg/issues/new).
