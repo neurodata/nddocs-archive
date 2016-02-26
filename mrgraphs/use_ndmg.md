@@ -20,5 +20,5 @@ Let's chat about the things that might look a little funny here. `mask` is a bin
 The **ndmg** end-to-end pipeline takes about 30 minutes to run on my computer (a pretty basic Macbook), and feeds you output statements along the way.
 
 ### Diving deeper
-Sure, the above gave you a taste of what the **ndmg** package can do, but what if you want a bit more of an intimiate knowledge of the inner workings of that pipeline we just showed? Well, you're in luck! Check out this [Jupyter Notebook](./examples/inside_run_ndmg.ipynb) that walks you through what the pipeline you just ran is doing.
+Sure, the above gave you a taste of what the **ndmg** package can do, but what if you want a bit more of an intimiate knowledge of the inner workings of that pipeline we just showed? Well, you're in luck! Check out this [Jupyter Notebook](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb) that walks you through what the pipeline you just ran is doing.
 
