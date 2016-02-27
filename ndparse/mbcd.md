@@ -25,9 +25,9 @@ Users can then choose an image processing or machine vision tool (deep learning 
 
 ![](./images/ndod/ndod_standalone_pipeline.png)
 
-## ndparse
+## ndod
 
-The standalone code to process these brains has been integrated into ndparse, the NeuroData Parse Package, and is available for use.  Relevant links are provided throughout this document.  
+The standalone code to process these brains has been integrated into ndparse, the NeuroData Object Detection Package, and is available for use.  Relevant links are provided throughout this document.  
 
 Tutorials for general ndod usage are provided [here](http://docs.neurodata.io/nddocs/index.html#parse).  There are three modules in our strategy of parsing neurodata:  manual annotation (mana), machine annotation (maca), and max annotation, which contains our reference deployment code (maxa).
 
@@ -47,7 +47,7 @@ The data is first converted to a common format.  Reference code is avaiable to t
 
 Prior to running this function, an optional file name cleanup function (`rename_jp2`) may be run if desired.  Depending on your local environment, small changes may be required to modify paths.
 
-The functions and examples referenced in this section can be found in the maca repo in [io](https://github.com/openconnectome/ndparse/tree/master/maca/packages/mbcd).  
+The functions and examples referenced in this section can be found in the maca repo in [io](https://github.com/openconnectome/ndod/tree/master/maca/packages/mbcd).  
 
 ## Manual Annotation
 
@@ -67,7 +67,7 @@ Unfortunately, it is memory-intensive (and prohibitive for smaller workstations)
 
 In brief, users have two choices: either a command line bash call or a python option.  We recommend processing on a single slice of brain and writing a wrapper to loop through directories of interest in your local computational environment.  More details are explained at the above link.
 
-Ilastik will work with grayscale or RGB images.  A script is provided [here](https://github.com/openconnectome/maca/packages/mbcd/) to take ilastik hdf5 probability output and convert to tif as a convenience function.  The example classifier assumes RGB data and a downsampling factor of 0.25 (in XY).
+Ilastik will work with grayscale or RGB images.  A script is provided [here](https://github.com/neurodata/ndod/tree/master/maca/packages/mbcd/) to take ilastik hdf5 probability output and convert to tif as a convenience function.  The example classifier assumes RGB data and a downsampling factor of 0.25 (in XY).
 
 #### Bash
 
@@ -126,7 +126,7 @@ An example of thresholded detections from running the provided ilastik classifie
 
 ![](./images/ndod/PMD2040_slice140_overlay_zoom.png)
 
-To convert the ilastik HDF5 output to TIF, please use the following convenience function:  `ilastik_to_tif_mbcd.m,` located [here](https://github.com/openconnectome/maca/packages/mbcd/).
+To convert the ilastik HDF5 output to TIF, please use the following convenience function:  `ilastik_to_tif_mbcd.m,` located [here](https://github.com/neurodata/ndod/tree/master/maca/packages/mbcd/).
  
 ### Deep Learning
 
@@ -141,7 +141,7 @@ This function may actually be used in two ways:
 - as an object detection post-processing step
 - as an image processing data-reduction step to filter putative cell cluster locations based on intensity.  This offers the possibility of a dramatic reduction in processing time, as far fewer pixels will need to be evaluated.  Because the deep learning methods are especially computationally expensive, users might wish to use this step to remove background and other pixels that are very unlikely to contain target from a classifier testing paradigm.
 
-The prototype code for post-processing can be found [here](https://github.com/openconnectome/maca/packages/mbcd/).  `ilastik_to_tif_mbcd.m` saves ilastik outputs as a uint16 tif file, and `cluster_postprocess.m` labels each cluster and extracts basic stats.
+The prototype code for post-processing can be found [here](https://github.com/neurodata/ndod/tree/master/maca/packages/mbcd/).  `ilastik_to_tif_mbcd.m` saves ilastik outputs as a uint16 tif file, and `cluster_postprocess.m` labels each cluster and extracts basic stats.
 
 ## Outlook and Engineering Recommendations
 
