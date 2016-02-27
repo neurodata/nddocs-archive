@@ -16,7 +16,7 @@ Using **ndmg**, we are processing brain scans on an ongoing basis, and the resul
 
 Here are a few guides so you can start playing with **ndmg**:
 
-- [understanding ndmg structure](./architecture.html)
+- [ndmg architecture](./architecture.html)
 - [installing ndmg](./install.html)
 - [preparing your data](./data.html)
 - [generate your brain graphs](./use_ndmg.html)
@@ -31,6 +31,9 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 - [function and class definitions](http://docs.neurodata.io/ndmg/)
 - [example pipeline](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb)
 - [validation](./validation.html)
+- [atlases](./atlases.html)
+- [batch effects](https://github.com/neurodata/nddocs/blob/gh-pages/mrgraphs/dataset_variance.ipynb)
+
 
 ### Help
 Feeling a bit lost? Reach out by [email](mailto:support@neurodata.io) and in the subject line include '**ndmg**'. <br/>
