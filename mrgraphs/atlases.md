@@ -7,7 +7,7 @@ layout: default
 When deriving MR connectomes, we parcellate the brain into groups of nodes as defined by anatomical atlases. These atlases are defined either physiologically or structurally by neuroanatomists (Deikan, Talairach, AAL, JHU, HarvardOxford), are generated using a segmentation algorithm looking for certain features or groupings (CPAC200, slab1068, slab907), or are simply images of the brain which have been cubed-up (Incremented, DS). Tabulated below are the atlases we use and the number of regions (i.e. graph nodes) there are in them, respectively.
 
 |Atlas Name     |  ROIs  |
-|:--------------|:-------|
+|--------------:|:-------|
 |desikan        |70      |
 |Incremented    |1827243 |
 |Talairach      |1105    |
