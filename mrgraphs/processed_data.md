@@ -18,7 +18,7 @@ The number of scans indicated for each dataset is the reported quantity, though 
 |SWU4    | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/SWU4/), [fMRI](http://openconnecto.me/mrdata/share/fmri/cpacv0392/SWU4/) | 570 | Yes |
 |BNU1    | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/BNU1/), [fMRI](http://openconnecto.me/mrdata/share/fmri/cpacv0392/BNU1/graphs/) | 114 | Yes |
 |BNU3    | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/BNU3/), [fMRI](http://openconnecto.me/mrdata/share/fmri/cpacv0392/BNU3/graphs/) | 48 | No |
-|HNU1    | [DTI}(http://openconnecto.me/mrdata/share/dti/ndmg_v0011/HNU1/), [fMRI](http://openconnecto.me/mrdata/share/fmri/cpacv0392/HNU1/graphs/) | 300 | Yes |
+|HNU1    | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/HNU1/), [fMRI](http://openconnecto.me/mrdata/share/fmri/cpacv0392/HNU1/graphs/) | 300 | Yes |
 |HCP500  | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/HCP500/) | 3156 | Yes |
 |NKIENH  | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/NKIENH/) | 198 | No |
 |MRN114  | [DTI](http://openconnecto.me/mrdata/share/dti/ndmg_v0011/MRN114/) | 114 | No |
