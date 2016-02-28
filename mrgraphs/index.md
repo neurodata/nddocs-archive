@@ -31,6 +31,7 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 - [function and class definitions](http://docs.neurodata.io/ndmg/)
 - [example pipeline](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb)
 - [validation](./validation.html)
+- [processed data](./processed_data.html)
 - [atlases](./atlases.html)
 - [batch effects](https://github.com/neurodata/nddocs/blob/gh-pages/mrgraphs/dataset_variance.ipynb)
 
