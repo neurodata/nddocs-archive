@@ -46,6 +46,7 @@ layout: default
 
 | role 			| name 											| PI | github | google | projects/repos | 
 | data science 	| [Youngser Park](http://www.cis.jhu.edu/~parky/)| cep | youngser		|  				| semipar-cci, synapse-clustering | 
+| data science 	| Jesse Leigh Patsolic | jovo/cep | MrAE		|  				| synaptome-stats | 
 | IT 			| [Anthony Kolasny](http://www.cis.jhu.edu/~akolasny/) | mim
 | financials 	| [Erika Lance](http://cis.jhu.edu/staff/elance.php) | 
 | logistics 	| [Heather Lockard-Wheeler](http://cis.jhu.edu/staff/hlockard-wheeler.php) | 
