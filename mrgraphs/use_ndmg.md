@@ -4,9 +4,9 @@ layout: default
 ---
 
 ### Using ndmg
-Now that your data is all set and ready to use, let's put **ndmg** to work! Let's give our end-to-end pipeline a shot. We're going to assume that you are using our demo data and you've stored it in your home directory. Open a new terminal and type the following:
+Now that your data is all set and ready to use, let's put **ndmg** to work! Let's give our end-to-end pipeline a shot. We're going to assume that you are using our demo data and you've stored it and our pipeline in your home directory. Open a new terminal and type the following:
 
-    python ndmg_pipeline.py ~/data/KKI2009_113_1_DTI.nii ~/data/KKI2009_113_1_DTI.bval ~/data/KKI2009_113_1_DTI.bvec ~/data/KKI2009_113_1_MPRAGE.nii ~/atlas/MNI152_T1_1mm.nii.gz ~/atlas/MNI152_T1_1mm_brain_mask.nii.gz ~/data/outputs ~/atlas/desikan.nii.gz
+    python ~/ndmg/ndmg/scripts/ndmg_pipeline.py ~/data/KKI2009_113_1_DTI.nii ~/data/KKI2009_113_1_DTI.bval ~/data/KKI2009_113_1_DTI.bvec ~/data/KKI2009_113_1_MPRAGE.nii ~/atlas/MNI152_T1_1mm.nii.gz ~/atlas/MNI152_T1_1mm_brain_mask.nii.gz ~/data/outputs ~/atlas/desikan.nii.gz
 
 
 To break that down a bit, let's look at the arguments specifically:
@@ -15,6 +15,10 @@ To break that down a bit, let's look at the arguments specifically:
 
 
 Let's chat about the things that might look a little funny here. `mask` is a binary mask (i.e. black and white) image of the brain in the atlas you're using. `outdir` is the base directory where you want your output files to be stored - don't worry, **ndmg** will handle the naming and organization within. Lastly, notice that `[labels [labels ...]]` block at the end? That means that **ndmg** allows you to make connectomes on multiple scales and parcellation schemes at once, you just need to pass in all of the sets of labels you'd like to use!
+
+There is one optional parameter not listed above which specifies the format of the graphs. Previously, we've made graphs in the graphml format. However, as these can grow to be quite large files as you use larger parcellations, we by default use the gpickle format now which can be read using networkx. If you wish to change this format, you may add the following to the end of your command:
+
+    --fmt graphml
 
 ### Waiting for your results
 The **ndmg** end-to-end pipeline takes about 30 minutes to run on my computer (a pretty basic Macbook), and feeds you output statements along the way.
