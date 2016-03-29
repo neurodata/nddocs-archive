@@ -33,7 +33,7 @@ All of our code is open source and hosted at [github](https://github.com/neuroda
 - [validation](./validation.html)
 - [processed data](./processed_data.html)
 - [atlases](./atlases.html)
-- [batch effects](https://github.com/neurodata/nddocs/blob/gh-pages/mrgraphs/dataset_variance.ipynb)
+- [batch effects in MRI](https://github.com/neurodata/nddocs/blob/gh-pages/mrgraphs/dataset_variance/dataset_variance.ipynb)
 
 
 ### Help
