@@ -28,21 +28,17 @@ If you're still having no luck, try checking out the `travis.yml` file in the ma
 ## Getting Started
 
 You can view a list of not-necessarily-too-up-to-date tutorials, and some information about getting started,
-over [here](<http://docs.neurodata.io/nddocs/ndio/tutorials.html>). System- and
-library-requirements are listed
-[here](<http://docs.neurodata.io/nddocs/ndio/importing.html>).
+over [here](<http://docs.neurodata.io/nddocs/ndio/tutorials.html>).
 
-Contributing
-------------
+## Contributing
 
 Please submit bug reports, or get in touch at our [GitHub
-repository](<https://github.com/openconnectome/ndio>). When contributing, please
+repository](<https://github.com/neurodata/ndio>). When contributing, please
 follow the [Contribution
-Guidelines](<https://github.com/openconnectome/ndio/blob/master/CONTRIBUTING.md>).
+Guidelines](<https://github.com/neurodata/ndio/blob/master/CONTRIBUTING.md>).
 
-Documentation
--------------
+## Documentation
 
 ndio is fully documented [here](<http://docs.neurodata.io/ndio/>).
 
-Submit bug reports [here](<https://github.com/openconnectome/ndio/issues/new>).
+Submit bug reports [here](<https://github.com/neurodata/ndio/issues/new>).
