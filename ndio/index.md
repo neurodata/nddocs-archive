@@ -9,16 +9,23 @@ to work with other remotes (servers) to allow for additional flexibility.  More
 complete documentation is available at [the ndio documentation
 website](<http://docs.neurodata.io/ndio>).
 
- 
-
 ndio is now considered stable as of the 1.0 release in April 2016.
 
- 
+## Installation
 
-Getting Started
----------------
+Before you install ndio, you'll need to have a few prerequisites. The first thing to do is to **install numpy**, which often does not jive well with the auto-installation process supported by `pip`.
 
-You can view a list of tutorials, and some information about getting started,
+If you already have numpy installed, then simply run:
+
+```
+pip install ndio
+```
+
+Generally, installation failures can be fixed by running the same line again, which, yeah, that's super janky, whatever. If that still fails, try cloning the repository from https://github.com/neurodata/ndio and running `pip install -r requirements.txt`.
+
+## Getting Started
+
+You can view a list of not-necessarily-too-up-to-date tutorials, and some information about getting started,
 over [here](<http://docs.neurodata.io/nddocs/ndio/tutorials.html>). System- and
 library-requirements are listed
 [here](<http://docs.neurodata.io/nddocs/ndio/importing.html>).
