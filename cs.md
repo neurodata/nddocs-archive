@@ -18,7 +18,7 @@ layout: default
 
 ## interactive visualizations
 
-- [images](http://ix.neurodata.io)
+- [images (ndviz)](http://docs.neurodata.io/ndviz) 
 - [graphs](http://gx.neurodata.io)
 - [matrices](http://vx.neurodata.io)
 
