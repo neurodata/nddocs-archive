@@ -23,6 +23,8 @@ pip install ndio
 
 Generally, installation failures can be fixed by running the same line again, which, yeah, that's super janky, whatever. If that still fails, try cloning the repository from https://github.com/neurodata/ndio and running `pip install -r requirements.txt`.
 
+If there are issues installing h5py, run `brew install homebrew/science/hdf5`.
+
 If you're still having no luck, try checking out the `travis.yml` file in the main directory of the repository — these are the lines required to get ndio up and running on a totally blank Ubuntu 14.04 machine.
 
 ## Getting Started
