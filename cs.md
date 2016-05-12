@@ -18,7 +18,7 @@ layout: default
 
 ## interactive visualizations
 
-- [images](http://ix.neurodata.io)
+- [images (ndviz)](http://docs.neurodata.io/ndviz) 
 - [graphs](http://gx.neurodata.io)
 - [matrices](http://vx.neurodata.io)
 
@@ -28,10 +28,6 @@ layout: default
 	- [2D Stitching Artifact Removal](https://github.com/mkazhdan/DMG) 
 	- [3D Histogram Normalization](http://www.cs.jhu.edu/~misha/Code/GradientDomainFusion/Version1.0/)
 	- [Volume Registration](https://github.com/neurodata/ndreg)
-- graph inference
-	- [serial electron microscopy](http://i2g.io)
-	- [diffusion MRI](http://m2g.io)
-	- [functional MRI](http://fcp-indi.github.io/)
 - object detection pipelines
 	- [Label](http://docs.neurodata.io/nddocs/ndparse/mana.html)
 	- [Learn](http://docs.neurodata.io/nddocs/ndparse/maca.html)
@@ -39,6 +35,10 @@ layout: default
 		- [MATLAB Synapse Detection from EM data](http://docs.neurodata.io/vesicle/)
 		- [Random Forest](http://docs.neurodata.io/nddocs/ndparse/mbcd.html)
 		- [Deep Networks](http://docs.neurodata.io/nddocs/ndparse/nddl.html)
+- graph inference
+	- [serial electron microscopy](http://i2g.io)
+	- [diffusion MRI](http://m2g.io)
+	- [functional MRI](http://fcp-indi.github.io/)
 
 
 
