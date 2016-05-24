@@ -68,6 +68,9 @@ Table 2: Publications assocated with data hosted by ndstore
 
 ## Matrices
 
+<figure><img src="./figs/FM_sparse_mat.png"><figcaption>Figure 7a: The format of a sparse matrix.</figcaption></figure>
+<figure><img src="./figs/FM_tile_format.png"><figcaption>Figure 7b: The storage format of a tile.</figcaption></figure>
+
 FlashX partitions a sparse matrix into tiles and store tiles in a very compact format
 (Figure 7b). We use our own SCSR (Super Compressed Row Storage)
 format for rows with more than one non-zero entry and the coordinate format (COO)
@@ -122,8 +125,7 @@ Supplementary Table 1: Functions supported in our databases.  (A) NeuroImages. (
 
 Supplementary Figure 1: Infrastructure supporting all components of the OCP data analysis pipeline.  (A) The OCP Data Cluster. (B) Software running on the backend. (C) Software running on the frontend.
 
-![figure 9](figs/FM_TAS.png)
-<figure><img src="./figs/FM_TAS.png"><figcaption></figcaption></figure>
+<figure><img src="./figs/FM_TAS.png"><figcaption>Figure 9</figcaption></figure>
 
 ## Graphs
 
