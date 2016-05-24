@@ -5,7 +5,13 @@ layout: default
 
 ## Images 
 
-Table 1: Publicly available image data through NDStore. The key corresponds to the publication associated to the data, as given in Table 2. The token is a programmatic key which enables users to access the associated data. The URL corresponds to a location at which this data is viewable using our web viewer, NeuroDataViz.
+You can reproduce our Read/Write throughput and the tilecache benchmarks using AWS EC2 instances.
+The software stack can be installed on the EC2 instance using an install scripts.
+After installing the backend, you can run the benchmarks in the paper using the benchmark scripts provided. 
+The benchmark scripts are configurable to run the benchmark tests for different test configurations, for example running the benckmark for 32 threads.
+The results of these benchmarks are stored in CSV files and you can use provided R scripts to generate the graphs as shown in the paper.
+
+Table 3: Publicly available image data through NDStore. The key corresponds to the publication associated to the data, as given in Table 2. The token is a programmatic key which enables users to access the associated data. The URL corresponds to a location at which this data is viewable using our web viewer, NeuroDataViz.
 
 | key |       token        | resolution (nm3; Hz) |     voxels / volume     | channels | total (GV) |
 |-----|--------------------|----------------------|-------------------------|----------|------------|
@@ -62,9 +68,49 @@ Table 2: Publications assocated with data hosted by ndstore
 
 ## Matrices
 
+FlashX partitions a sparse matrix into tiles and store tiles in a very compact format
+(Figure 7b). We use our own SCSR (Super Compressed Row Storage)
+format for rows with more than one non-zero entry and the coordinate format (COO)
+for rows with only one non-zero entry [25]. The SCSR format only stores data
+for non-empty rows in a tile. A non-empty row contains a row header that has an
+identifier to indicate the row number, followed by column
+indices. The most significant bit of the identifier is always
+set to 1, while the most significant bit of a column index
+entry is always set to 0. As such, we can easily distinguish
+a row identifier from a column index entry and determine
+the end of a row. We use two bytes to store a row number and
+a column index entry, which further reduces the storage size.
+For the adjacency matrix of a real-world graph,
+many rows in a cache tile have only one non-zero entry, owing
+to the sparsity of the graphs and nearly random vertex
+connection. The COO format for single-entry rows avoids many
+conditional jumps without increasing the storage size.
+All non-zero values are stored together at the end of a tile.
+
+FlashX supports dense matrices of different shapes (Figure 8).
+It specifically optimizes tall-and-skinny matrices
+and short-and-wide matrices, and stores tall matrices and wide matrices
+as groups of tall-and-skinny matrices and short-and-wide matrices, respectively.
+For a tall-and-skinny matrix and short-and-wide matrix, FlashMatrix supports
+row-major and column-major matrix layout (Figure 9). As such,
+we avoid data copy for common matrix operations such as matrix transpose.
+FlashMatrix partitions TAS matrices horizontally
+into I/O-level partitions. All elements in an I/O-level partition are stored
+contiguously regardless of the data layout in the matrix. Each I/O
+access reads the entire I/O-level partition, so the partition size determines an I/O
+size, usually on the order of megabytes. The number of rows in an I/O-level
+partition is always 2<sup>i</sup>.
+
 ## Graphs
 
 ## Reproducibility
 
 ## Links
+
+
+## References 
+
+[25] 
+[Da Zheng, Disa Mhembere, Vince Lyzinski, Joshua T. Vogelstein, Carey E. Priebe, and Randal Burns, Semi-External Memory Sparse Matrix Multiplication on Billion-node Graphs in a Multicore Architecture, 2016.](http://arxiv.org/abs/1602.02864)
+
 
