@@ -90,6 +90,8 @@ connection. The COO format for single-entry rows avoids many
 conditional jumps without increasing the storage size.
 All non-zero values are stored together at the end of a tile.
 
+<figure><img src="./figs/FM_dense_matrix.png"><figcaption>Figure 8: Dense matrices of different shapes.</figcaption></figure>
+
 FlashX supports dense matrices of different shapes (Figure 8).
 It specifically optimizes tall-and-skinny matrices
 and short-and-wide matrices, and stores tall matrices and wide matrices
