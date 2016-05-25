@@ -106,6 +106,19 @@ access reads the entire I/O-level partition, so the partition size determines an
 size, usually on the order of megabytes. The number of rows in an I/O-level
 partition is always 2<sup>i</sup>.
 
+Table 5: The runtime and memory consumption of FlashGraph on a Web page
+graph with 3.4 billion vertices and 129 billion edges.
+
+| Algorithm | Runtime (sec) | Memory (GB) |
+|-----------|---------------|-------------|
+| BFS       |  298          |    22       | 
+| BC        |  595          |    81       | 
+| TC        |  7818         |    55       |
+| WCC       |  461          |    47       |
+| PR        |  2041         |    46       |
+| SS        |  375          |    83       |
+
+
 ## Explore
 
 To recreate the Matrix Explorer panel first navigate to <a href="http://mx.neurodata.io/">Matrix-Explorer</a>, click on Demo (Iris Dataset), and proceed to the "Embedding \& Clustering" tab. The resultant window should look like the image shown in the subpanel.
