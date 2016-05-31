@@ -5,7 +5,7 @@ layout: default
 
 ## Images
 
-We have curated a collection of image datasets and setup pre-configured *NeuroDataViz* projects for them. This data is available by visiting http://viz.neurodata.io and clicking on "Data".
+We have curated a collection of image datasets and setup pre-configured *NeuroDataViz* projects for them. This data is available by visiting [viz.neurodata.io](http://viz.neurodata.io) and clicking on "Data".
 
 The data in Figure 2(a) was collected by Bobby Kasthuri in 2011 and published in 2015. The global dataset is available at http://viz.neurodata.io/project/kasthuri11cc. The data used to generate the figure was taken from the following subregion: http://viz.neurodata.io/project/kasthuri11cc/xy/2/2439/4281/1100/. In *NDStore* parlance, the data is identified as follows:
 
