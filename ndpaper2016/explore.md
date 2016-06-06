@@ -47,8 +47,9 @@ The *Histogram Explorer* can also be used to determine an appropriate "image win
 
 To use the tool to resample a dataset, first load a 16-bit token and channel into the Histogram Explorer. A good example token / channel combination is **Ex10R55** and **DAPI_1**. The *Ex10R55* dataset was collected by Weiler et al and published in Nature Scientific Data in 2014 [(Weiler et al., 2014)](http://www.nature.com/articles/sdata201446).
 
-**AB TODO:** Finish this section when histogram for DAPI_1 is generated.
+Immediately, it is apparent that the 16-bit dataset is using a small fraction of the 16-bit intensity space. The plotted histogram will appear blank. The plot is interactive, and the user can zoom in on a particular chunk of the histogram by clicking and dragging across.
 
+At the bottom of the page is an image loaded from NDStore. The double slider immediately above the image adjusts the resampling from 16-bit space to 8-bit spae. After moving the slider, click "*Apply Window to Image*" to see the results updated in the image below. 
 
 ## Annotations
 
