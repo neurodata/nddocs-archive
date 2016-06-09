@@ -28,12 +28,3 @@ The following projects from the Images table also include annotation data:
 | Rat Hippocampal CA1 neuropil (Harris et al., 2015) | [http://viz.neurodata.io/dataview/kharris15](http://viz.neurodata.io/dataview/kharris15) |
 | C. elegans hermaphrodite pharynx (Bhatla et al., 2015) | [http://viz.neurodata.io/dataview/bhatla15](http://viz.neurodata.io/dataview/bhatla15) |
 | Fly Medulla	(Takemura et al., 2013) | [http://viz.neurodata.io/dataview/takemura13](http://viz.neurodata.io/dataview/takemura13) |
-
-
-## Matrices
-
-## Graphs
-
-## Reproducibility
-
-## Links
