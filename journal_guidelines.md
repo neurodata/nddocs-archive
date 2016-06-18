@@ -18,19 +18,19 @@ in general, assume:
 
 submit as article, they will typically require downsampling to report.
 
-intro: 900
-results: 2700
-disc: 900
+- intro: 900
+- results: 2700
+- disc: 900
 
 20% over the limit yields 5400 words:
 
-intro: 1080
-results: 3240
-disc: 900
+- intro: 1080
+- results: 3240
+- disc: 900
 
 in line numbers, 360 lines total, but subtract 40 lines for references, leaves 320
 
-intro: 64 lines
-results: 192 lines
-disc: 64 lines
+- intro: 64 lines
+- results: 192 lines
+- disc: 64 lines
 
