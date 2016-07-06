@@ -51,9 +51,9 @@ layout: default
 
     You can see what version of ndio you have imported with `ndio.version`.
 
-## Getting started with ndio
+## Example ndio notebooks
 
 
-   - This tutorial includes information about [getting started with ndio](https://github.com/neurodata/ndiodemos/blob/master/Getting%20Started.ipynb)
+   - This tutorial includes information about [getting started with ndio](https://github.com/neurodata/ndio-demos/blob/master/Getting%20Started.ipynb)
 
    - Additional examples (still in development) are available [here](https://github.com/neurodata/ndpaper/blob/gh-pages/neurocartography/claims).
