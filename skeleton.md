@@ -231,21 +231,37 @@ many do not have "websites" per se, it is not obvious that they need a website, 
 
 (not sure how to organize: species? scale? modality? all options?)
 
+
 ## Nano-Cortical (Bobby paper)
+
 ## Nano-hippocampal (Kristen paper)
+
 ## Micro-Cortical (Eva paper)
+
 ## Micro-molecular Cortical (Nick paper)
+
 ## 3D Synapse Distribution (ndpaper)
+
 ## sex prediction (signal subgraph)
+
 ## Joint C. Elegans Chemical + Electrical Connectomes (http://dx.doi.org/10.1080/21624054.2016.1142041)
+
 ## Drosophila Neural Line-Behavior Map
+
 ## Micro/mammal dynamics (Hofer paper)
+
 ## brain dependence stuff (mgc paper)
+
 ## supervenience paper
+
 ## optimal pipelines (discriminability paper)
+
 ## CLARITY classification (ndpaper?)
+
 ## individual differences (http://dx.doi.org/10.1002/hbm.23150)
+
 ## AD prediction
+
 
 
 
