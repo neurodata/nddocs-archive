@@ -253,13 +253,23 @@ many do not have "websites" per se, it is not obvious that they need a website, 
 
 (all this stuff is basically here: http://neurodata.io/about)
 
+
 ## mission & values
+
 ## references
+
 ## links
+
 ## press
+
 ## people
+
 ## funding
+
 ## review articles?
+- CCC
+- cosmos to connectomes
+- human connectomes
 - CCC
 - cosmos to connectomes
 - human connectomes
