@@ -6,38 +6,41 @@ layout: default
 # statistical science
 
 ## time-series
-- sequential monte carlo
-- non-negative deconvolution
-- graph inference
-- dictionary learning
-- variational inference
-- high-dimensional system identification
+- Deconvolution/Spike Detection
+	- [Sequential Monte Carlo]
+	- [Non-negative Deconvolution]
+	- [Dictionary Learning]
+	- [Variational Inference]
+- Graph Inference
+	- [MCMC]
+	- [High-Dimensional System Identification]
 
 ## graphs
 
-- vertex clustering
-	- unsupervised
-	- semi-supervised
-	- supervised
-- similarity/dissimilarity, testing, and matching
-	- testing
-		- non-parametric two-sample tests
-		- semi-parametric two-sample tests
-	- matching
-		- graph matching
-		- seeded graph matching
-		- large seeded graph matching
-		- graph matching theory
-	- clustering
-		- Deltacon
-- graph classification
-	- nonparametric
-	- shuffled
-	- signal subgraph
-- models
-	- random dot product model
-	- bayesian random dot product model
-	- hierarchical stochastic block model
+- Vertex Clustering
+	- Unsupervised
+	- Semi-Supervised
+	- Supervised
+- Graph Comparisons
+	- Testing
+		- Non-Parametric Two-Sample Tests
+		- Semi-Parametric Two-Sample Tests
+	- Matching
+		- Graph Matching
+		- Seeded Graph Matching
+		- Large Seeded Graph Matching
+		- Graph Matching Theory
+	- Clustering
+		- [Deltacon]
+		- [gClust]
+- Graph Classification
+	- Non-Parametric
+	- Shuffled
+	- Signal Subgraph
+- Models
+	- Random Dot Product Model
+	- Bayesian Random Dot Product Model
+	- Hierarchical Stochastic Block Model
 
 ## shapes
 - LDDMM

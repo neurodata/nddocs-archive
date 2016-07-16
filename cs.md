@@ -18,9 +18,9 @@ layout: default
 
 ## interactive visualizations
 
-- [images](http://ix.neurodata.io)
-- [graphs](http://gx.neurodata.io)
-- [matrices](http://vx.neurodata.io)
+- [Images](http://ix.neurodata.io)
+- [Graphs](http://gx.neurodata.io)
+- [Matrices](http://vx.neurodata.io)
 
 
 ## scalable machine vision 
@@ -42,7 +42,7 @@ layout: default
 
 
 
-## scalable analytics
+## big data analytics
 - [Images](http://docs.neurodata.io/ndstore/api/stats_api.html)
 - [Shapes](https://github.com/mkazhdan/ShapeSPH)
 - [Graphs](http://flashx.io/)
