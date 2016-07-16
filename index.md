@@ -12,3 +12,5 @@ layout: default
 - [*statistical science*](http://docs.neurodata.io/nddocs/stats.html) Statistical sciences have developed a beautiful corpus of knowledge on inference in various settings over the last 100 years. However, in recent years, new experimental and data collection methods have yielded datasets that no longer fit within the assumptions upon which that body of literature rests. We therefore focus on building statistical methods for 21st century data.
 
 - [*neuroscience*](http://docs.neurodata.io/nddocs/neuro.html) The above described tools, both statistical and computational, are designed and built in the service of answering fundamental questions in neuroscience. We have used them on the data we share to answer a number of previously intractable questions.
+
+- [*NeuroData Paper*](./ndpaper2016/index.html)

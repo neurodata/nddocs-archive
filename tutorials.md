@@ -31,13 +31,31 @@ There are many other viewers out there, with complementary features.  The ones t
 
 We have developed [Graph Explorer]128.220.176.8/Graph-Explorer/shiny/), a [shiny app](https://www.shinyapps.io/) that allows you to upload any graph to both visualize and analyze it.  Other 3rd party graph visualization/analysis tools can also be used with any of our graphs.
 
+### Use the Histogram Explorer tool?
+
+The *Histogram Explorer* is available at [hx.neurodata.io](http://hx.neurodata.io). An *NDStore* dataset **Token** and **Channel** are required to load histograms and associated statistics. Public tokens and channels are available in Table 1, Table 2, and supplementary material.
+
+#### 8-bit Datasets
+
+Figure 2(b) was generated using Histogram Explorer. To setup the view shown in the figure, first visit [hx.neurodata.io](http://hx.neurodata.io). Enter **kharris15apical** in the Token box, and **em** in the Channel box. Press "Load Histogram" to load the histogram and relevant statistics.
+
+#### 16-bit Datasets
+
+The *Histogram Explorer* can also be used to determine an appropriate "image window" for 16-bit datasets. The image window sets a low bound and high bound for resampling a 16-bit dataset into an 8-bit image. Often, the low bound is set at around the 15% and 25% of the dataset intensity value, and the high bound is set at between 80% and 99%.
+
+To use the tool to resample a dataset, first load a 16-bit token and channel into the Histogram Explorer. A good example token / channel combination is **Ex10R55** and **DAPI_1**. The *Ex10R55* dataset was collected by Weiler et al and published in Nature Scientific Data in 2014 [(Weiler et al., 2014)](http://www.nature.com/articles/sdata201446).
+
+Immediately, it is apparent that the 16-bit dataset is using a small fraction of the 16-bit intensity space. The plotted histogram will appear blank. The plot is interactive, and the user can zoom in on a particular chunk of the histogram by clicking and dragging across.
+
+At the bottom of the page is an image loaded from NDStore. The double slider immediately above the image adjusts the resampling from 16-bit space to 8-bit space. After moving the slider, click "*Apply Window to Image*" to see the results updated in the image below.
+
 ### Download some data to play with on my computer?
 
 #### Images
 
 - The easiest way to download data is via our [Download Web-form](http://neurodata.io/exchange/download). It presents two options:
   - "Ready-to-go" downloads provide frequently requested cubes as a PNG stack
-  - If you know the token, channel, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly.  Information about each dataset can be found in the project info pages 
+  - If you know the token, channel, resolution, and bounding box for some data of interest, and you want less than 2 GB, you can type it in directly.  Information about each dataset can be found in the project info pages
 (e.g., `openconnecto.me/ocp/ca/bock11/info/`)
 - [ndio](http://docs.neurodata.io/ndio/) is our Python library that lets you get and put data into NeuroData.  As long as you are transfering < 1 TB of data, this should work fine.  An example ipython notebook can be found [here](https://github.com/openconnectome/ndio-demos/blob/master/Getting%20Started/Downloading%20a%20Volume.ipynb).  An example call is:
 

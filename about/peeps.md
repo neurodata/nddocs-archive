@@ -37,6 +37,7 @@ layout: default
 | [Will Gray Roncal](http://will.grayroncal.com)| greg hager | phd | willgray | willgray 		| m2g, manno, macho, maxxo, vesicle, i2g, cajal  |
 | Disa Mhembere 								| randalburns | phd | [dmhembe1](http://www.cs.jhu.edu/~disa/) 		| disa.mhembere | flashx | 
 | Runze Tang 									| cep | phd | [TangRunze](https://github.com/tangrunze) 	| tangrunze 	| sbmopti, llg | 
+| Heather Gaddy Patsolic 						        | cep | phd | [DSP137](https://github.com/DSP137) 	        |  	        |              | 
 | Tyler Tomita 									| jovo | phd | [ttomita](https://github.com/ttomita/) 	| tmtomita87 	| randomerforest, qing |   
 | Shangsi Wang 									| cep/jovo | phd | [shangsiwang](https://github.com/shangsiwang) | | reliability, joint-embedding |  
 | [Da Zheng](http://www.cs.jhu.edu/~zhengda/) 	| randal | phd | icoming 		| zhengda1936 	| flashx |  
@@ -45,7 +46,7 @@ layout: default
 
 | role 			| name 											| PI | github | google | projects/repos | 
 | data science 	| [Youngser Park](http://www.cis.jhu.edu/~parky/)| cep | youngser		|  				| semipar-cci, synapse-clustering | 
-| data science 	| Jesse Leigh Patsolic | jovo/cep | MrAE		|  				| synaptome-stats | 
+| data science 	| Jesse Leigh Patsolic | jovo/cep | [MrAE](https://github.com/MrAE)		|  				| synaptome-stats | 
 | IT 			| [Anthony Kolasny](http://www.cis.jhu.edu/~akolasny/) | mim
 | financials 	| [Erika Lance](http://cis.jhu.edu/staff/elance.php) | 
 | logistics 	| [Heather Lockard-Wheeler](http://cis.jhu.edu/staff/hlockard-wheeler.php) | 
