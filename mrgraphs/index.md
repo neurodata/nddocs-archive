@@ -26,9 +26,11 @@ Here are a few guides so you can start playing with **ndmg**:
 All of our code is open source and hosted at [github](https://github.com/neurodata/ndmg/). Feel free to issue a pull request for an awesome new feature or bug fix - we're always looking forward to new brain-mapping enthusiasts to work with!
 
 
+
 ### Documentation
 
 - [function and class definitions](http://docs.neurodata.io/ndmg/)
+- [web service](./web_services.html)
 - [example pipeline](https://github.com/neurodata/ndmg/blob/master/examples/inside_run_ndmg.ipynb)
 - [validation](./validation.html)
 - [processed data](./processed_data.html)
