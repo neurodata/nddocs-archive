@@ -6,9 +6,9 @@ layout: default
 in general, assume:
 
 - 20/60/20 for intro/results/discussion
-- we can submit 20% over the limit
 - ~15 words per line
-
+- ~1 line per reference
+- can submit between 20% and 50% over the limit
 # Tutorials
 
 ## [science](http://www.sciencemag.org/authors/science-information-authors):
@@ -16,21 +16,23 @@ in general, assume:
 - report: 2500 words including captions & refs, 4 figs, 30 refs
 - article: 4500 words including caps & refs, 6 figs, 40 refs, 
 
-submit as article, they will typically require downsampling to report.
+assuming 15 words per line, that is:
 
-- intro: 900
-- results: 2700
-- disc: 900
+- report: 167 lines
+- article: 300 lines
 
-20% over the limit yields 5400 words:
+subtracting 1 line  per reference:
 
-- intro: 1080
-- results: 3240
-- disc: 900
+- report: 137 lines
+- article: 260 lines
 
-in line numbers, 360 lines total, but subtract 40 lines for references, leaves 320
+assuming a 20/60 relative faction meaning intro and discussion each get 20%, results get 60%, yields 
 
-- intro: 64 lines
-- results: 192 lines
-- disc: 64 lines
+- report: 27/82
+- article: 52/156
+
+50% over yields:
+
+- report: 40/123; total = 203
+- article: 78/234; total = 390
 
